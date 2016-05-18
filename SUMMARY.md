@@ -2,8 +2,8 @@
 
 * [nowa](README.md)
 * 开始
+   * [安装](an_zhuang.md)
    * [简介](jian_jie.md)
-* [安装](an_zhuang.md)
 * 使用
    * [初始化](chu_shi_hua.md)
        * 新项目
