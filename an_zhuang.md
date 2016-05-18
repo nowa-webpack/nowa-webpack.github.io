@@ -17,7 +17,7 @@ nowa install
 ```
 
 > 如果提示无权限，请尝试加 `sudo`。  
-> 如果下载速度过慢，
+> 如果下载速度过慢，https://registry.npm.taobao.org // TODO
 > `nowa install` 会安装一批常用的插件。
 
 
