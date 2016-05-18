@@ -1,6 +1,7 @@
 # Summary
 
 * [简介](README.md)
+* 开始
 * [安装](an_zhuang.md)
 * 使用
    * [初始化](chu_shi_hua.md)
@@ -21,5 +22,4 @@
    * 组件库定制构建
 * 扩展
 * 常见问题
-* 开始
 
