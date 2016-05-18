@@ -1,6 +1,6 @@
 # Summary
 
-* [简介](README.md)
+* [nowa](README.md)
 * 开始
    * [简介](jian_jie.md)
 * [安装](an_zhuang.md)
