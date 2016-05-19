@@ -7,7 +7,7 @@
    * [预览](yu_lan.md)
 * 使用
    * [初始化](chu_shi_hua.md)
-       * 新项目
+       * [新项目](xin_xiang_mu.md)
        * 新页面
        * 新模块
    * 开发
