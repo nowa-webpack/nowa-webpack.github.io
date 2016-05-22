@@ -22,6 +22,6 @@ nowa init uxcore
 
 目前内置了以下快捷映射：
 
-```
+`h5`、`salt` => `https://github.com/nowa-webpack/template-salt/archive/master.zip`
 
-```
+`web`、`uxcore` => `https://github.com/nowa-webpack/template-uxcore/archive/master.zip`
