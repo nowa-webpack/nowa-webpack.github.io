@@ -12,7 +12,7 @@
        * [新模块](xin_mo_kuai.md)
    * 开发
        * [本地开发](ben_di_kai_fa.md)
-       * 远程调试
+       * [远程调试](yuan_cheng_diao_shi.md)
        * https 配置
        * 国际化
        * 禁用 HMR
