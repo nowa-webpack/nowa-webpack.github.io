@@ -12,16 +12,25 @@
 nowa server
 ```
 
-该命令必须使用在通过 `nowa init` 创建的项目中，可在项目中的任意目录下执行。
+该命令必须使用在通过 `nowa init` 创建的项目中，请在项目根目录下执行。
 
-当回答完一些必要的问题之后，脚手架会开始自动生成新页面相关文件（包括 html、js 和 css）。
-
-
-等待初始化完毕后，便可直接通过 `nowa server` 或 `npm start` 来启动开发服务器，访问到新建的页面。
+也可通过快捷命令 `npm start` 来完成同样的工作。
 
 ## 参数
 
-`nowa init page` 在初始化新页面时，接受以下候选参数：
+`nowa server` 接受以下候选参数：
 
-- `-t, --template` 用户指定所使用的项目模板，一般定义在 `abc.json` 的 `options` 属性中，**必须给出**
+- `-s, --src <dir>` 源代码目录，默认指向 `src`
+- `-d, --dist <dir>` 输出代码目录，默认指向 `dist`
+- `-p, --port <port>` 服务器监听端口，默认指向 `3000`
+- `-e  --entry <file>` 应用入口文件，默认指向 `app/app.js`
+- `    --pages` 开启多页面入口规则
+- `    --vars` 运行时环境变量（详见[环境变量篇](huan_jing_bian_liang.md)）
+- `    --buildvars` 构建时环境变量（详见[环境变量篇](huan_jing_bian_liang.md)）
+- `-r, --proxy`  dev proxy hostname or mappings
+- `-k, --keepcss`  keep flush css files
+- `-l, --lazyload`  disable hot reload
+- `-h, --https`  start https server
+- `    --externals`  webpack external varibles
+- `-o, --loose`  use babel es2015 loose mode to transform codes
 
