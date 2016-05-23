@@ -26,7 +26,7 @@ nowa init uxcore
 
 当回答完一些必要的问题之后，脚手架会开始自动生成和初始化项目。
 
-![](2016-05-22 22-53-26屏幕截图.png)
+![](screenshot-init-proj.png)
 
 等待初始化完毕后，便可直接通过 `nowa server` 或 `npm start` 来启动开发服务器。
 
