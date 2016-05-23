@@ -13,8 +13,8 @@
    * 开发
        * [本地开发](ben_di_kai_fa.md)
        * 远程调试
-           * https 配置
        * 转发映射配置
+       * https 配置
        * 国际化
        * 禁用 HMR
        * 覆盖默认的 webpack 配置
