@@ -16,7 +16,7 @@ nowa init page
 
 当回答完一些必要的问题之后，脚手架会开始自动生成新页面相关文件（包括 html、js 和 css）。
 
-![](2016-05-23 14-09-59屏幕截图.png)
+![](screenshot-init-page.png)
 
 等待初始化完毕后，便可直接通过 `nowa server` 或 `npm start` 来启动开发服务器，访问到新建的页面。
 
