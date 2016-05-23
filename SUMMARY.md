@@ -9,7 +9,7 @@
    * [初始化](chu_shi_hua.md)
        * [新项目](xin_xiang_mu.md)
        * [新页面](xin_ye_mian.md)
-       * 新模块
+       * [新模块](xin_mo_kuai.md)
    * 开发
        * 本地开发
        * 远程调试
