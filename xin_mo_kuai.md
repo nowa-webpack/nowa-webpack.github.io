@@ -28,4 +28,4 @@ var TestMod = require('../components/test-mod');
 
 `nowa init page` 在初始化新页面时，接受以下候选参数：
 
-- `-t, --template` 用户指定所使用的项目模板，一般定义在 `abc.json` 的 `options` 属性中，**必须给出**
+- `-t, --template <url>` 用户指定所使用的项目模板，一般定义在 `abc.json` 的 `options` 属性中，**必须给出**
