@@ -59,3 +59,28 @@ nowa proxy
 
 ### 参数列表
 
+`nowa proxy` 接受以下候选参数：
+
+- `    --mappings` 代理映射配置
+- `-r, --rule <path>` 规则定义文件路径，规则定义文件将会覆盖代理映射配置
+- `-t, --throttle <throttle>` 模拟网络限速（kb/s）
+- `-s  --silent` 不输出日志到终端
+
+`mappings` 中每条规则定义如下：
+
+"`<METHOD>` `[<PROTOCOL>:]//<HOSTNAME>[:<PORT>]/[PATH]`": "`[<PROTOCOL>:]//<HOSTNAME1>[:<PORT1>]/[PATH1]`"
+
+> 其中 `METHOD` 和 `PROTOCOL` 不允许改变，`PATH` 中小括号中的部分映射后将拼接到 `PATH1` 之后
+
+`abc.json`
+```json
+{
+  "options": {
+    "port": 3000,
+    "mappings": {
+      "GET //localhost:3000/(admin/meeting/mobile/*.json)": "//a-work.alibaba-inc.com"
+    }
+  }
+}
+```
+
