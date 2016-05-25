@@ -14,7 +14,7 @@
        * [本地开发](ben_di_kai_fa.md)
        * [远程调试](yuan_cheng_diao_shi.md)
        * [https 配置](https_pei_zhi.md)
-       * 国际化
+       * [国际化](guo_ji_hua.md)
        * 禁用 HMR
        * 覆盖默认的 webpack 配置
        * 环境变量

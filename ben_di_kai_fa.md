@@ -16,6 +16,8 @@ nowa server
 
 也可通过快捷命令 `npm start` 来完成同样的工作。
 
+![](screenshot-server-use.png)
+
 ## 参数
 
 `nowa server` 接受以下候选参数：
