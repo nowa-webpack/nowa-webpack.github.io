@@ -15,7 +15,7 @@
        * [远程调试](yuan_cheng_diao_shi.md)
        * [https 配置](https_pei_zhi.md)
        * [国际化](guo_ji_hua.md)
-       * [模块热替换](mokuai_re_ti_huan.md)
+       * [模块热替换](mo_kuai_re_ti_huan.md)
        * 覆盖默认的 webpack 配置
        * 环境变量
    * 项目构建
