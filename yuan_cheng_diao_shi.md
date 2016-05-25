@@ -45,7 +45,7 @@
 - 如果开发服务器存在静态资源 `/api/getSomeInfo.json`，则返回 `/api/getSomeInfo.json`
 - 如果开发服务器不存在静态资源 `/api/getSomeInfo.json`，则转发到 `http://10.125.55.239:9077/api/getSomeInfo.json`
 
-同样的，对于其他的非 `/api` 开头的请求，则转发到 `http://127.0.0.1:9077`。
+同样的，对于其他的非 `/api` 开头的请求（匹配 `"*"`），则转发到 `http://127.0.0.1:9077`。
 
 ## 代理服务器的规则配置
 
@@ -68,9 +68,17 @@ nowa proxy
 
 `mappings` 中每条规则定义如下：
 
-"`<METHOD>` `[<PROTOCOL>:]//<HOSTNAME>[:<PORT>]/[PATH]`": "`[<PROTOCOL>:]//<HOSTNAME1>[:<PORT1>]/[PATH1]`"
+```
+"<METHOD> //<HOSTNAME>[:<PORT>]/[PATH]": "//<HOSTNAME1>[:<PORT1>]/[PATH1]"
+```
 
-> 其中 `METHOD` 和 `PROTOCOL` 不允许改变，`PATH` 中小括号中的部分映射后将拼接到 `PATH1` 之后
+其中左边为筛选表达式，右边为目标表达式
+- `METHOD` 请求方法，仅可用于筛选，可选值 `GET | POST | *`
+- `HOSTNAME` 请求域名，用于筛选和目标，两边必须都给出
+- `PORT` 请求端口，用于筛选和目标，若在目标表达式中未给出则仍维持筛选表达式中的值，若在筛选表达式中未给出则不对端口做限定
+- `PATH` 请求路径，用于筛选和目标，其中小括号括起的部分映射后将拼接到 `PATH1` 之后
+
+例如有以下配置：
 
 `abc.json`
 ```json
@@ -78,9 +86,10 @@ nowa proxy
   "options": {
     "port": 3000,
     "mappings": {
-      "GET //localhost:3000/(admin/meeting/mobile/*.json)": "//a-work.alibaba-inc.com"
+      "GET //localhost:3000/(admin/meeting/mobile/*.json)": "//a-work.alibaba-inc.com:443"
     }
   }
 }
 ```
 
+则对于 `https://localhost:3000/admin/meeting/mobile/apply/GetList.json` 的请求将被转发到 `https://a-work.alibaba-inc.com/admin/meeting/mobile/apply/GetList.json`
