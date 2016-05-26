@@ -19,7 +19,7 @@
        * [覆盖默认的 webpack 配置](fu_gai_mo_ren_de_webpack_pei_zhi.md)
        * [环境变量](huan_jing_bian_liang.md)
    * 构建
-       * [项目构建](ben_di_gou_jian.md)
+       * [项目构建](xiang_mu_gou_jian.md)
        * 组件库的定制构建
 * 扩展
 * 常见问题
