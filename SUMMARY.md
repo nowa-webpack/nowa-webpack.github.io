@@ -23,5 +23,6 @@
        * [组件库的定制构建](zu_jian_ku_de_ding_zhi_gou_jian.md)
 * [扩展](kuo_zhan.md)
    * 脚手架
+   * 插件
 * 常见问题
 
