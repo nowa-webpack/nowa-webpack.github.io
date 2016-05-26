@@ -60,4 +60,4 @@ window['Uxcore'] = {
 
 - 以这份临时文件为构建入口（entry）进行 webpack 构建，输出 `uxcore.js`
 - 对输出文件进行压缩，生成 `uxcore.min.js`
-- 拷贝 `uxcore.js` 和 `uxcore.min.js` 到 `src/lib` 目录
+- 拷贝 `uxcore.js` 和 `uxcore.min.js` 到 `src/lib` 目录（为避免 `dist` 目录冲突，一般会把 `dist` 目录移出版本管理，所以把 `src/lib` 目录拿来用于存储依赖库文件）
