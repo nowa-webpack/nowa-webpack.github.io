@@ -9,10 +9,10 @@
 这个 zip 文件解压后可包括以下文件或文件夹：
 
 - `README.md` 模板介绍文件
-- `prompt.js` 定制的提问模板（返回一份 [inquirer](https://www.npmjs.org/package/inquirer) 配置和答案的后处理函数）
 - `mod` 供模块生成（`nowa init mod`）使用
 - `page` 供页面生成（`nowa init page`）使用
 - `proj` 供项目生成（`nowa init <url>`）使用
+- `<type>.js` 定制的提问模板（`<type>` 取值 `mod`、`page` 或 `proj`，返回一份 [inquirer](https://www.npmjs.org/package/inquirer) 配置和回答的后处理函数）
 
 在执行对应的命令时，
 - 首先会给用户提问一些基础问题和模板定制问题
@@ -26,7 +26,7 @@
 
   以下是一份典型的提问模板：
 
-  `prompt.js`
+  `proj.js`
   ```js
   // inquirer prompts config
   // see https://www.npmjs.org/package/inquirer for detail
@@ -37,7 +37,7 @@
     }
   ];
   // post-process of answer
-  exports.answers = function(answers) {
+  exports.answers = function(answers, abc) {
     return answers;
   };
   ```
