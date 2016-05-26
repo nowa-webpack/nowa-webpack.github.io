@@ -20,7 +20,7 @@
        * [环境变量](huan_jing_bian_liang.md)
    * 构建
        * [项目构建](xiang_mu_gou_jian.md)
-       * 组件库的定制构建
+       * [组件库的定制构建](zu_jian_ku_de_ding_zhi_gou_jian.md)
 * 扩展
 * 常见问题
 
