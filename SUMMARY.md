@@ -12,7 +12,7 @@
        * [新模块](xin_mo_kuai.md)
    * 开发
        * [本地开发](ben_di_kai_fa.md)
-       * [远程调试](yuan_cheng_diao_shi.md)
+       * [远程调试](yuan_cheng_tiao_shi.md)
        * [https 配置](https_pei_zhi.md)
        * [国际化](guo_ji_hua.md)
        * [模块热替换](mo_kuai_re_ti_huan.md)
