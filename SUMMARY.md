@@ -18,8 +18,8 @@
        * [模块热替换](mo_kuai_re_ti_huan.md)
        * [覆盖默认的 webpack 配置](fu_gai_mo_ren_de_webpack_pei_zhi.md)
        * [环境变量](huan_jing_bian_liang.md)
-   * [项目构建](ben_di_gou_jian.md)
    * 构建
+       * [项目构建](ben_di_gou_jian.md)
        * 组件库的定制构建
 * 扩展
 * 常见问题
