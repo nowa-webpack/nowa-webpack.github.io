@@ -18,6 +18,13 @@ nowa server
 
 ![](screenshot-server-use.png)
 
+`nowa server` 将把以下目录作为静态资源监听目录：
+- `./html`
+- `./dist`（该目录跟随 `--dist` 配置而改变）
+- `.`
+
+webpack 的构建输出文件将不会写到文件系统，而是缓存在内存中，在访问时直接输出。这样做可显著提高构建效率。
+
 ## 参数
 
 `nowa server` 接受以下候选参数：
