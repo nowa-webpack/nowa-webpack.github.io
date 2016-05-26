@@ -20,6 +20,7 @@ nowa server
 
 `nowa server` 将把以下目录作为静态资源监听目录：
 - `./html`
+- `./src/lib`（该目录跟随 `--src` 配置而改变）
 - `./dist`（该目录跟随 `--dist` 配置而改变）
 - `.`
 
