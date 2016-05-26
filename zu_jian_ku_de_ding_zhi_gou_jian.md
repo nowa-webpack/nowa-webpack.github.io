@@ -15,25 +15,49 @@ nowa lib
 该命令必须使用在通过 `nowa init` 创建的项目中，请在项目根目录下执行。
 
 ![](screenshot-lib-use.png)
-// TODO
 
-`nowa build` 主要做了以下几个事情：
-- 拷贝 html 文件和第三方依赖库到输出目录
-- 对源代码做 webpack 构建（针对所有环境变量组合分别输出，详见[环境变量篇](huan_jing_bian_liang.md)）
-- 对所有输出文件做压缩和代码优化
+## 配置
 
-## 参数
+`nowa lib` 会读取 `abc.json` 中的 `libraries` 参数，按配置构建出所有的依赖库。
 
-`nowa build` 接受以下候选参数：
+一个典型的配置如下：
 
-- `-s, --src <dir>` 源代码目录，默认指向 `src`
-- `-d, --dist <dir>` 输出代码目录，默认指向 `dist`
-- `-e  --entry <file>` 应用入口文件，默认指向 `app/app.js`
-- `    --pages` 开启多页面入口规则
-- `    --vars` 运行时环境变量（详见[环境变量篇](huan_jing_bian_liang.md)）
-- `    --buildvars` 构建时环境变量（详见[环境变量篇](huan_jing_bian_liang.md)）
-- `    --externals` webpack 外部变量定义
-- `-o, --loose` 使用 babel es2015 的宽松模式来做代码转换
-- `-c, --keepconsole` 保留源代码中的 `console.log`，默认会删除
-- `    --skipminify` 跳过压缩任务，默认会进行代码压缩
-- `-p, --progress` 在等待时显示 webpack 的构建进度
+`abc.json`
+```json
+{
+  "options": {
+    "libraries": {
+      "Uxcore": {
+        "output": "uxcore.js",
+        "mappings": {
+          "Button": "uxcore-button@~0.4.0"
+        }
+      }
+    }
+  }
+}
+```
+
+其中
+- `Uxcore` 是构建出的库对外暴露的全局变量
+- `output` 定义输出的文件名，输出文件会放在 `--dist` 配置的目录下，另外也会拷贝一份到 `src/lib` 目录
+- `mappings` 定义了全局变量下各个属性和组件的对应关系，其中组件可带上语义化版本号（如果不带的话默认取最新版）
+
+对于以上的配置，`nowa lib` 的执行过程
+- 首先安装组件依赖
+
+```shell
+npm install uxcore-button@~0.4.0 -d
+```
+
+- 然后生成临时文件
+
+```js
+window['Uxcore'] = {
+  Button: require('uxcore-button')
+};
+```
+
+- 以这份临时文件为构建入口（entry）进行 webpack 构建，输出 `uxcore.js`
+- 对输出文件进行压缩，生成 `uxcore.min.js`
+- 拷贝 `uxcore.js` 和 `uxcore.min.js` 到 `src/lib` 目录
