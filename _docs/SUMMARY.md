@@ -6,7 +6,7 @@
    * [安装](an_zhuang.md)
    * [预览](yu_lan.md)
 * 使用
-   * [初始化](chu_shi_hua.md)
+   * 初始化
        * [新项目](xin_xiang_mu.md)
        * [新页面](xin_ye_mian.md)
        * [新模块](xin_mo_kuai.md)
@@ -21,7 +21,7 @@
    * 构建
        * [项目构建](xiang_mu_gou_jian.md)
        * [组件库的定制构建](zu_jian_ku_de_ding_zhi_gou_jian.md)
-* [扩展](kuo_zhan.md)
+* 扩展
    * [脚手架](jiao_shou_jia.md)
    * [插件](cha_jian.md)
 * [常见问题](chang_jian_wen_ti.md)
