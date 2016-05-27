@@ -1,0 +1,7 @@
+{
+  "name": "nowa-webpack.github.io",
+  "scripts": {
+    "start": "gitbook serve _docs docs",
+    "save": "git add . --all && git commit -am ci && git push origin master"
+  }
+}

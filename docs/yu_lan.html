@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>项目构建 · GitBook</title>
+        <title>预览 · GitBook</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,8 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="zu_jian_ku_de_ding_zhi_gou_jian.html" />
     
+    <link rel="prev" href="an_zhuang.html" />
     
 
     </head>
@@ -140,7 +140,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="yu_lan.html">
+        <li class="chapter active" data-level="1.2.3" data-path="yu_lan.html">
             
                 <a href="yu_lan.html">
             
@@ -354,7 +354,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.3.3.1" data-path="xiang_mu_gou_jian.html">
+        <li class="chapter " data-level="1.3.3.1" data-path="xiang_mu_gou_jian.html">
             
                 <a href="xiang_mu_gou_jian.html">
             
@@ -478,7 +478,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >项目构建</a>
+        <a href="." >预览</a>
     </h1>
 </div>
 
@@ -493,38 +493,50 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x9879;&#x76EE;&#x6784;&#x5EFA;">&#x9879;&#x76EE;&#x6784;&#x5EFA;</h1>
+                                <h1 id="&#x9884;&#x89C8;">&#x9884;&#x89C8;</h1>
 <hr>
-<h2 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h2>
-<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>nowa build</code> &#x547D;&#x4EE4;&#x6765;&#x5B8C;&#x6210;&#x672C;&#x5730;&#x9879;&#x76EE;&#x4EE3;&#x7801;&#x7684;&#x6784;&#x5EFA;&#x5DE5;&#x4F5C;&#x3002;</p>
-<blockquote>
-<p>&#x5982;&#x679C;&#x63D0;&#x793A;&#x627E;&#x4E0D;&#x5230; build &#x547D;&#x4EE4;&#xFF0C;&#x8BF7;&#x901A;&#x8FC7; <code>nowa install build</code> &#x6765;&#x5B89;&#x88C5;</p>
-</blockquote>
-<pre><code class="lang-shell">nowa build
-</code></pre>
-<p>&#x8BE5;&#x547D;&#x4EE4;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x5728;&#x901A;&#x8FC7; <code>nowa init</code> &#x521B;&#x5EFA;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x8BF7;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x6267;&#x884C;&#x3002;</p>
-<p>&#x4E5F;&#x53EF;&#x901A;&#x8FC7;&#x5FEB;&#x6377;&#x547D;&#x4EE4; <code>npm run build</code> &#x6765;&#x5B8C;&#x6210;&#x540C;&#x6837;&#x7684;&#x5DE5;&#x4F5C;&#x3002;</p>
-<p><img src="screenshot-build-use.png" alt=""></p>
-<p><code>nowa build</code> &#x4E3B;&#x8981;&#x505A;&#x4E86;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x4E8B;&#x60C5;&#xFF1A;</p>
+<h2 id="&#x64CD;&#x4F5C;&#x89C6;&#x9891;">&#x64CD;&#x4F5C;&#x89C6;&#x9891;</h2>
+<p>&#x64CD;&#x4F5C;&#x89C6;&#x9891;</p>
+<h2 id="&#x76EE;&#x5F55;&#x7ED3;&#x6784;">&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h2>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x4E00;&#x4E2A;&#x901A;&#x8FC7; <code>nowa init</code> &#x521D;&#x59CB;&#x5316;&#x7684;&#x5178;&#x578B;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</p>
+<pre><code>.
+&#x251C;&#x2500;&#x2500; abc.json  ------------------------- &#x9879;&#x76EE;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x6587;&#x4EF6;
+&#x251C;&#x2500;&#x2500; favicon.ico  ---------------------- &#x9875;&#x9762;&#x56FE;&#x6807;
+&#x251C;&#x2500;&#x2500; html  ----------------------------- html&#x76EE;&#x5F55;
+&#x2502;   &#x2514;&#x2500;&#x2500; index.html  ------------------- &#x5165;&#x53E3;&#x9875;&#x9762;
+&#x251C;&#x2500;&#x2500; package.json  --------------------- &#x9879;&#x76EE;&#x914D;&#x7F6E;
+&#x251C;&#x2500;&#x2500; README.md  ------------------------ &#x8BF4;&#x660E;&#x6587;&#x4EF6;
+&#x2514;&#x2500;&#x2500; src  ------------------------------ &#x6E90;&#x7801;&#x76EE;&#x5F55;
+    &#x251C;&#x2500;&#x2500; app  -------------------------- &#x9879;&#x76EE;&#x7EA7;&#x4EE3;&#x7801;
+    &#x2502;   &#x251C;&#x2500;&#x2500; app.js  ------------------- &#x9879;&#x76EE;&#x7EA7;&#x811A;&#x672C;&#x903B;&#x8F91;
+    &#x2502;   &#x251C;&#x2500;&#x2500; app.less  ----------------- &#x5168;&#x5C40;&#x6837;&#x5F0F;
+    &#x251C;&#x2500;&#x2500; components  ------------------- &#x4E1A;&#x52A1;&#x6A21;&#x5757;&#x96C6;&#x5408;&#x76EE;&#x5F55;
+    &#x251C;&#x2500;&#x2500; i18n  ------------------------- &#x56FD;&#x9645;&#x5316;&#x6587;&#x6848;&#x8D44;&#x6E90;&#x6587;&#x4EF6;
+    &#x2502;   &#x251C;&#x2500;&#x2500; en.js
+    &#x2502;   &#x251C;&#x2500;&#x2500; index.js  ----------------- &#x56FD;&#x9645;&#x5316;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;&#x5668;
+    &#x2502;   &#x2514;&#x2500;&#x2500; zh-cn.js
+    &#x251C;&#x2500;&#x2500; images  ----------------------- &#x56FE;&#x7247;&#x8D44;&#x6E90;&#x76EE;&#x5F55;
+    &#x2514;&#x2500;&#x2500; pages  ------------------------ &#x9875;&#x9762;&#x96C6;&#x5408;&#x76EE;&#x5F55;
+        &#x2514;&#x2500;&#x2500; demo  --------------------- &#x67D0;&#x4E00;&#x4E2A;&#x9875;&#x9762;
+            &#x251C;&#x2500;&#x2500; index.js  ------------- &#x9875;&#x9762;&#x5165;&#x53E3;&#x6587;&#x4EF6;
+            &#x251C;&#x2500;&#x2500; actions.js  ----------- &#x4E8B;&#x4EF6;&#x5217;&#x8868;
+            &#x251C;&#x2500;&#x2500; store.js  ------------- &#x5B58;&#x50A8;&#x5668;
+            &#x251C;&#x2500;&#x2500; PageDemo.js  ---------- &#x9875;&#x9762;&#x89C6;&#x56FE;&#x903B;&#x8F91;
+            &#x2514;&#x2500;&#x2500; PageDemo.less  -------- &#x9875;&#x9762;&#x6837;&#x5F0F;
+</code></pre><h2 id="&#x5E38;&#x7528;&#x547D;&#x4EE4;">&#x5E38;&#x7528;&#x547D;&#x4EE4;</h2>
 <ul>
-<li>&#x62F7;&#x8D1D; html &#x6587;&#x4EF6;&#x548C;&#x7B2C;&#x4E09;&#x65B9;&#x4F9D;&#x8D56;&#x5E93;&#x5230;&#x8F93;&#x51FA;&#x76EE;&#x5F55;</li>
-<li>&#x5BF9;&#x6E90;&#x4EE3;&#x7801;&#x505A; webpack &#x6784;&#x5EFA;&#xFF08;&#x9488;&#x5BF9;&#x6240;&#x6709;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7EC4;&#x5408;&#x5206;&#x522B;&#x8F93;&#x51FA;&#xFF0C;&#x8BE6;&#x89C1;<a href="huan_jing_bian_liang.html">&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7BC7;</a>&#xFF09;</li>
-<li>&#x5BF9;&#x6240;&#x6709;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x505A;&#x538B;&#x7F29;&#x548C;&#x4EE3;&#x7801;&#x4F18;&#x5316;</li>
-</ul>
-<h2 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h2>
-<p><code>nowa build</code> &#x63A5;&#x53D7;&#x4EE5;&#x4E0B;&#x5019;&#x9009;&#x53C2;&#x6570;&#xFF1A;</p>
-<ul>
-<li><code>-s, --src &lt;dir&gt;</code> &#x6E90;&#x4EE3;&#x7801;&#x76EE;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411; <code>src</code></li>
-<li><code>-d, --dist &lt;dir&gt;</code> &#x8F93;&#x51FA;&#x4EE3;&#x7801;&#x76EE;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411; <code>dist</code></li>
-<li><code>-e  --entry &lt;file&gt;</code> &#x5E94;&#x7528;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411; <code>app/app.js</code></li>
-<li><code>--pages</code> &#x5F00;&#x542F;&#x591A;&#x9875;&#x9762;&#x5165;&#x53E3;&#x89C4;&#x5219;</li>
-<li><code>--vars</code> &#x8FD0;&#x884C;&#x65F6;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF08;&#x8BE6;&#x89C1;<a href="huan_jing_bian_liang.html">&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7BC7;</a>&#xFF09;</li>
-<li><code>--buildvars</code> &#x6784;&#x5EFA;&#x65F6;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF08;&#x8BE6;&#x89C1;<a href="huan_jing_bian_liang.html">&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7BC7;</a>&#xFF09;</li>
-<li><code>--externals</code> webpack &#x5916;&#x90E8;&#x53D8;&#x91CF;&#x5B9A;&#x4E49;</li>
-<li><code>-o, --loose</code> &#x4F7F;&#x7528; babel es2015 &#x7684;&#x5BBD;&#x677E;&#x6A21;&#x5F0F;&#x6765;&#x505A;&#x4EE3;&#x7801;&#x8F6C;&#x6362;</li>
-<li><code>-c, --keepconsole</code> &#x4FDD;&#x7559;&#x6E90;&#x4EE3;&#x7801;&#x4E2D;&#x7684; <code>console.log</code>&#xFF0C;&#x9ED8;&#x8BA4;&#x4F1A;&#x5220;&#x9664;</li>
-<li><code>--skipminify</code> &#x8DF3;&#x8FC7;&#x538B;&#x7F29;&#x4EFB;&#x52A1;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F1A;&#x8FDB;&#x884C;&#x4EE3;&#x7801;&#x538B;&#x7F29;</li>
-<li><code>-p, --progress</code> &#x5728;&#x7B49;&#x5F85;&#x65F6;&#x663E;&#x793A; webpack &#x7684;&#x6784;&#x5EFA;&#x8FDB;&#x5EA6;</li>
+<li><p><code>nowa init</code> </p>
+<p>  &#x4EE3;&#x7801;&#x751F;&#x6210;&#xFF08;&#x652F;&#x6301;&#x9879;&#x76EE;&#x3001;&#x9875;&#x9762;&#x3001;&#x6A21;&#x5757;&#x4E09;&#x79CD;&#x7EA7;&#x522B;&#x7684;&#x4EE3;&#x7801;&#x751F;&#x6210;&#xFF0C;&#x6A21;&#x677F;&#x81EA;&#x52A8;&#x4ECE;&#x4E91;&#x7AEF;&#x540C;&#x6B65;&#xFF09;</p>
+</li>
+<li><p><code>nowa server</code></p>
+<p>  &#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x8C03;&#x5F0F;&#x670D;&#x52A1;&#x5668;&#xFF08;&#x65E0;&#x5237;&#x65B0;&#x70ED;&#x66FF;&#x6362;&#x3001;sourceMap&#x3001;&#x4EE3;&#x7406;&#x8F6C;&#x53D1;&#x3001;&#x53D8;&#x91CF;&#x6CE8;&#x5165;&#x3001;&#x652F;&#x6301; https&#xFF09;</p>
+</li>
+<li><p><code>nowa build</code> </p>
+<p>  &#x4EE3;&#x7801;&#x6784;&#x5EFA;&#xFF08;&#x901A;&#x8FC7;&#x76EE;&#x5F55;&#x7EA6;&#x5B9A;&#x652F;&#x6301;&#x591A; entry&#x3001;&#x901A;&#x8FC7;&#x6CE8;&#x5165;&#x53D8;&#x91CF;&#x7EC4;&#x5408;&#x652F;&#x6301;&#x591A;&#x7AEF;&#x540C;&#x65F6;&#x6784;&#x5EFA;&#xFF09;</p>
+</li>
+<li><p><code>nowa lib</code> </p>
+<p>  UI &#x5E93;&#x6784;&#x5EFA;&#xFF08;&#x901A;&#x8FC7;&#x7B80;&#x5355;&#x914D;&#x7F6E;&#x6765;&#x6784;&#x5EFA;&#x7B2C;&#x4E09;&#x65B9; UI &#x7EC4;&#x4EF6;&#x5E93;&#xFF0C;&#x76EE;&#x524D;&#x652F;&#x6301; <a href="http://uxco.re/" _target="blank">UXCore</a>&#xFF09;</p>
+</li>
 </ul>
 
                                 
@@ -553,10 +565,10 @@
 
             
                 
-                
-                <a href="zu_jian_ku_de_ding_zhi_gou_jian.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 组件库的定制构建">
-                    <i class="fa fa-angle-right"></i>
+                <a href="an_zhuang.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 安装">
+                    <i class="fa fa-angle-left"></i>
                 </a>
+                
                 
             
         
@@ -565,7 +577,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"项目构建","level":"1.3.3.1","depth":3,"next":{"title":"组件库的定制构建","level":"1.3.3.2","depth":3,"path":"zu_jian_ku_de_ding_zhi_gou_jian.md","ref":"zu_jian_ku_de_ding_zhi_gou_jian.md","articles":[]},"previous":{"title":"构建","level":"1.3.3","depth":2,"ref":"","articles":[{"title":"项目构建","level":"1.3.3.1","depth":3,"path":"xiang_mu_gou_jian.md","ref":"xiang_mu_gou_jian.md","articles":[]},{"title":"组件库的定制构建","level":"1.3.3.2","depth":3,"path":"zu_jian_ku_de_ding_zhi_gou_jian.md","ref":"zu_jian_ku_de_ding_zhi_gou_jian.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"xiang_mu_gou_jian.md","mtime":"2016-05-27T02:35:26.444Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2016-05-27T02:38:47.912Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"预览","level":"1.2.3","depth":2,"next":{"title":"使用","level":"1.3","depth":1,"ref":"","articles":[{"title":"初始化","level":"1.3.1","depth":2,"path":"chu_shi_hua.md","ref":"chu_shi_hua.md","articles":[{"title":"新项目","level":"1.3.1.1","depth":3,"path":"xin_xiang_mu.md","ref":"xin_xiang_mu.md","articles":[]},{"title":"新页面","level":"1.3.1.2","depth":3,"path":"xin_ye_mian.md","ref":"xin_ye_mian.md","articles":[]},{"title":"新模块","level":"1.3.1.3","depth":3,"path":"xin_mo_kuai.md","ref":"xin_mo_kuai.md","articles":[]}]},{"title":"开发","level":"1.3.2","depth":2,"ref":"","articles":[{"title":"本地开发","level":"1.3.2.1","depth":3,"path":"ben_di_kai_fa.md","ref":"ben_di_kai_fa.md","articles":[]},{"title":"远程调试","level":"1.3.2.2","depth":3,"path":"yuan_cheng_tiao_shi.md","ref":"yuan_cheng_tiao_shi.md","articles":[]},{"title":"https 配置","level":"1.3.2.3","depth":3,"path":"https_pei_zhi.md","ref":"https_pei_zhi.md","articles":[]},{"title":"国际化","level":"1.3.2.4","depth":3,"path":"guo_ji_hua.md","ref":"guo_ji_hua.md","articles":[]},{"title":"模块热替换","level":"1.3.2.5","depth":3,"path":"mo_kuai_re_ti_huan.md","ref":"mo_kuai_re_ti_huan.md","articles":[]},{"title":"覆盖默认的 webpack 配置","level":"1.3.2.6","depth":3,"path":"fu_gai_mo_ren_de_webpack_pei_zhi.md","ref":"fu_gai_mo_ren_de_webpack_pei_zhi.md","articles":[]},{"title":"环境变量","level":"1.3.2.7","depth":3,"path":"huan_jing_bian_liang.md","ref":"huan_jing_bian_liang.md","articles":[]}]},{"title":"构建","level":"1.3.3","depth":2,"ref":"","articles":[{"title":"项目构建","level":"1.3.3.1","depth":3,"path":"xiang_mu_gou_jian.md","ref":"xiang_mu_gou_jian.md","articles":[]},{"title":"组件库的定制构建","level":"1.3.3.2","depth":3,"path":"zu_jian_ku_de_ding_zhi_gou_jian.md","ref":"zu_jian_ku_de_ding_zhi_gou_jian.md","articles":[]}]}]},"previous":{"title":"安装","level":"1.2.2","depth":2,"path":"an_zhuang.md","ref":"an_zhuang.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"yu_lan.md","mtime":"2016-05-27T03:54:30.938Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2016-05-27T04:45:03.328Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>本地开发 · GitBook</title>
+        <title>简介 · GitBook</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="yuan_cheng_tiao_shi.html" />
+    <link rel="next" href="an_zhuang.html" />
     
     
 
@@ -114,7 +114,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="jian_jie.html">
+        <li class="chapter active" data-level="1.2.1" data-path="jian_jie.html">
             
                 <a href="jian_jie.html">
             
@@ -244,7 +244,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.3.2.1" data-path="ben_di_kai_fa.html">
+        <li class="chapter " data-level="1.3.2.1" data-path="ben_di_kai_fa.html">
             
                 <a href="ben_di_kai_fa.html">
             
@@ -478,7 +478,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >本地开发</a>
+        <a href="." >简介</a>
     </h1>
 </div>
 
@@ -493,43 +493,31 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x672C;&#x5730;&#x5F00;&#x53D1;">&#x672C;&#x5730;&#x5F00;&#x53D1;</h1>
+                                <h1 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h1>
 <hr>
-<h2 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h2>
-<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>nowa server</code> &#x547D;&#x4EE4;&#x6765;&#x5F00;&#x542F;&#x4E00;&#x4E2A;&#x672C;&#x5730;&#x5F00;&#x53D1;&#x8C03;&#x8BD5;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
-<blockquote>
-<p>&#x5982;&#x679C;&#x63D0;&#x793A;&#x627E;&#x4E0D;&#x5230; server &#x547D;&#x4EE4;&#xFF0C;&#x8BF7;&#x901A;&#x8FC7; <code>nowa install server</code> &#x6765;&#x5B89;&#x88C5;</p>
-</blockquote>
-<pre><code class="lang-shell">nowa server
-</code></pre>
-<p>&#x8BE5;&#x547D;&#x4EE4;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x5728;&#x901A;&#x8FC7; <code>nowa init</code> &#x521B;&#x5EFA;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x8BF7;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x6267;&#x884C;&#x3002;</p>
-<p>&#x4E5F;&#x53EF;&#x901A;&#x8FC7;&#x5FEB;&#x6377;&#x547D;&#x4EE4; <code>npm start</code> &#x6765;&#x5B8C;&#x6210;&#x540C;&#x6837;&#x7684;&#x5DE5;&#x4F5C;&#x3002;</p>
-<p><img src="screenshot-server-use.png" alt=""></p>
-<p><code>nowa server</code> &#x5C06;&#x628A;&#x4EE5;&#x4E0B;&#x76EE;&#x5F55;&#x4F5C;&#x4E3A;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x76D1;&#x542C;&#x76EE;&#x5F55;&#xFF1A;</p>
+<p><code>nowa</code> &#x662F;&#x57FA;&#x4E8E; <a href="webpack.github.io">webpack</a> &#x7684;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x96C6;&#x5408;&#x3002;</p>
+<p>&#x5B83;&#x8D77;&#x6E90;&#x4E8E;&#x963F;&#x91CC;&#x5185;&#x5916;&#x524D;&#x7AEF;&#x7EC4;&#x7684;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x6784;&#x5EFA;&#x5DE5;&#x5177;&#xFF0C;&#x56E0;&#x6B64;&#x8C10;&#x97F3;&#x201C;&#x5185;&#x5916;&#x201D;&#xFF0C;&#x53E6;&#x5916;&#x4E5F;&#x5BD3;&#x610F; &#x201C;<strong>N</strong>ot <strong>O</strong>nly for <strong>W</strong>eb <strong>A</strong>pp, but also for anything&#x201D; &#x7684;&#x613F;&#x666F;&#x3002;</p>
+<p><code>nowa</code> &#x7684;&#x8BDE;&#x751F;&#x65E8;&#x5728;&#x89E3;&#x51B3;&#x4EE5;&#x4E0B;&#x75DB;&#x70B9;&#xFF1A;</p>
 <ul>
-<li><code>./html</code></li>
-<li><code>./src/lib</code>&#xFF08;&#x8BE5;&#x76EE;&#x5F55;&#x8DDF;&#x968F; <code>--src</code> &#x914D;&#x7F6E;&#x800C;&#x6539;&#x53D8;&#xFF09;</li>
-<li><code>./dist</code>&#xFF08;&#x8BE5;&#x76EE;&#x5F55;&#x8DDF;&#x968F; <code>--dist</code> &#x914D;&#x7F6E;&#x800C;&#x6539;&#x53D8;&#xFF09;</li>
-<li><code>.</code></li>
+<li>&#x6BCF;&#x6B21;&#x4E0B;&#x8F7D;&#x6216;&#x65B0;&#x5EFA;&#x9879;&#x76EE;&#x90FD;&#x8981;&#x5B89;&#x88C5;&#x4E00;&#x5768;&#x5F00;&#x53D1;&#x7528;&#x7684;&#x4F9D;&#x8D56;&#xFF0C;&#x800C;&#x8FD9;&#x4E9B;&#x4F9D;&#x8D56;&#x7EDD;&#x5927;&#x90E8;&#x5206;&#x90FD;&#x662F;&#x91CD;&#x590D;&#x7684;&#xFF0C;&#x8017;&#x65F6;&#x53C8;&#x5360;&#x7A7A;&#x95F4;&#xFF08;&#x4EC5; babel &#x7684;&#x4E00;&#x4E9B;&#x63D2;&#x4EF6;&#x5C31;&#x4E00;&#x767E;&#x591A;&#x5146;&#xFF09;&#xFF1B;</li>
+<li>&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x6784;&#x5EFA;&#x4EFB;&#x52A1;&#x914D;&#x7F6E;&#x5728;&#x81EA;&#x5DF1;&#x9879;&#x76EE;&#x4E2D;&#x7EF4;&#x62A4;&#xFF0C;&#x4E0D;&#x65B9;&#x4FBF;&#x7EDF;&#x4E00;&#x7EF4;&#x62A4;&#x548C;&#x7BA1;&#x7406;&#xFF1B;</li>
+<li>&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x5BF9;&#x4E8E;&#x5F88;&#x591A;&#x65B0;&#x624B;&#x7528;&#x6237;&#x6765;&#x8BF4;&#x8FD8;&#x662F;&#x592A;&#x7E41;&#x7410;&#xFF0C;&#x8FEB;&#x5207;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x4E00;&#x7AD9;&#x5F0F;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1B;</li>
+<li>&#x9879;&#x76EE;&#x6A21;&#x677F;&#x7684;&#x66F4;&#x65B0;&#x4F9D;&#x8D56;&#x4E8E;&#x811A;&#x624B;&#x67B6;&#x7684;&#x53D1;&#x5E03;&#xFF0C;&#x9891;&#x7E41;&#x66F4;&#x65B0;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x4E0D;&#x4F73;&#xFF1B;</li>
+<li>&#x5E0C;&#x671B;&#x6709;&#x66F4;&#x6D41;&#x7545;&#x7684;&#x5F00;&#x53D1;&#x4F53;&#x9A8C;&#xFF1B;</li>
+<li>&#x5E0C;&#x671B;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x627E;&#x5230;&#x6240;&#x6709;&#x5E38;&#x7528;&#x7684;&#x5DE5;&#x5177;&#xFF1B;</li>
+<li>&#x5E0C;&#x671B;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x4FBF;&#x6377;&#x7684;&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;&#x65B9;&#x6848;&#xFF1B;</li>
+<li>&#x2026;&#x2026;</li>
 </ul>
-<p>webpack &#x7684;&#x6784;&#x5EFA;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x5C06;&#x4E0D;&#x4F1A;&#x5199;&#x5230;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x800C;&#x662F;&#x7F13;&#x5B58;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x5728;&#x8BBF;&#x95EE;&#x65F6;&#x76F4;&#x63A5;&#x8F93;&#x51FA;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x53EF;&#x663E;&#x8457;&#x63D0;&#x9AD8;&#x6784;&#x5EFA;&#x6548;&#x7387;&#x3002;</p>
-<h2 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h2>
-<p><code>nowa server</code> &#x63A5;&#x53D7;&#x4EE5;&#x4E0B;&#x5019;&#x9009;&#x53C2;&#x6570;&#xFF1A;</p>
+<p><code>nowa</code> &#x7684;&#x6838;&#x5FC3;&#x4EC5;&#x4EC5;&#x662F;&#x4E2A;&#x63D2;&#x4EF6;&#x7684;&#x811A;&#x624B;&#x67B6;&#x3001;&#x5B89;&#x88C5;&#x5668;&#x548C;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x4F46;&#x5B83;&#x4E3A;&#x57FA;&#x4E8E;&#x5B83;&#x5F00;&#x53D1;&#x7684;&#x63D2;&#x4EF6;&#x63D0;&#x4F9B;&#x4E86;&#x8BF8;&#x591A;&#x4FBF;&#x5229;&#xFF0C;&#x800C;&#x8FD9;&#x4E9B;&#x63D2;&#x4EF6;&#x5171;&#x540C;&#x6784;&#x6210;&#x4E86; <code>nowa</code> &#x7684;&#x751F;&#x6001;&#x4F53;&#x7CFB;&#x3002;</p>
+<h2 id="&#x63D2;&#x4EF6;">&#x63D2;&#x4EF6;</h2>
+<p><code>nowa</code> &#x5BB6;&#x65CF;&#x4E2D;&#x6709;&#x8FD9;&#x4E48;&#x4E00;&#x4E9B;&#x4E3B;&#x8981;&#x7684;&#x63D2;&#x4EF6;&#x5404;&#x53F8;&#x5176;&#x804C;&#xFF1A;</p>
 <ul>
-<li><code>-s, --src &lt;dir&gt;</code> &#x6E90;&#x4EE3;&#x7801;&#x76EE;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411; <code>src</code></li>
-<li><code>-d, --dist &lt;dir&gt;</code> &#x8F93;&#x51FA;&#x4EE3;&#x7801;&#x76EE;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411; <code>dist</code></li>
-<li><code>-p, --port &lt;port&gt;</code> &#x670D;&#x52A1;&#x5668;&#x76D1;&#x542C;&#x7AEF;&#x53E3;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411; <code>3000</code></li>
-<li><code>-e  --entry &lt;file&gt;</code> &#x5E94;&#x7528;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411; <code>app/app.js</code></li>
-<li><code>--pages</code> &#x5F00;&#x542F;&#x591A;&#x9875;&#x9762;&#x5165;&#x53E3;&#x89C4;&#x5219;</li>
-<li><code>--vars</code> &#x8FD0;&#x884C;&#x65F6;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF08;&#x8BE6;&#x89C1;<a href="huan_jing_bian_liang.html">&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7BC7;</a>&#xFF09;</li>
-<li><code>--buildvars</code> &#x6784;&#x5EFA;&#x65F6;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF08;&#x8BE6;&#x89C1;<a href="huan_jing_bian_liang.html">&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7BC7;</a>&#xFF09;</li>
-<li><code>-r, --proxy</code> &#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8D44;&#x6E90;&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;</li>
-<li><code>-k, --keepcss</code> &#x5B9E;&#x65F6;&#x8F93;&#x51FA; css &#x6587;&#x4EF6;&#x5230; dist &#x76EE;&#x5F55;</li>
-<li><code>-l, --lazyload</code> &#x7981;&#x7528;&#x53D8;&#x66F4;&#x7684;&#x5B9E;&#x65F6;&#x63A8;&#x9001;</li>
-<li><code>-h, --https</code> &#x5F00;&#x542F; https &#x670D;&#x52A1;&#x5668;</li>
-<li><code>--externals</code> webpack &#x5916;&#x90E8;&#x53D8;&#x91CF;&#x5B9A;&#x4E49;</li>
-<li><code>-o, --loose</code> &#x4F7F;&#x7528; babel es2015 &#x7684;&#x5BBD;&#x677E;&#x6A21;&#x5F0F;&#x6765;&#x505A;&#x4EE3;&#x7801;&#x8F6C;&#x6362;</li>
+<li><code>nowa-init</code> &#x521D;&#x59CB;&#x5316;&#x5DE5;&#x5177;</li>
+<li><code>nowa-server</code> &#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;</li>
+<li><code>nowa-build</code> &#x6253;&#x5305;&#x5DE5;&#x5177;</li>
+<li><code>nowa-lib</code> &#x7B2C;&#x4E09;&#x65B9;&#x7EC4;&#x4EF6;&#x5B9A;&#x5236;&#x6784;&#x5EFA;&#x5DE5;&#x5177;</li>
 </ul>
+<p>&#x5C06;&#x5728;<a href="chu_shi_hua.md">&#x4F7F;&#x7528;&#x7BC7;</a>&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x3002;</p>
 
                                 
                                 </section>
@@ -558,7 +546,7 @@
             
                 
                 
-                <a href="yuan_cheng_tiao_shi.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 远程调试">
+                <a href="an_zhuang.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 安装">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -569,7 +557,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"本地开发","level":"1.3.2.1","depth":3,"next":{"title":"远程调试","level":"1.3.2.2","depth":3,"path":"yuan_cheng_tiao_shi.md","ref":"yuan_cheng_tiao_shi.md","articles":[]},"previous":{"title":"开发","level":"1.3.2","depth":2,"ref":"","articles":[{"title":"本地开发","level":"1.3.2.1","depth":3,"path":"ben_di_kai_fa.md","ref":"ben_di_kai_fa.md","articles":[]},{"title":"远程调试","level":"1.3.2.2","depth":3,"path":"yuan_cheng_tiao_shi.md","ref":"yuan_cheng_tiao_shi.md","articles":[]},{"title":"https 配置","level":"1.3.2.3","depth":3,"path":"https_pei_zhi.md","ref":"https_pei_zhi.md","articles":[]},{"title":"国际化","level":"1.3.2.4","depth":3,"path":"guo_ji_hua.md","ref":"guo_ji_hua.md","articles":[]},{"title":"模块热替换","level":"1.3.2.5","depth":3,"path":"mo_kuai_re_ti_huan.md","ref":"mo_kuai_re_ti_huan.md","articles":[]},{"title":"覆盖默认的 webpack 配置","level":"1.3.2.6","depth":3,"path":"fu_gai_mo_ren_de_webpack_pei_zhi.md","ref":"fu_gai_mo_ren_de_webpack_pei_zhi.md","articles":[]},{"title":"环境变量","level":"1.3.2.7","depth":3,"path":"huan_jing_bian_liang.md","ref":"huan_jing_bian_liang.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ben_di_kai_fa.md","mtime":"2016-05-27T02:35:26.440Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2016-05-27T02:38:47.912Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"简介","level":"1.2.1","depth":2,"next":{"title":"安装","level":"1.2.2","depth":2,"path":"an_zhuang.md","ref":"an_zhuang.md","articles":[]},"previous":{"title":"开始","level":"1.2","depth":1,"ref":"","articles":[{"title":"简介","level":"1.2.1","depth":2,"path":"jian_jie.md","ref":"jian_jie.md","articles":[]},{"title":"安装","level":"1.2.2","depth":2,"path":"an_zhuang.md","ref":"an_zhuang.md","articles":[]},{"title":"预览","level":"1.2.3","depth":2,"path":"yu_lan.md","ref":"yu_lan.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"jian_jie.md","mtime":"2016-05-27T03:54:30.938Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2016-05-27T04:45:03.328Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
