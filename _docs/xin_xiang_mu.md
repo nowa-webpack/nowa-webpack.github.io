@@ -15,6 +15,7 @@ nowa init https://github.com/nowa-webpack/template-uxcore/archive/master.zip
 `<url>` 为项目模板 zip 包下载地址或下载地址的快捷命令，例如可以通过快捷命令达到和以上命令同样的效果：
 
 ```shell
+mkdir test && cd test
 nowa init uxcore
 ```
 
