@@ -18,6 +18,7 @@
        * [模块热替换](mo_kuai_re_ti_huan.md)
        * [覆盖默认的 webpack 配置](fu_gai_mo_ren_de_webpack_pei_zhi.md)
        * [环境变量](huan_jing_bian_liang.md)
+       * [图片和 svg 的使用](tu_pian_he_svg_de_shi_yong.md)
    * 构建
        * [项目构建](xiang_mu_gou_jian.md)
        * [组件库的定制构建](zu_jian_ku_de_ding_zhi_gou_jian.md)
