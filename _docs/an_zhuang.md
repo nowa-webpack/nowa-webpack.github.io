@@ -14,8 +14,7 @@
 通过以下命令来安装 nowa 和常用插件：
 
 ```bash
-npm i nowa -g
-nowa install
+npm i nowa -g && nowa install
 ```
 
 > 如果提示无权限，请尝试加 `sudo`。  
