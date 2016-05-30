@@ -4,7 +4,10 @@
 
 ## 操作视频
 
-操作视频
+<div style="width: 770px; height: 470px">
+<script src="http://api.video.taobao.com/video/getPlayerJS"></script>
+<script src="http://api.video.taobao.com/video/embedVideo?vid=39414747&amp;uid=62837672&amp;tid=1&amp;autoplay=false"></script>
+</div>
 
 ## 目录结构
 
