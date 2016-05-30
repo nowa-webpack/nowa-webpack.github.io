@@ -4,10 +4,8 @@
 
 ## 操作视频
 
-<div style="width: 770px; height: 470px">
-<script src="http://api.video.taobao.com/video/getPlayerJS"></script>
-<script src="http://api.video.taobao.com/video/embedVideo?vid=39414747&amp;uid=62837672&amp;tid=1&amp;autoplay=false"></script>
-</div>
+<script src="//g.tbcdn.cn/tb/videocenter/1.2.4/js/tbvideo.js"></script>
+<script id="tb_player">tb_player_object.embedPlayer({div:'tb_player',height:470,uid:62837672,vid:39414747,width:770},{autoplay:0},{})</script>
 
 ## 目录结构
 
