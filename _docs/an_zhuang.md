@@ -19,7 +19,7 @@ npm i nowa -g && nowa install
 ```
 
 > 如果提示无权限，请尝试加 `sudo`。  
-> 如果下载速度过慢，请增加 `--registry https://registry.npm.taobao.org` 参数  
+> 如果下载速度过慢，可尝试使用 [cnpm](https://cnpmjs.org/) 替换 npm。  
 > `nowa install` 会安装一批常用的插件。
 
 
