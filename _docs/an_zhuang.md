@@ -18,10 +18,10 @@
 npm i nowa -g && nowa install
 ```
 
-中国大陆用户请使用以下命令：
+因为众所周知的原因，中国大陆用户请使用以下命令：
 
 ```shell
-npm i nowa -g --registry=https://registry.npm.taobao.org && nowa install
+npm i nowa -g --registry=https://registry.npm.taobao.org && nowa install --registry=https://registry.npm.taobao.org
 ```
 
 > 如果提示无权限，请尝试加 `sudo`。  
