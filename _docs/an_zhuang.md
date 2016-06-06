@@ -14,12 +14,17 @@
 
 通过以下命令来安装 nowa 和常用插件：
 
-```bash
+```shell
 npm i nowa -g && nowa install
 ```
 
+中国大陆用户请使用以下命令：
+
+```shell
+npm i nowa -g --registry=https://registry.npm.taobao.org && nowa install
+```
+
 > 如果提示无权限，请尝试加 `sudo`。  
-> 如果下载速度过慢，可尝试使用 [cnpm](https://cnpmjs.org/) 替换 npm。  
 > `nowa install` 会安装一批常用的插件。
 
 
