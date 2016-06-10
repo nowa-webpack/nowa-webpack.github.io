@@ -10,7 +10,7 @@
 <!--[if lt IE 10]><script>window.__ie__=1</script><![endif]-->
 <script>
 (function(node) {
-  var locale = location.hash.substring(1) || navigator.language.split('-')[0];
+  var locale = location.hash.substring(1) || (navigator.browserLanguage || navigator.language).split('-')[0];
   node.src = './app-' + (locale !== 'zh' ? 'en' : locale) + '.js';
   document.body.appendChild(node);
 })(document.createElement('script'));
