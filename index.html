@@ -1,0 +1,4 @@
+<script>
+console.log(location.hash.substring(1) || navigator.language.split('-')[0])
+  location.href = 'web/index.html#' + (location.hash.substring(1) || navigator.language.split('-')[0]);
+</script>

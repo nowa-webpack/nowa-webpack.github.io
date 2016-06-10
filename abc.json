@@ -1,0 +1,15 @@
+{
+  "name": "nowa-github-pages",
+  "options": {
+    "dist": "web",
+    "vars": {
+      "locale": "zh"
+    },
+    "buildvars": {
+      "locale": [ "zh", "en" ]
+    },
+    "entry": "index.js",
+    "loose": true,
+    "exportcss": false
+  }
+}

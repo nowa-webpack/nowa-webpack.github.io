@@ -1,7 +1,24 @@
 {
-  "name": "nowa-webpack.github.io",
+  "name": "nowa-github-pages",
+  "author": "gbk <ck0123456@gmail.com>",
+  "version": "1.0.0",
+  "description": "nowa github homepage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nowa-webpack/nowa-webpack.github.io.git"
+  },
   "scripts": {
-    "start": "gitbook serve _docs docs",
-    "save": "gitbook build _docs docs && git add . --all && git commit -am ci && git push origin master"
+    "start": "nowa server",
+    "build_doc": "gitbook build src/docs docs",
+    "build_web": "nowa build",
+    "commit": "git add . --all && git commit -m update && git push origin master",
+    "save": "npm run build_doc && npm run build_web && npm run commit"
+  },
+  "homepage": "https://nowa-webpack.github.io/",
+  "license": "MIT",
+  "devDependencies": {
+    "handlebars": "^4.0.5",
+    "handlebars-loader": "^1.3.0",
+    "i18n-helper": "^1.2.0"
   }
 }

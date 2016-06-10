@@ -1,0 +1,188 @@
+/*
+* @Author: gbk
+* @Date:   2016-06-07 13:18:10
+* @Last Modified by:   gbk
+* @Last Modified time: 2016-06-10 18:54:23
+*/
+
+@-webkit-keyframes rolling {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rolling {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rolling-back {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@keyframes rolling-back {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@font-face {
+  font-family: virgo;
+  src: url('./fonts/virgo.ttf');
+}
+html, body {
+  height: 100%;
+}
+.github {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  right: 5px;
+  width: 54px;
+  height: 54px;
+  margin-right: 12px;
+  fill: rgba(255, 255, 255, 0.8);
+}
+.github:hover {
+  fill: rgba(255, 255, 255, 1);
+}
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 500px;
+  height: 100%;
+}
+.main {
+  position: relative;
+  -webkit-transition: top 0.2s;
+  transition: top 0.2s;
+}
+.main .text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.main .logo {
+  font-size: 120px;
+  line-height: 130px;
+  font-family: virgo;
+}
+.main .desc {
+  opacity: 0.8;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: virgo;
+}
+.document {
+  display: inline-block;
+  height: 48px;
+  padding: 0 24px;
+  margin-top: 40px;
+  margin-right: 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.9);
+  line-height: 48px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #337ab7;
+}
+.document:hover {
+  background: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  color: #337ab7;
+}
+.wheel {
+  position: absolute;
+  top: -80px;
+  left: -90px;
+  width: 200px;
+  height: 200px;
+  -webkit-animation: rolling 5s linear infinite;
+          animation: rolling 5s linear infinite;
+  fill: rgba(0, 0, 0, 0.2);
+}
+.wheel-small {
+  position: absolute;
+  top: 65px;
+  left: 55px;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: rolling-back 5s linear infinite;
+          animation: rolling-back 5s linear infinite;
+  fill: rgba(255, 255, 255, 0.2);
+}
+.features {
+  padding: 30px 40px 0;
+  font-size: 14px;
+}
+.features > * {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 15px;
+}
+.features .icon {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  width: 48px;
+  height: 48px;
+  fill: rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+.features > *:hover .icon {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.features .backup-item {
+  display: none;
+}
+.footer {
+  padding-bottom: 32px;
+}
+@media (max-width: 768px) {
+  .main .logo {
+    font-size: 80px;
+    line-height: 85px;
+  }
+  .main .desc {
+    font-size: 14px;
+    line-height: 13px;
+  }
+  .document {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .features .backup-item {
+    display: block;
+  }
+}

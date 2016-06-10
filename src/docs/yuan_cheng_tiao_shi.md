@@ -93,3 +93,11 @@ nowa proxy
 ```
 
 则对于 `https://localhost:3000/admin/meeting/mobile/apply/GetList.json` 的请求将被转发到 `https://a-work.alibaba-inc.com/admin/meeting/mobile/apply/GetList.json`
+
+### https 请求转发
+
+如需转发 https 请求，需要在设备中安装 https 根证书（证书只需安装一次）。
+
+- 服务端开启 `nowa proxy`
+- 用调试设备访问代理服务地址，形如：`http://<代理服务器 IP>:8002/fetchCrtFile`
+- 下载并安装证书
