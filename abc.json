@@ -3,13 +3,12 @@
   "options": {
     "dist": "web",
     "vars": {
-      "locale": "zh"
+      "locale": "en"
     },
     "buildvars": {
       "locale": [ "zh", "en" ]
     },
     "entry": "index.js",
-    "loose": true,
-    "exportcss": false
+    "loose": true
   }
 }

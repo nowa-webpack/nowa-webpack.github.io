@@ -1,12 +1,12 @@
 <div class="banner bg-primary">
 
   <a href="https://github.com/nowa-webpack/nowa" title="Github">
-    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="github"><use xlink:href="#github"></use></svg>
+    <svg class="github"><use xlink:href="#github"></use></svg>
   </a>
 
   <div class="main" id="J_Main">
-    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="wheel"><use xlink:href="#wheel"></use></svg>
-    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="wheel wheel-small"><use xlink:href="#wheel"></use></svg>
+    <svg class="wheel"><use xlink:href="#wheel"></use></svg>
+    <svg class="wheel wheel-small"><use xlink:href="#wheel"></use></svg>
     <div class="text">
       <div class="logo">NOWA</div>
       <div class="desc">tools for web developers.</div>
@@ -19,75 +19,26 @@
 <div class="container">
 
   <div class="row features text-info">
-    <div class="clearfix col-sm-6 col-md-4">
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="icon"><use xlink:href="#wheel"></use></svg>
-      <div class="pull-left">
-        <h4>简易灵活的脚手架定制</h4>
-        <p class="text-muted">简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制</p>
+    {{#each features}}
+      <div class="clearfix col-sm-6 col-md-4{{#if last}} backup-item{{/if}}">
+        <svg class="icon"><use xlink:href="#wheel"></use></svg>
+        <div class="pull-left">
+          <h4 class="text-nowrap">{{i18n title}}</h4>
+          <p class="text-muted">{{i18n desc}}</p>
+        </div>
       </div>
-    </div>
-    <div class="clearfix col-sm-6 col-md-4">
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="icon"><use xlink:href="#wheel"></use></svg>
-      <div class="pull-left">
-        <h4>HTTPS 调试服务支持</h4>
-        <p class="text-muted">简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制</p>
-      </div>
-    </div>
-    <div class="clearfix col-sm-6 col-md-4">
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="icon"><use xlink:href="#wheel"></use></svg>
-      <div class="pull-left">
-        <h4>React 模块实时热替换</h4>
-        <p class="text-muted">简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制</p>
-      </div>
-    </div>
-    <div class="clearfix col-sm-6 col-md-4">
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="icon"><use xlink:href="#wheel"></use></svg>
-      <div class="pull-left">
-        <h4>支持环境变量注入</h4>
-        <p class="text-muted">简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制</p>
-      </div>
-    </div>
-    <div class="clearfix col-sm-6 col-md-4">
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="icon"><use xlink:href="#wheel"></use></svg>
-      <div class="pull-left">
-        <h4>插件化的命令扩展</h4>
-        <p class="text-muted">简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制</p>
-      </div>
-    </div>
-    <div class="clearfix col-sm-6 col-md-4">
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="icon"><use xlink:href="#wheel"></use></svg>
-      <div class="pull-left">
-        <h4>构建提速 50%</h4>
-        <p class="text-muted">简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制</p>
-      </div>
-    </div>
-    <div class="clearfix col-sm-6 col-md-4">
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="icon"><use xlink:href="#wheel"></use></svg>
-      <div class="pull-left">
-        <h4>构建配置可深度定制</h4>
-        <p class="text-muted">简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制</p>
-      </div>
-    </div>
-    <div class="clearfix col-sm-6 col-md-4">
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="icon"><use xlink:href="#wheel"></use></svg>
-      <div class="pull-left">
-        <h4>便捷的远程代码调试</h4>
-        <p class="text-muted">简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制</p>
-      </div>
-    </div>
-    <div class="clearfix col-sm-6 col-md-4 backup-item">
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="icon"><use xlink:href="#wheel"></use></svg>
-      <div class="pull-left">
-        <h4>持续维护和保障稳定</h4>
-        <p class="text-muted">简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制简易灵活的脚手架定制</p>
-      </div>
-    </div>
+    {{/each}}
   </div>
 
   <hr>
 
   <div class="text-center text-muted footer">
-    &copy; 2016 Alibaba, Inc. Licensed under MIT license.
+    &copy;
+    {{i18n "license"}}
+    |
+    <a href="index.html?zh">中文</a>
+    |
+    <a href="index.html?en">English</a>
   </div>
 
 </div>

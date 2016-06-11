@@ -2,47 +2,23 @@
 * @Author: gbk
 * @Date:   2016-06-07 13:18:10
 * @Last Modified by:   gbk
-* @Last Modified time: 2016-06-10 18:54:23
+* @Last Modified time: 2016-06-11 22:09:25
 */
 
-@-webkit-keyframes rolling {
-  from {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
 @keyframes rolling {
   from {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes rolling-back {
-  from {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  to {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes rolling-back {
   from {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   to {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 @font-face {
@@ -51,12 +27,13 @@
 }
 html, body {
   height: 100%;
+  font-family: Microsoft Yahei;
 }
 .github {
   position: absolute;
   z-index: 1;
   top: 15px;
-  right: 5px;
+  right: 15px;
   width: 54px;
   height: 54px;
   margin-right: 12px;
@@ -66,21 +43,14 @@ html, body {
   fill: rgba(255, 255, 255, 1);
 }
 .banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 500px;
+  justify-content: center;
+  align-items: center;
+  min-height: 340px;
   height: 100%;
 }
 .main {
   position: relative;
-  -webkit-transition: top 0.2s;
   transition: top 0.2s;
 }
 .main .text {
@@ -123,8 +93,7 @@ html, body {
   left: -90px;
   width: 200px;
   height: 200px;
-  -webkit-animation: rolling 5s linear infinite;
-          animation: rolling 5s linear infinite;
+  animation: rolling 5s linear infinite;
   fill: rgba(0, 0, 0, 0.2);
 }
 .wheel-small {
@@ -133,8 +102,7 @@ html, body {
   left: 55px;
   width: 100px;
   height: 100px;
-  -webkit-animation: rolling-back 5s linear infinite;
-          animation: rolling-back 5s linear infinite;
+  animation: rolling-back 5s linear infinite;
   fill: rgba(255, 255, 255, 0.2);
 }
 .features {
@@ -143,8 +111,8 @@ html, body {
 }
 .features > * {
   position: relative;
+  min-height: 110px;
   padding-left: 80px;
-  margin-bottom: 15px;
 }
 .features .icon {
   position: absolute;
@@ -153,14 +121,11 @@ html, body {
   width: 48px;
   height: 48px;
   fill: rgba(0, 0, 0, 0.2);
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  transition: transform 0.2s;
 }
 .features > *:hover .icon {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
+  fill: rgba(0, 0, 0, 0.4);
 }
 .features .backup-item {
   display: none;

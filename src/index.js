@@ -2,7 +2,7 @@
 * @Author: gbk
 * @Date:   2016-06-10 16:33:15
 * @Last Modified by:   gbk
-* @Last Modified time: 2016-06-10 22:51:38
+* @Last Modified time: 2016-06-11 21:55:13
 */
 
 'use strict';
@@ -19,7 +19,18 @@ if (window.__ie__) {
 } else {
 
   // render html
-  document.body.innerHTML = appTpl({}, {
+  document.body.innerHTML = appTpl({
+    features: (function(features) {
+      for (var i = 0; i < 9; i++) {
+        features.push({
+          title: 'feature' + i + '.title',
+          desc: 'feature' + i + '.desc'
+        });
+      }
+      features[i - 1].last = true;
+      return features;
+    })([])
+  }, {
     helpers: {
       i18n: i18n
     }
@@ -27,17 +38,17 @@ if (window.__ie__) {
 
   // auto locate logo
   const main = document.getElementById('J_Main');
-  let limit = 0;
-  const onResize = () => {
-    limit = main.parentNode.clientHeight / 2;
-    onScroll();
-  }
-  const onScroll = () => {
-    var top = document.body.scrollTop || document.documentElement.scrollTop;
-    main.style.top = (top < limit ? top : limit) / 2 + 'px';
+  const onScroll = function() {
+    var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.clientHeight;
+    if (scrollTop > (docHeight - main.clientHeight - 20) / 2) {
+      main.style.top = (docHeight - main.clientHeight - 20) / 2 + 'px';
+    } else {
+      main.style.top = 0;
+    }
   }
   window.addEventListener('scroll', onScroll);
-  window.addEventListener('resize', onResize);
-  onResize();
+  window.addEventListener('resize', onScroll);
+  onScroll();
 
 }
