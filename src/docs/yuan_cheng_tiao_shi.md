@@ -94,6 +94,34 @@ nowa proxy
 
 则对于 `https://localhost:3000/admin/meeting/mobile/apply/GetList.json` 的请求将被转发到 `https://a-work.alibaba-inc.com/admin/meeting/mobile/apply/GetList.json`
 
+### 代理配置
+
+由于是使用请求代理来做转发，所以需要在操作系统或浏览器中进行代理设置将相应的请求转发到代理服务器
+
+#### PC 浏览器
+
+强烈建议使用 [SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif) 来做代理设置
+
+- 使用 PAC 脚本
+
+典型的 PAC 脚本如下：
+```js
+function FindProxyForURL(url, host) {
+  if (host === "test.com") {
+    return "PROXY 127.0.0.1:8001; DIRECT";
+  }
+  return "DIRECT";
+}
+```
+
+- 使用 HTTP 代理：
+
+![](https://gw.alicdn.com/tfscom/TB1lZLqKpXXXXcQXpXXXXXXXXXX)
+
+#### 移动设备
+
+[Android 或 iOS 的代理设置](https://www.google.com/search?q=Android+iOS+%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE&gws_rd=cr,ssl)
+
 ### https 请求转发
 
 如需转发 https 请求，需要在设备中安装 https 根证书（证书只需安装一次）。

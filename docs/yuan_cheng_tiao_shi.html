@@ -582,6 +582,27 @@
 }
 </code></pre>
 <p>&#x5219;&#x5BF9;&#x4E8E; <code>https://localhost:3000/admin/meeting/mobile/apply/GetList.json</code> &#x7684;&#x8BF7;&#x6C42;&#x5C06;&#x88AB;&#x8F6C;&#x53D1;&#x5230; <code>https://a-work.alibaba-inc.com/admin/meeting/mobile/apply/GetList.json</code></p>
+<h3 id="&#x4EE3;&#x7406;&#x914D;&#x7F6E;">&#x4EE3;&#x7406;&#x914D;&#x7F6E;</h3>
+<p>&#x7531;&#x4E8E;&#x662F;&#x4F7F;&#x7528;&#x8BF7;&#x6C42;&#x4EE3;&#x7406;&#x6765;&#x505A;&#x8F6C;&#x53D1;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x5728;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x6216;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8FDB;&#x884C;&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;&#x5C06;&#x76F8;&#x5E94;&#x7684;&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;&#x5230;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;</p>
+<h4 id="pc-&#x6D4F;&#x89C8;&#x5668;">PC &#x6D4F;&#x89C8;&#x5668;</h4>
+<p>&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528; <a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif" _target="blank">SwitchyOmega</a> &#x6765;&#x505A;&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;</p>
+<ul>
+<li>&#x4F7F;&#x7528; PAC &#x811A;&#x672C;</li>
+</ul>
+<p>&#x5178;&#x578B;&#x7684; PAC &#x811A;&#x672C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">FindProxyForURL</span>(<span class="hljs-params">url, host</span>) </span>{
+  <span class="hljs-keyword">if</span> (host === <span class="hljs-string">&quot;test.com&quot;</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;PROXY 127.0.0.1:8001; DIRECT&quot;</span>;
+  }
+  <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;DIRECT&quot;</span>;
+}
+</code></pre>
+<ul>
+<li>&#x4F7F;&#x7528; HTTP &#x4EE3;&#x7406;&#xFF1A;</li>
+</ul>
+<p><img src="https://gw.alicdn.com/tfscom/TB1lZLqKpXXXXcQXpXXXXXXXXXX" alt=""></p>
+<h4 id="&#x79FB;&#x52A8;&#x8BBE;&#x5907;">&#x79FB;&#x52A8;&#x8BBE;&#x5907;</h4>
+<p><a href="https://www.google.com/search?q=Android+iOS+%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE&amp;gws_rd=cr,ssl" _target="blank">Android &#x6216; iOS &#x7684;&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;</a></p>
 <h3 id="https-&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;">https &#x8BF7;&#x6C42;&#x8F6C;&#x53D1;</h3>
 <p>&#x5982;&#x9700;&#x8F6C;&#x53D1; https &#x8BF7;&#x6C42;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x8BBE;&#x5907;&#x4E2D;&#x5B89;&#x88C5; https &#x6839;&#x8BC1;&#x4E66;&#xFF08;&#x8BC1;&#x4E66;&#x53EA;&#x9700;&#x5B89;&#x88C5;&#x4E00;&#x6B21;&#xFF09;&#x3002;</p>
 <ul>
@@ -632,7 +653,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"远程调试","level":"1.3.2.2","depth":3,"next":{"title":"https 配置","level":"1.3.2.3","depth":3,"path":"https_pei_zhi.md","ref":"https_pei_zhi.md","articles":[]},"previous":{"title":"本地开发","level":"1.3.2.1","depth":3,"path":"ben_di_kai_fa.md","ref":"ben_di_kai_fa.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"yuan_cheng_tiao_shi.md","mtime":"2016-06-08T04:03:26.724Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2016-06-11T14:18:18.791Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"远程调试","level":"1.3.2.2","depth":3,"next":{"title":"https 配置","level":"1.3.2.3","depth":3,"path":"https_pei_zhi.md","ref":"https_pei_zhi.md","articles":[]},"previous":{"title":"本地开发","level":"1.3.2.1","depth":3,"path":"ben_di_kai_fa.md","ref":"ben_di_kai_fa.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"yuan_cheng_tiao_shi.md","mtime":"2016-06-13T06:58:05.290Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2016-06-13T06:58:25.207Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
