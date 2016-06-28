@@ -21,7 +21,7 @@ nowa init mod
 等待初始化完毕后，便可在其他页面或模块中引用新建的模块了。
 
 ```js
-var TestMod = require('../components/test-mod');
+var TestMod = require('../../components/test-mod');
 ```
 
 ## 参数
@@ -29,3 +29,5 @@ var TestMod = require('../components/test-mod');
 `nowa init page` 在初始化新页面时，接受以下候选参数：
 
 - `-t, --template <url>` 用户指定所使用的项目模板，一般定义在 `abc.json` 的 `options` 属性中，**必须给出**
+- `-f, --force` 是否强制更新模板
+  如果不给出 `force` 参数，模板将在本地缓存 24 小时，在 24 小时后的第一次执行时自动检查并下载更新

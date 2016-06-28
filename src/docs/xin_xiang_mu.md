@@ -36,5 +36,17 @@ nowa init uxcore
 `nowa init` 在初始化新项目时，接受以下候选参数：
 
 - `-f, --force` 是否强制更新模板
-
   如果不给出 `force` 参数，模板将在本地缓存 24 小时，在 24 小时后的第一次执行时自动检查并下载更新
+- `-a, --as` 模板路径的别名
+  如果指定了模板路径的别名，则下次可通过模板路径别名替代完整的模板路径来初始化项目  
+例如：
+```shell
+nowa init https://github.com/nowa-webpack/template-uxcore/archive/master.zip -a ux
+```
+
+第二次可使用以下命令有同样的效果：
+```shell
+nowa init ux
+```
+
+![](screenshot-init-alias.png)

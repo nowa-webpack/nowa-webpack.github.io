@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>新页面 · GitBook</title>
+        <title>路由映射配置 · GitBook</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="xin_mo_kuai.html" />
+    <link rel="next" href="mo_ni_shu_ju.html" />
     
     
-    <link rel="prev" href="xin_xiang_mu.html" />
+    <link rel="prev" href="tu_pian_he_svg_de_shi_yong.html" />
     
 
     </head>
@@ -201,7 +201,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.1.2" data-path="xin_ye_mian.html">
+        <li class="chapter " data-level="1.3.1.2" data-path="xin_ye_mian.html">
             
                 <a href="xin_ye_mian.html">
             
@@ -350,7 +350,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.9" data-path="lu_you_ying_she.html">
+        <li class="chapter active" data-level="1.3.2.9" data-path="lu_you_ying_she.html">
             
                 <a href="lu_you_ying_she.html">
             
@@ -519,7 +519,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >新页面</a>
+        <a href="." >路由映射配置</a>
     </h1>
 </div>
 
@@ -534,26 +534,36 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x65B0;&#x9875;&#x9762;">&#x65B0;&#x9875;&#x9762;</h1>
+                                <h1 id="&#x8DEF;&#x7531;&#x6620;&#x5C04;">&#x8DEF;&#x7531;&#x6620;&#x5C04;</h1>
 <hr>
-<h2 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h2>
-<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>nowa init page</code> &#x547D;&#x4EE4;&#x6765;&#x505A;&#x9875;&#x9762;&#x521D;&#x59CB;&#x5316;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
-<blockquote>
-<p>&#x5982;&#x679C;&#x63D0;&#x793A;&#x627E;&#x4E0D;&#x5230; init &#x547D;&#x4EE4;&#xFF0C;&#x8BF7;&#x901A;&#x8FC7; <code>nowa install init</code> &#x6765;&#x5B89;&#x88C5;</p>
-</blockquote>
-<pre><code class="lang-shell">nowa init page
+<h2 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h2>
+<p><code>nowa server</code> &#x63D0;&#x4F9B;&#x7B80;&#x5355;&#x7684;&#x8DEF;&#x7531;&#x6620;&#x5C04;&#x529F;&#x80FD;&#xFF0C;&#x4E3B;&#x8981;&#x4F9B; historyApiFallback &#x4F7F;&#x7528;&#xFF0C;&#x6EE1;&#x8DB3;&#x591A;&#x4E2A;&#x9875;&#x9762;&#x6307;&#x5411;&#x540C;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x7684;&#x9700;&#x6C42;&#x3002;</p>
+<h2 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h2>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x9700;&#x8981;&#x5C06;&#x6240;&#x6709;&#x7684; <code>/user/*</code> &#x6307;&#x5411; <code>/user.html</code>&#xFF0C;&#x5219;&#x53EF;&#x7528;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#xFF1A;</p>
+<p><code>abc.json</code></p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;options&quot;</span>: {
+    <span class="hljs-string">&quot;historyApiFallback&quot;</span>: {
+      <span class="hljs-string">&quot;/user/*&quot;</span>: <span class="hljs-string">&quot;/user.html&quot;</span>
+    }
+  }
+}
 </code></pre>
-<p>&#x8BE5;&#x547D;&#x4EE4;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x5728;&#x901A;&#x8FC7; <code>nowa init</code> &#x521B;&#x5EFA;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x53EF;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x76EE;&#x5F55;&#x4E0B;&#x6267;&#x884C;&#x3002;</p>
-<p>&#x5F53;&#x56DE;&#x7B54;&#x5B8C;&#x4E00;&#x4E9B;&#x5FC5;&#x8981;&#x7684;&#x95EE;&#x9898;&#x4E4B;&#x540E;&#xFF0C;&#x811A;&#x624B;&#x67B6;&#x4F1A;&#x5F00;&#x59CB;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x65B0;&#x9875;&#x9762;&#x76F8;&#x5173;&#x6587;&#x4EF6;&#xFF08;&#x5305;&#x62EC; html&#x3001;js &#x548C; css&#xFF09;&#x3002;</p>
-<p><img src="screenshot-init-page.png" alt=""></p>
-<p>&#x7B49;&#x5F85;&#x521D;&#x59CB;&#x5316;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x4FBF;&#x53EF;&#x76F4;&#x63A5;&#x901A;&#x8FC7; <code>nowa server</code> &#x6216; <code>npm start</code> &#x6765;&#x542F;&#x52A8;&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x8BBF;&#x95EE;&#x5230;&#x65B0;&#x5EFA;&#x7684;&#x9875;&#x9762;&#x3002;</p>
-<h2 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h2>
-<p><code>nowa init page</code> &#x5728;&#x521D;&#x59CB;&#x5316;&#x65B0;&#x9875;&#x9762;&#x65F6;&#xFF0C;&#x63A5;&#x53D7;&#x4EE5;&#x4E0B;&#x5019;&#x9009;&#x53C2;&#x6570;&#xFF1A;</p>
-<ul>
-<li><code>-t, --template &lt;url&gt;</code> &#x7528;&#x6237;&#x6307;&#x5B9A;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x9879;&#x76EE;&#x6A21;&#x677F;&#xFF0C;&#x4E00;&#x822C;&#x5B9A;&#x4E49;&#x5728; <code>abc.json</code> &#x7684; <code>options</code> &#x5C5E;&#x6027;&#x4E2D;&#xFF0C;<strong>&#x5FC5;&#x987B;&#x7ED9;&#x51FA;</strong></li>
-<li><code>-f, --force</code> &#x662F;&#x5426;&#x5F3A;&#x5236;&#x66F4;&#x65B0;&#x6A21;&#x677F;
-&#x5982;&#x679C;&#x4E0D;&#x7ED9;&#x51FA; <code>force</code> &#x53C2;&#x6570;&#xFF0C;&#x6A21;&#x677F;&#x5C06;&#x5728;&#x672C;&#x5730;&#x7F13;&#x5B58; 24 &#x5C0F;&#x65F6;&#xFF0C;&#x5728; 24 &#x5C0F;&#x65F6;&#x540E;&#x7684;&#x7B2C;&#x4E00;&#x6B21;&#x6267;&#x884C;&#x65F6;&#x81EA;&#x52A8;&#x68C0;&#x67E5;&#x5E76;&#x4E0B;&#x8F7D;&#x66F4;&#x65B0;</li>
-</ul>
+<p>&#x8DEF;&#x7531;&#x6620;&#x5C04;&#x652F;&#x6301;&#x53D8;&#x91CF;&#x66FF;&#x6362;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x9700;&#x8981;&#x5C06;&#x6240;&#x6709;&#x7684; <code>/category/:cat</code> &#x6307;&#x5411;&#x5BF9;&#x5E94;&#x7684; category &#x9875;&#x9762;&#xFF0C;&#x5219;&#x53EF;&#x7528;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#xFF1A;</p>
+<p><code>abc.json</code></p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;options&quot;</span>: {
+    <span class="hljs-string">&quot;historyApiFallback&quot;</span>: {
+      <span class="hljs-string">&quot;/category/:cat&quot;</span>: <span class="hljs-string">&quot;/{{cat}}.html&quot;</span>
+    }
+  }
+}
+</code></pre>
+<blockquote>
+<p>&#x53EF;&#x7528;&#x7684;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x8BE6;&#x89C1; <a href="http://expressjs.com/" _target="blank">express &#x6587;&#x6863;</a>&#x3002;</p>
+</blockquote>
+<h2 id="&#x6CE8;&#x610F;">&#x6CE8;&#x610F;</h2>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;<code>historyApiFallback</code> &#x4F18;&#x5148;&#x7EA7;&#x9AD8;&#x4E8E;&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF0C;&#x5982;&#x679C;&#x8BBF;&#x95EE;&#x7684;&#x8DEF;&#x5F84;&#x5339;&#x914D;&#x4E86;&#x67D0;&#x4E2A;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#xFF0C;&#x5219;&#x5C06;&#x8BBF;&#x95EE;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x6307;&#x5411;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x975E;&#x539F;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x3002;</p>
 
                                 
                                 </section>
@@ -581,12 +591,12 @@
 
             
                 
-                <a href="xin_xiang_mu.html" class="navigation navigation-prev " aria-label="Previous page: 新项目">
+                <a href="tu_pian_he_svg_de_shi_yong.html" class="navigation navigation-prev " aria-label="Previous page: 图片和 svg 的使用">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="xin_mo_kuai.html" class="navigation navigation-next " aria-label="Next page: 新模块">
+                <a href="mo_ni_shu_ju.html" class="navigation navigation-next " aria-label="Next page: 模拟数据配置">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -597,7 +607,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"新页面","level":"1.3.1.2","depth":3,"next":{"title":"新模块","level":"1.3.1.3","depth":3,"path":"xin_mo_kuai.md","ref":"xin_mo_kuai.md","articles":[]},"previous":{"title":"新项目","level":"1.3.1.1","depth":3,"path":"xin_xiang_mu.md","ref":"xin_xiang_mu.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"xin_ye_mian.md","mtime":"2016-06-28T15:30:56.380Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2016-06-28T15:39:45.008Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"路由映射配置","level":"1.3.2.9","depth":3,"next":{"title":"模拟数据配置","level":"1.3.2.10","depth":3,"path":"mo_ni_shu_ju.md","ref":"mo_ni_shu_ju.md","articles":[]},"previous":{"title":"图片和 svg 的使用","level":"1.3.2.8","depth":3,"path":"tu_pian_he_svg_de_shi_yong.md","ref":"tu_pian_he_svg_de_shi_yong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lu_you_ying_she.md","mtime":"2016-06-28T15:24:48.600Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2016-06-28T15:39:45.008Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

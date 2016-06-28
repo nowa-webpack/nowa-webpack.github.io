@@ -11,7 +11,7 @@
 - `README.md` 模板介绍文件
 - `proj` 供项目生成（`nowa init <url>`）使用
 - `<mod>` 供模块生成（`nowa init <mod>`）使用
-- `<type>.js` 定制的提问模板（`<type>` 取值 `proj` 或 `<mod>`，返回一份 [inquirer](https://www.npmjs.org/package/inquirer) 配置和回答的后处理函数）
+- `<type>.js` 定制的提问模板（`<type>` 对应到 <mod>）
 
 例如：
 ```
@@ -38,6 +38,15 @@
 
 ### 提问模板
 
+提问模板模块可对外暴露以下属性：
+
+- prompts | `Array<Object>`
+  以数组形式定义了所有的问题，格式详见 [inquirer](https://www.npmjs.org/package/inquirer)
+- answers | `Function`
+  数据后处理函数，入参是 用户的回答 和 项目配置
+- filter | `Function`
+  生成文件的过滤函数，入参是 文件名 和 answers 返回的数据
+
 以下是一份典型的提问模板：
 
 `proj.js`
@@ -46,17 +55,30 @@
 // see https://www.npmjs.org/package/inquirer for detail
 exports.prompts = [
   {
-    name: 'name',
-    message: 'What\'s your name?'
+    name: 'library',
+    message: 'Generate a custom library?'
+  },
+  {
+    name: 'store',
+    type: 'confirm',
+    message: 'Generate store & actions?'
   }
 ];
 // post-process of answer
 exports.answers = function(answers, abc) {
+  answers.name = answers.name.toLowerCase();
   return answers;
 };
+// filter out files
+exports.filter = function(source, data) {
+  if (!data.store) {
+    return !/(actions|store)\.js$/.test(source);
+  }
+};
+
 ```
 
-将在基础问题之外增加一个问题，询问用户要不要生成自定义库构建的配置，用户的回答将以 bool 变量存储到 library 变量，并可在后续的模板渲染时使用。
+将在基础问题之外增加 2 个问题，询问用户要不要生成自定义库构建的配置（用户的回答将以 bool 变量存储到 library 变量）和是否要生成 actions 和 store（用户的回答将以 bool 变量存储到 store 变量），并可在后续的模板渲染时使用。
 
 > 如果没有提问模板，则直接使用默认问题的答案作为模板渲染的上下文。
 
@@ -81,3 +103,7 @@ exports.answers = function(answers, abc) {
 ```
 
 ### 更详细的使用，可参考 [Salt 项目模板](https://github.com/nowa-webpack/template-salt)
+
+### 控制文件是否生成
+
+可通过 filter 函数来控制哪些文件不需要生成。每个文件在生成之前都会够一遍 filter 函数，将文件路径当作第一个参数传入，渲染上下文作为第二个参数，如果 filter 返回 false，则跳过该文件的生成，否则正常生成文件。

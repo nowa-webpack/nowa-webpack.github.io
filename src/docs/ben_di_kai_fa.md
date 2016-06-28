@@ -42,5 +42,7 @@ webpack 的构建输出文件将不会写到文件系统，而是缓存在内存
 - `-l, --lazyload` 禁用变更的实时推送
 - `-h, --https` 开启 https 服务器
 - `    --externals` webpack 外部变量定义
-- `-o, --loose` 使用 babel es2015 的宽松模式来做代码转换
-
+- `-o, --open` 使用默认浏览器访问页面
+- `    --loose` 使用 babel es2015 的宽松模式来做代码转换
+- `    --historyApiFallback` 路由映射配置（详见[路由映射篇](lu_you_ying_she.md)）
+- `    --mockapi` 模拟数据脚本映射配置（详见[模拟数据篇](mo_ni_shu_ju.md)）
