@@ -36,3 +36,21 @@ npm i nowa -g --registry=https://registry.npm.taobao.org && nowa install --regis
 ```shell
 npm uninstall nowa -g
 ```
+
+### 关于权限
+
+关于权限的问题这里特别说明一下：
+
+- Windows
+
+请 **不要** 加 sudo，如果提示没权限，请使用管理员权限打开命令行，再执行命令。
+
+- Linux 和 Mac OSX
+
+  - `npm i nowa -g` 会向 `npm bin -g` 和 `npm root -g` 这两个目录下写入文件，所以请确保执行安装命令时，你对这两个目录拥有写权限。  
+  - `nowa install` 会向 `$HOME` 和 `npm root -g` 这两个目录下写入文件，所以请确保执行安装命令时，你对这两个目录拥有写权限。  
+  - 获得写权限可以使用以下命令：
+  ```shell
+  sudo chmod 777 `npm root -g`
+  ```
+  - 所有 nowa 开头的命令请不要加 sudo，否则可能会给你造成一些麻烦
