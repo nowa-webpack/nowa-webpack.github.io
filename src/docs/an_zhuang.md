@@ -43,7 +43,7 @@ npm uninstall nowa -g
 
 - Windows
 
-请 **不要** 加 sudo，如果提示没权限，请使用管理员权限打开命令行，再执行命令。
+  请 **不要** 加 sudo，如果提示没权限，请使用管理员权限打开命令行，再执行命令。
 
 - Linux 和 Mac OSX
 
