@@ -39,3 +39,6 @@ nowa build
 - `    --skipminify` 跳过压缩任务，默认会进行代码压缩
 - `-p, --progress` 在等待时显示 webpack 的构建进度
 - `    --exportcss` 是否导出 css 文件，默认为 `true`
+- `    --multiCompilers` 是否使用多个编译配置，默认为 `false`
+- `    --minifyExtension <extension>` 压缩文件的后缀，默认无
+- `    --includes` 需要过 loader 的资源目录，默认同 src
