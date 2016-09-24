@@ -47,3 +47,4 @@ webpack 的构建输出文件将不会写到文件系统，而是缓存在内存
 - `    --historyApiFallback` 路由映射配置（详见[路由映射篇](lu_you_ying_she.md)）
 - `    --mockapi` 模拟数据脚本映射配置（详见[模拟数据篇](mo_ni_shu_ju.md)）
 - `    --includes` 需要过 loader 的资源目录，默认同 src
+- `    --polyfill` 引入 babel 的 polyfill，可直接使用 Object.assign 等类方法和 Map、Set、Promise 等类，默认为 `false`

@@ -61,3 +61,16 @@ window['Uxcore'] = {
 - 以这份临时文件为构建入口（entry）进行 webpack 构建，输出 `uxcore.js`
 - 对输出文件进行压缩，生成 `uxcore.min.js`
 - 拷贝 `uxcore.js` 和 `uxcore.min.js` 到 `src/lib` 目录（为避免 `dist` 目录冲突，一般会把 `dist` 目录移出版本管理，所以把 `src/lib` 目录拿来用于存储依赖库文件）
+
+## 参数
+
+`nowa lib` 接受以下候选参数：
+
+- `-d, --dist <dir>` 输出代码目录，默认指向 `dist`
+- `-o, --loose` 使用 babel es2015 的宽松模式来做代码转换
+- `-c, --keepconsole` 保留源代码中的 `console.log`，默认会删除
+- `    --skipminify` 跳过压缩任务，默认会进行代码压缩
+- `    --libraries` 依赖库映射配置
+- `    --skipinstall` 跳过安装（将使用 node_modules 中已安装的组件），默认为 `false`
+- `    --npm <npm>` 安装使用的 npm，默认 `npm`
+- `    --polyfill` 引入 babel 的 polyfill，可直接使用 Object.assign 等类方法和 Map、Set、Promise 等类，默认为 `false`
