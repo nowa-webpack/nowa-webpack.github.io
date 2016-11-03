@@ -21,6 +21,7 @@
        * [图片和 svg 的使用](tu_pian_he_svg_de_shi_yong.md)
        * [路由映射配置](lu_you_ying_she.md)
        * [模拟数据配置](mo_ni_shu_ju.md)
+       * [云构建](yun_gou_jian.md)
    * 构建
        * [项目构建](xiang_mu_gou_jian.md)
        * [组件库的定制构建](zu_jian_ku_de_ding_zhi_gou_jian.md)

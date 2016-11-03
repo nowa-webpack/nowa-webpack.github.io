@@ -9,7 +9,7 @@
 > 如果提示找不到 init 命令，请通过 `nowa install init` 来安装
 
 ```shell
-nowa init https://github.com/nowa-webpack/template-uxcore/archive/master.zip
+nowa init https://github.com/nowa-webpack/template-uxcore/archive/v2.zip
 ```
 
 `<url>` 为项目模板 zip 包下载地址或下载地址的快捷命令，例如可以通过快捷命令达到和以上命令同样的效果：
@@ -23,7 +23,7 @@ nowa init uxcore
 
 `h5`、`salt` => `https://github.com/nowa-webpack/template-salt/archive/master.zip`
 
-`web`、`uxcore` => `https://github.com/nowa-webpack/template-uxcore/archive/master.zip`
+`web`、`uxcore` => `https://github.com/nowa-webpack/template-uxcore/archive/v2.zip`
 
 当回答完一些必要的问题之后，脚手架会开始自动生成和初始化项目。
 
