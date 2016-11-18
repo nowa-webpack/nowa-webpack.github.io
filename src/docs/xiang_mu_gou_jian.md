@@ -43,3 +43,4 @@ nowa build
 - `    --minifyExtension <extension>` 压缩文件的后缀，默认无
 - `    --includes` 需要过 loader 的资源目录，默认同 src
 - `    --polyfill` 引入 babel 的 polyfill，可直接使用 Object.assign 等类方法和 Map、Set、Promise 等类，默认为 `false`
+- `    --mangle` 在压缩 js 代码是是否对变量做混淆，默认为 `false`

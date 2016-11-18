@@ -19,11 +19,13 @@ mkdir test && cd test
 nowa init uxcore
 ```
 
-目前内置了以下快捷映射：
+主要有以下快捷映射：
 
 `h5`、`salt` => `https://github.com/nowa-webpack/template-salt/archive/master.zip`
 
 `web`、`uxcore` => `https://github.com/nowa-webpack/template-uxcore/archive/v2.zip`
+
+> 全部映射可查看[这里](https://github.com/nowa-webpack/template-alias/blob/master/alias.json)。
 
 当回答完一些必要的问题之后，脚手架会开始自动生成和初始化项目。
 
