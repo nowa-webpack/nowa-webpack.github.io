@@ -4,7 +4,7 @@
 
 `nowa` 是基于 [webpack](http://webpack.github.io/docs/) 的前端开发解决方案集合。
 
-[项目地址](https://github.com/nowa-webpack/nowa)，如果 nowa 能够帮到您，请帮忙点亮 Star！
+[项目地址](https://github.com/nowa-webpack/nowa)，如果 `nowa` 能够帮到您，请帮忙点亮 Star！
 
 发现问题请提到[这里](https://github.com/nowa-webpack/nowa/issues/new)
 
