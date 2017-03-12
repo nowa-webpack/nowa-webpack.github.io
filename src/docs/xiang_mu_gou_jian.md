@@ -30,7 +30,7 @@ nowa build
 - `-s, --src <dir>` 源代码目录，默认指向 `src`
 - `-d, --dist <dir>` 输出代码目录，默认指向 `dist`
 - `-e  --entry <file>` 应用入口文件，默认指向 `app/app.js`
-- `    --pages` 开启多页面入口规则
+- `    --pages [pages]` 开启多页面入口规则，可传入需要构建的页面，例如 `home,demo`
 - `    --vars` 运行时环境变量（详见[环境变量篇](huan_jing_bian_liang.md)）
 - `    --buildvars` 构建时环境变量（详见[环境变量篇](huan_jing_bian_liang.md)）
 - `    --externals` webpack 外部变量定义

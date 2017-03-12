@@ -34,7 +34,7 @@ webpack 的构建输出文件将不会写到文件系统，而是缓存在内存
 - `-d, --dist <dir>` 输出代码目录，默认指向 `dist`
 - `-p, --port <port>` 服务器监听端口，默认指向 `3000`
 - `-e  --entry <file>` 应用入口文件，默认指向 `app/app.js`
-- `    --pages` 开启多页面入口规则
+- `    --pages [pages]` 开启多页面入口规则，可传入需要构建的页面，例如 `home,demo`
 - `    --vars` 运行时环境变量（详见[环境变量篇](huan_jing_bian_liang.md)）
 - `    --buildvars` 构建时环境变量（详见[环境变量篇](huan_jing_bian_liang.md)）
 - `-r, --proxy` 开发服务器的资源代理设置
