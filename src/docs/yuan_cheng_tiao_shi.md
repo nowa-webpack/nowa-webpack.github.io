@@ -15,14 +15,14 @@
 {
   "options": {
     "port": 3000,
-    "proxy": "http://127.0.0.1:9077"
+    "proxy": "http://127.0.0.1:9077/admin"
   }
 }
 ```
 
 那么对于 `http://127.0.0.1:3000/index.htm` 的访问，
 - 如果开发服务器存在静态资源 `/index.htm`，则返回 `/index.htm`
-- 如果开发服务器不存在静态资源 `/index.htm`，则转发到 `http://127.0.0.1:9077/index.htm`
+- 如果开发服务器不存在静态资源 `/index.htm`，则转发到 `http://127.0.0.1:9077/admin/index.htm`
 
 ### 多规则配置
 
