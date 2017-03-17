@@ -9,4 +9,8 @@
 ![](screenshot-issue-1.png)
 
 一般是由于上次 npm 安装异常中止导致，可通过卸载后重新安装 nowa 工具来解决。  
-详见 [安装文档](an_zhuang.md) 中卸载和安装部分。
+
+```shell
+rm -rf `npm root -g`/nowa-* ~/.nowa
+nowa install --registry=https://registry.npm.taobao.org
+```
