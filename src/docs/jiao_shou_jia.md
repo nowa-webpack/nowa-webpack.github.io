@@ -75,7 +75,10 @@ exports.filter = function(source, data) {
     return !/(actions|store)\.js$/.test(source);
   }
 };
-
+// done
+exports.done = function(root) {
+  console.log('Init project at ' + root);
+}
 ```
 
 将在基础问题之外增加 2 个问题，询问用户要不要生成自定义库构建的配置（用户的回答将以 bool 变量存储到 library 变量）和是否要生成 actions 和 store（用户的回答将以 bool 变量存储到 store 变量），并可在后续的模板渲染时使用。
@@ -107,3 +110,7 @@ exports.filter = function(source, data) {
 ### 控制文件是否生成
 
 可通过 filter 函数来控制哪些文件不需要生成。每个文件在生成之前都会够一遍 filter 函数，将文件路径当作第一个参数传入，渲染上下文作为第二个参数，如果 filter 返回 false，则跳过该文件的生成，否则正常生成文件。
+
+### 生成完成后的回调
+
+done 函数是所有文件生成完成后，自动执行的回调，可用来做一些后置处理和消息输出。
