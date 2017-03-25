@@ -105,8 +105,6 @@ exports.done = function(root) {
 <title>test<title>
 ```
 
-### 更详细的使用，可参考 [Salt 项目模板](https://github.com/nowa-webpack/template-salt)
-
 ### 控制文件是否生成
 
 可通过 filter 函数来控制哪些文件不需要生成。每个文件在生成之前都会够一遍 filter 函数，将文件路径当作第一个参数传入，渲染上下文作为第二个参数，如果 filter 返回 false，则跳过该文件的生成，否则正常生成文件。
@@ -114,3 +112,5 @@ exports.done = function(root) {
 ### 生成完成后的回调
 
 done 函数是所有文件生成完成后，自动执行的回调，可用来做一些后置处理和消息输出。
+
+### 更详细的使用，可参考 [Salt 项目模板](https://github.com/nowa-webpack/template-salt)
