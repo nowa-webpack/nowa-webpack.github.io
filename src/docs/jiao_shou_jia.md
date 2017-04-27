@@ -4,9 +4,9 @@
 
 ## 扩展说明
 
-`nowa init <url>` 允许用户自定义脚手架模板。其中 `<url>` 必须是一个 zip 文件的 http 协议的访问地址（建议使用 github 的 archive zip 下载地址）。
+`nowa init <url>` 允许用户自定义脚手架模板。其中 `<url>` 可以是一个 zip 文件的 http 协议的访问地址（建议使用 github 的 archive zip 下载地址）或者是本地目录（方便调试用）。
 
-这个 zip 文件解压后可包括以下文件或文件夹：
+这个 zip 文件解压后（或本地路径下）可包括以下文件或文件夹：
 
 - `README.md` 模板介绍文件
 - `proj` 供项目生成（`nowa init <url>`）使用
