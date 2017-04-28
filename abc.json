@@ -6,7 +6,10 @@
       "locale": "zh"
     },
     "buildvars": {
-      "locale": [ "zh", "en" ]
+      "locale": [
+        "zh",
+        "en"
+      ]
     },
     "entry": "index.js",
     "loose": true
