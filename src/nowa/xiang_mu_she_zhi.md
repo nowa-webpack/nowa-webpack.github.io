@@ -1,7 +1,8 @@
 ##  依赖管理
 
 ---
-<!--插图 -->
+<img src="sc_operation_9.png" width="800">
+
 
 #### 基本设置
 

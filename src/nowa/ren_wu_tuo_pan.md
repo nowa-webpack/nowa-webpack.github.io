@@ -4,7 +4,12 @@
 
 为方便用户在隐藏界面的情况下对项目进行一些操作，从 1.7.0 版本起添加了 '任务托盘' 的功能。
 
-windows:
+绿色点代表项目启动了，灰色按钮代表项目停止状态。
+
+#### windows:
+<img src="sc_operation_10.png" width="300">
 <!--插图 -->
-mac:
+
+#### mac:
+<img src="sc_operation_11.png" width="300">
 <!--插图 -->
