@@ -15,8 +15,8 @@
   * [基础操作](ji_chu_cao_zuo.md)
   * [控制台](kong_zhi_tai.md)
   * [依赖管理](yi_lai_guan_li.md)
-  * 项目设置
-  * 任务托盘
+  * [项目设置](xiang_mu_she_zhi.md)
+  * [任务托盘](ren_wu_tuo_pan.md)
 
 * [常见问题](qa.md)
 * [加入我们](jia_ru_wo_men.md)
