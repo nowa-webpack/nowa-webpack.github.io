@@ -23,7 +23,7 @@ rd /q /s c:/User/YOUR_PC_NAME/.nowa-gui/installation
 ```sh
 npm uninstall nowa -g
 $rm -rf ~/.nowa-gui./installation
-
+```
 这个方式是很简单粗暴地解决 nowa 大多数底层问题。
 
 
