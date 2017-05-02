@@ -6,8 +6,8 @@
 
 也欢迎加入我们团队：阿里巴巴 - 信息平台 - 用户体验平台部。
 
-<[职位描述](https://www.v2ex.com/t/356011)>
+< [职位描述](https://www.v2ex.com/t/356011) >
 
-简历请发到 <[caoke.ck@alibaba-inc.com](mailto:caoke.ck@alibaba-inc.com)>。
+简历请发到 < [caoke.ck@alibaba-inc.com](mailto:caoke.ck@alibaba-inc.com) >。
 
 ![](https://g.alicdn.com/dingding/desktop-assets/1.0.1/img/face/default/emotion_028.png)
