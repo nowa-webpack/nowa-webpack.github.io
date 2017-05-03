@@ -20,13 +20,12 @@ npm i nowa -g && nowa install
 
 > `nowa install` 会安装一批常用的插件。
 
-因为众所周知的原因，中国大陆用户请使用以下命令：
-
-```shell
-npm i nowa -g --registry=https://registry.npm.taobao.org && nowa install --registry=https://registry.npm.taobao.org
+可以使用 registry 参数来指定安装的源（nowa-install v1.2.0 之前默认使用 registry.npmjs.org 源，v1.2.0 之后默认使用 registry.npm.taobao.org 源）
+```
+nowa install --registry=https://registry.npm.taobao.org
 ```
 
-> 如果报错无权限，请尝试加 `sudo`。  
+> 如果报错无权限，请尝试加 sudo `sudo npm i nowa -g && nowa install`。  
 > 如果报错 `common.gypi not found`，请尝试 `rm -rf ~/.node_gyp` 后重新安装。
 
 ## 卸载
