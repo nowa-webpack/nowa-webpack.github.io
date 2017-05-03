@@ -25,7 +25,7 @@ npm i nowa -g && nowa install
 nowa install --registry=https://registry.npm.taobao.org
 ```
 
-> 如果报错无权限，请尝试加 `sudo`。  
+> 如果报错无权限，请尝试加 sudo `sudo npm i nowa -g && nowa install`。  
 > 如果报错 `common.gypi not found`，请尝试 `rm -rf ~/.node_gyp` 后重新安装。
 
 ## 卸载
