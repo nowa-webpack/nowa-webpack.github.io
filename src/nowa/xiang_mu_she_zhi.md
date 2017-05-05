@@ -1,4 +1,4 @@
-##  依赖管理
+##  项目设置
 
 ---
 <img src="sc_operation_9.png" width="800">

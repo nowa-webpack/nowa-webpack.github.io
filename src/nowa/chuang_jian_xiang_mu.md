@@ -19,7 +19,7 @@
 
 官方模板下自带文字解释说明，请选择适合自己场景的模板。比如示例目前选择了 'uxcore'。
 
-<img src="sc_import_1.png" width="600">
+<img src="sc_import_1.png" >
 
 2、创建设置
 
@@ -27,7 +27,7 @@
 
 请选择合适自己的源，如果不是含有私有模块的项目，内陆用户请选择taobao源。详情查看[源策略](https://nowa-webpack.github.io/nowa/gong_ju_she_zhi.html)第4道。
 
-<img src="sc_import_2.png" width="600">
+<img src="sc_import_2.png" >
 
 如果新填写的路径已经存在的话，会弹出提示框提示已经存在的项目文件，可以选择覆盖安装，或者取消之后重新填写路径。
 
@@ -37,7 +37,7 @@
 
 3、静静等待安装
 
-<img src="sc_import_3.png" width="800">
+<img src="sc_import_3.png">
 
 
 根据自身网络情况，等待时间因机子而异，稍安勿躁。安装采用的源是第二步用户选择 npm 源，如果不想作死，请根据实际情况选择源。

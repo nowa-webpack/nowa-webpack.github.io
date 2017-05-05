@@ -2,7 +2,7 @@
 
 ---
 
-<img src="sc_operation_4.png" width="800">
+<img src="sc_operation_4.png">
 
 
 这里集中显示任务的日志输出。

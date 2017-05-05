@@ -25,7 +25,7 @@
 
 4、填写模板的必要信息
 
-提交之后创建页面会出现用户的自定义的本地模板。后面的流程与(https://nowa-webpack.github.io/nowa/chuang_jian_xiang_mu.html) 一样。
+提交之后创建页面会出现用户的自定义的本地模板。后面的流程与[创建项目](https://nowa-webpack.github.io/nowa/chuang_jian_xiang_mu.html) 一样。
 
 
 提交的远程模板有更新的话，可以点击更新按钮使本地缓存的模板更新。

@@ -2,7 +2,7 @@
 
 ---
 
-<img src="sc_operation_7.png" width="600">
+<img src="sc_operation_7.png">
 <!--插图 -->
 
 依赖管理根据 `package.json` 里面的依赖字段分为 'Dependencies' 和 'Dev Dependencies'。

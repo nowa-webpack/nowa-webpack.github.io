@@ -9,7 +9,7 @@
 
 文字解说：
 
-<img src="sc_operation_3.png" width="800">
+<img src="sc_operation_3.png">
 <!--插图 -->
 
 #### 1、删除项目

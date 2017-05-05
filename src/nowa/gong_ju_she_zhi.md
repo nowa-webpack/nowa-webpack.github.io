@@ -7,7 +7,7 @@
 <img src="sc_setting_0.png" width="180">
 
 设置页面:
-<img src="sc_setting_1.png" width="800">
+<img src="sc_setting_1.png">
 <!--插图 -->
 
 #### 1. 项目版本
