@@ -26,5 +26,14 @@
 
 如果觉得您对配置项内容不了解的话，可以点击面板的右上方的 '问号' 按钮进行查看每一项的说明。
 
-如果您觉得配置项缺少的话，可以到[这里](https://github.com/nowa-webpack/nowa-gui/issues/new)提意见～
+#### abc.json
+
+每个 nowa 项目中都会包含这个文件，这个文件是 nowa 项目的配置文件。
+
+关于 'abc.json' 具体的项目配置说明，用户可以参考命令行版本的[本地开发](https://nowa-webpack.github.io/docs/ben_di_kai_fa.html)。
+
+用户可以添加 'webpack.config.js' 对 nowa 默认的 webpack 项进行覆盖，具体请参考[覆盖默认的 webpack 配置](https://nowa-webpack.github.io/docs/fu_gai_mo_ren_de_webpack_pei_zhi.html)。
+
+
+如果您觉得可视化工具对 nowa 的配置项缺少的话，可以到[这里](https://github.com/nowa-webpack/nowa-gui/issues/new)提意见～
 

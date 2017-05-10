@@ -14,10 +14,10 @@
   * [导入项目](dao_ru_xiang_mu.md)
   * [创建项目](chuang_jian_xiang_mu.md)
   * [工具设置](gong_ju_she_zhi.md)
-* 模板
-  * [官方模板](guan_fang_mu_ban.md)
-  * [自定义本地模板](ben_di_mu_ban.md)
-  * [自定义远程模板](yuan_cheng_mu_ban.md)
+* 脚手架
+  * [官方脚手架](guan_fang_mu_ban.md)
+  * [自定义本地脚手架](ben_di_mu_ban.md)
+  * [自定义远程脚手架](yuan_cheng_mu_ban.md)
 * 项目
   * [基础操作](ji_chu_cao_zuo.md)
   * [控制台](kong_zhi_tai.md)

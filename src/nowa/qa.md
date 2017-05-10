@@ -29,7 +29,7 @@ $rm -rf ~/.nowa-gui./installation
 
 ## 2. 打开工具的时候弹出 'Invalid type of Version' 错误
 
-请用户删除工具安装的模板，然后打开工具重试
+请用户删除工具安装的脚手架，然后打开工具重试
 * windows:
 
 ``` sh
@@ -46,7 +46,5 @@ $rm -rf ~/.nowa-gui./template
 
 1. 请用户先根据日志窗口出现的信息进行排查
 2. 删除项目后重新导入
-
-
 
 

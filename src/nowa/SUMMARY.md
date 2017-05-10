@@ -7,16 +7,22 @@
   * [导入项目](dao_ru_xiang_mu.md)
   * [创建项目](chuang_jian_xiang_mu.md)
   * [工具设置](gong_ju_she_zhi.md)
-* 模板
-  * [官方模板](guan_fang_mu_ban.md)
-  * [自定义本地模板](ben_di_mu_ban.md)
-  * [自定义远程模板](yuan_cheng_mu_ban.md)
+* 脚手架
+  * [官方脚手架](guan_fang_mu_ban.md)
+  * [自定义本地脚手架](ben_di_mu_ban.md)
+  * [自定义远程脚手架](yuan_cheng_mu_ban.md)
 * 项目
   * [基础操作](ji_chu_cao_zuo.md)
   * [控制台](kong_zhi_tai.md)
   * [依赖管理](yi_lai_guan_li.md)
   * [项目设置](xiang_mu_she_zhi.md)
   * [任务托盘](ren_wu_tuo_pan.md)
-
+* 开发
+  * [图片和 svg 的使用](https://nowa-webpack.github.io/docs/tu_pian_he_svg_de_shi_yong.html)
+  * [模拟数据](https://nowa-webpack.github.io/docs/mo_ni_shu_ju.html)
+  * [国际化](https://nowa-webpack.github.io/docs/guo_ji_hua.html)
+  * [代理服务器](https://nowa-webpack.github.io/docs/yuan_cheng_tiao_shi.html)
+  * [模块热替换](https://nowa-webpack.github.io/docs/mo_kuai_re_ti_huan.html)
+  * [环境变量](https://nowa-webpack.github.io/docs/huan_jing_bian_liang.html)
 * [常见问题](qa.md)
 * [加入我们](jia_ru_wo_men.md)
