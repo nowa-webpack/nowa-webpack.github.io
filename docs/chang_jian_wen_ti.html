@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>常见问题 · GitBook</title>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.0.2">
         
         
         
@@ -554,6 +554,16 @@
 <pre><code class="lang-shell">rm -rf `npm root -g`/nowa-* ~/.nowa
 nowa install --registry=https://registry.npm.taobao.org
 </code></pre>
+<h2 id="2-&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;-typescript-&#x5199;-jsx-&#x62A5;&#x9519;">2. &#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528; typescript &#x5199; jsx &#x62A5;&#x9519;</h2>
+<p><a href="https://github.com/techird/blog/issues/3" _target="blank">TS &#x548C; JSX &#x517C;&#x5BB9;&#x95EE;&#x9898;</a>&#x7531;&#x6765;&#x5DF2;&#x4E45;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x4E0D;&#x652F;&#x6301;&#x7684;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8981;&#x652F;&#x6301;&#xFF0C;&#x9700;&#x8981;&#x5728; tsconfig.json &#x91CC;&#x9762;&#x52A0;&#x4E2A;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;compilerOptions&quot;</span>: {
+    <span class="hljs-string">&quot;jsx&quot;</span>: <span class="hljs-string">&quot;react&quot;</span>
+  }
+}
+</code></pre>
+<p>&#x66F4;&#x591A;&#x914D;&#x7F6E;&#x53EF;&#x67E5;&#x770B; <a href="https://www.typescriptlang.org/docs/handbook/react-&amp;-webpack.html" _target="blank">TypeScript &#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x3002;</p>
 
                                 
                                 </section>
@@ -593,7 +603,7 @@ nowa install --registry=https://registry.npm.taobao.org
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"常见问题","level":"1.5","depth":1,"previous":{"title":"插件","level":"1.4.2","depth":2,"path":"cha_jian.md","ref":"cha_jian.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chang_jian_wen_ti.md","mtime":"2017-04-30T01:43:49.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-10T03:25:15.453Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"常见问题","level":"1.5","depth":1,"previous":{"title":"插件","level":"1.4.2","depth":2,"path":"cha_jian.md","ref":"cha_jian.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chang_jian_wen_ti.md","mtime":"2017-05-11T11:54:17.090Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2017-05-11T11:56:43.205Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -623,7 +633,7 @@ nowa install --registry=https://registry.npm.taobao.org
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
         
     
 
