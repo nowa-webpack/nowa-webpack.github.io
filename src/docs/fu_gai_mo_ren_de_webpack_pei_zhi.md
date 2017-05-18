@@ -8,7 +8,7 @@
 
 `webpack.config.js`
 ```js
-module.exports = function(config) { // 传入 config 为默认 webpack 配置
+module.exports = function(config, webpack) { // 传入 config 为默认 webpack 配置
   // 此处可对配置做定制化修改
   config.plugins.push(new SomeWebpackPlugin());
 };
