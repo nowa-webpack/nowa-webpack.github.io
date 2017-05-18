@@ -45,3 +45,4 @@ nowa build
 - `    --polyfill` 引入 babel 的 polyfill，可直接使用 Object.assign 等类方法和 Map、Set、Promise 等类，默认为 `false`
 - `    --mangle` 在压缩 js 代码时是否对变量名做混淆，默认为 `false`
 - `    --alias` 路径别名配置，此处配置为相对路径，相对于源代码目录 `src`，默认为 `{ "i18n": "i18n" }`
+- `    --analyse [port]` 分析 webpack bundle 体积，在 port 端口开一个服务，自动打开浏览器查看
