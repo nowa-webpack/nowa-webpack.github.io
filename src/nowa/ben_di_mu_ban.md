@@ -11,7 +11,7 @@
 
 1、用户可以在创建页面点击 '添加自定义脚手架'的卡片
 
-<img src="sc_template_3.png" width="300">
+<img src="sc_template_3.png" width="100">
 
 2、选择'本地脚手架'
 

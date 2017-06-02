@@ -50,3 +50,4 @@ webpack 的构建输出文件将不会写到文件系统，而是缓存在内存
 - `    --polyfill` 引入 babel 的 polyfill，可直接使用 Object.assign 等类方法和 Map、Set、Promise 等类，默认为 `false`
 - `    --alias` 路径别名配置，此处配置为相对路径，相对于源代码目录 `src`，默认为 `{ "i18n": "i18n" }`
 - `    --injects` 向页面中插入的脚本地址的数组
+- `    --analyse` 生成 webpack 打包后的 js 分析文件

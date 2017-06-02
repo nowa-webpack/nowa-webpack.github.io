@@ -7,6 +7,7 @@
   * [导入项目](dao_ru_xiang_mu.md)
   * [创建项目](chuang_jian_xiang_mu.md)
   * [工具设置](gong_ju_she_zhi.md)
+  * [全局命令设置](quan_ju_ming_ling.md)
 * 脚手架
   * [官方脚手架](guan_fang_mu_ban.md)
   * [自定义本地脚手架](ben_di_mu_ban.md)
@@ -25,4 +26,5 @@
   * [模块热替换](https://nowa-webpack.github.io/docs/mo_kuai_re_ti_huan.html)
   * [环境变量](https://nowa-webpack.github.io/docs/huan_jing_bian_liang.html)
 * [常见问题](qa.md)
+* [更新日志](changelog.md)
 * [加入我们](jia_ru_wo_men.md)
