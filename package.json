@@ -13,6 +13,7 @@
     "start_doc_gui": "gitbook serve src/nowa nowa",
     "build_web": "nowa build",
     "build_doc": "gitbook build src/docs docs && gitbook build src/nowa nowa",
+    "build_nowa": "gitbook build src/nowa nowa",
     "commit": "git add . --all && git commit -m update && git push origin master",
     "save": "npm run build_doc && npm run build_web && npm run commit",
     "tags": "npm dist-tags ls"
