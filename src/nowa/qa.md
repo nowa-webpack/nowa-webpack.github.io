@@ -56,4 +56,15 @@ $rm -rf ~/.nowa-gui./template
 1. 请用户先根据日志窗口出现的信息进行排查
 2. 删除项目后重新导入
 
+## 4. 初始化安装的时候失败
+
+请用户查看出错日志，先排查网络问题。
+
+如果非阿里内网使用中出现类似`alibaba-inc.com` 字样，请用户重新安装最新版。
+
+windows 用户可能需要安装多次才能成功，请关闭工具后，执行`rd /q /s c:/User/YOUR_PC_NAME/.nowa-gui/installation` 命令后，重启工具安装。
+
+
+
+
 

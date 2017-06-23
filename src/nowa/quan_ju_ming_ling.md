@@ -6,7 +6,8 @@
 
 #### 入口
 
-<img src="sc_command_0.png" width="200">
+<img src="sc_setting_0.png" width="180">
+
 
 #### 页面
 

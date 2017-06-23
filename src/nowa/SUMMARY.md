@@ -6,7 +6,7 @@
   * [初始化](chu_shi_hua.md)
   * [导入项目](dao_ru_xiang_mu.md)
   * [创建项目](chuang_jian_xiang_mu.md)
-  * [工具设置](gong_ju_she_zhi.md)
+  * [工具基本设置](gong_ju_she_zhi.md)
   * [全局命令设置](quan_ju_ming_ling.md)
 * 脚手架
   * [官方脚手架](guan_fang_mu_ban.md)
@@ -18,6 +18,8 @@
   * [依赖管理](yi_lai_guan_li.md)
   * [项目设置](xiang_mu_she_zhi.md)
   * [任务托盘](ren_wu_tuo_pan.md)
+* 插件
+  * [安装管理](cha_jian_an_zhuang.md)
 * 开发
   * [图片和 svg 的使用](https://nowa-webpack.github.io/docs/tu_pian_he_svg_de_shi_yong.html)
   * [模拟数据](https://nowa-webpack.github.io/docs/mo_ni_shu_ju.html)
