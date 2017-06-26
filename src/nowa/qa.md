@@ -8,7 +8,7 @@
 
 1. 在终端里面执行 `nowa init page xxx` 的时候，报错找不到 `nowa` 命令
 
-2. nowa 项目使用 * 启动 * 和 * 编译 * 功能, 控制台报错找不到 `nowa` 模块
+2. nowa 项目使用 * 启动 * 和 * 编译 * 功能, 控制台报错找不到 `nowa` 模块或者 'babel-xxx'
 
 请用户先移除 npm 安装的全局 nowa，然后在用户目录删除工具默认安装的 nowa 目录, 然后打开工具重试。
 
@@ -49,6 +49,8 @@ rd /q /s c:/User/YOUR_PC_NAME/.nowa-gui/template
 
 ```sh
 $rm -rf ~/.nowa-gui./template
+
+
 ```
 
 ## 3. 导入项目安装失败
@@ -56,13 +58,23 @@ $rm -rf ~/.nowa-gui./template
 1. 请用户先根据日志窗口出现的信息进行排查
 2. 删除项目后重新导入
 
+
+
 ## 4. 初始化安装的时候失败
 
 请用户查看出错日志，先排查网络问题。
 
-如果非阿里内网使用中出现类似`alibaba-inc.com` 字样，请用户重新安装最新版。
+1. 如果非阿里内网使用中出现类似`alibaba-inc.com` 字样，请用户重新安装最新版。
 
-windows 用户可能需要安装多次才能成功，请关闭工具后，执行`rd /q /s c:/User/YOUR_PC_NAME/.nowa-gui/installation` 命令后，重启工具安装。
+2. 资源忙或被锁导致 symbol link 创建失败
+
+<img src="sc_qa_1.png" width="800">
+
+如果是管理员用户登录，那么初始化安装可能会出现如图所示的错误。
+
+首先用户要关闭360等杀毒软件，执行`rd /q /s c:/User/YOUR_PC_NAME/.nowa-gui/installation` 命令后，重启工具安装。
+
+
 
 
 
