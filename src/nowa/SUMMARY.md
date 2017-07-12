@@ -20,6 +20,7 @@
   * [任务托盘](ren_wu_tuo_pan.md)
 * 插件
   * [安装管理](cha_jian_an_zhuang.md)
+  * [UI插件API](cha_jian_api.md)
 * 开发
   * [图片和 svg 的使用](https://nowa-webpack.github.io/docs/tu_pian_he_svg_de_shi_yong.html)
   * [模拟数据](https://nowa-webpack.github.io/docs/mo_ni_shu_ju.html)

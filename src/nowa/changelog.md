@@ -1,6 +1,38 @@
 ## 更新日志
-
 ---
+
+1.8.6 / 2017-07-06
+==================
+# zh
+* 修改 Nowa GUI 插件接口 [https://github.com/Jirapo/nowa-gui-plugin-demo]
+* 内部用户请更新 nw-checkout & nw-publish 插件
+
+
+1.8.6 / 2017-07-06
+==================
+# zh
+* 修改 Nowa GUI 插件接口 [https://github.com/Jirapo/nowa-gui-plugin-demo]
+* 内部用户请更新 nw-checkout & nw-publish 插件
+
+
+1.8.4 / 2017-06-28
+==================
+* 开放 Nowa GUI 插件接口 [https://github.com/Jirapo/nowa-gui-plugin-demo]
+
+
+1.8.2 / 2017-06-26
+==================
+# zh
+* 支持工具内自更新
+* 项目支持重载
+* 增加 nowa 插件管理功能
+* 接入蚂蚁模板 [http://scaffold.ant.design/list.json]
+
+
+1.7.4 / 2017-06-15
+==================
+* 修复 windows 重复写入path的问题
+
 
 1.7.3 / 2017-06-05
 ==================

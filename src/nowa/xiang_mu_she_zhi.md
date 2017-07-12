@@ -30,7 +30,11 @@
 
 每个 nowa 项目中都会包含这个文件，这个文件是 nowa 项目的配置文件。
 
-关于 'abc.json' 具体的项目配置说明，用户可以参考命令行版本的[本地开发](https://nowa-webpack.github.io/docs/ben_di_kai_fa.html)。
+* 关于 **开发配置(nowa server)** 用户可以参考命令行版本的[本地开发](https://nowa-webpack.github.io/docs/ben_di_kai_fa.html)
+* 关于 **编译配置(nowa build)** 用户可以参考命令行版本的[项目构建](https://nowa-webpack.github.io/docs/xiang_mu_gou_jian.html)
+
+
+<!-- 关于 'abc.json' 具体的项目配置说明，用户可以参考命令行版本的[本地开发](https://nowa-webpack.github.io/docs/ben_di_kai_fa.html)。 -->
 
 用户可以添加 'webpack.config.js' 对 nowa 默认的 webpack 项进行覆盖，具体请参考[覆盖默认的 webpack 配置](https://nowa-webpack.github.io/docs/fu_gai_mo_ren_de_webpack_pei_zhi.html)。
 
