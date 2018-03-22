@@ -7,15 +7,10 @@ nowa github homepage
 ### Install
 
 ```shell
-npm i gitbook nowa -g && nowa install
+npm i gitbook -g
 ```
 
 ### Start
-
-- start web
-```shell
-npm start
-```
 
 - start cli doc
 ```shell

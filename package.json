@@ -8,21 +8,12 @@
     "url": "https://github.com/nowa-webpack/nowa-webpack.github.io.git"
   },
   "scripts": {
-    "start": "nowa server",
     "start_doc_cli": "gitbook serve src/docs docs",
     "start_doc_gui": "gitbook serve src/nowa nowa",
-    "build_web": "nowa build",
     "build_doc": "gitbook build src/docs docs && gitbook build src/nowa nowa",
-    "build_nowa": "gitbook build src/nowa nowa",
     "commit": "git add . --all && git commit -m update && git push origin master",
-    "save": "npm run build_doc && npm run build_web && npm run commit",
-    "tags": "npm dist-tags ls"
+    "save": "npm run build_doc && npm run commit"
   },
   "homepage": "https://nowa-webpack.github.io/",
-  "license": "MIT",
-  "devDependencies": {
-    "handlebars": "^4.0.5",
-    "handlebars-loader": "^1.3.0",
-    "i18n-helper": "^1.2.0"
-  }
+  "license": "MIT"
 }
