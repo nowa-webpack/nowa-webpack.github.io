@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.0.2">
+        <meta name="generator" content="GitBook 3.2.0">
         
         
         
@@ -487,7 +487,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="chang_jian_wen_ti.html">
+        <li class="chapter " data-level="1.5" data-path="upgrade-to-nowa2.html">
+            
+                <a href="upgrade-to-nowa2.html">
+            
+                    
+                    升级到 Nowa2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chang_jian_wen_ti.html">
             
                 <a href="chang_jian_wen_ti.html">
             
@@ -545,15 +558,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x4E91;&#x6784;&#x5EFA;">&#x4E91;&#x6784;&#x5EFA;</h1>
-<hr>
-<p>&#x8981;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;&#x4E91;&#x6784;&#x5EFA;&#xFF0C;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;</p>
-<h2 id="gitlab-&#x914D;&#x7F6E;">Gitlab &#x914D;&#x7F6E;</h2>
-<p>&#x5728; gitlab &#x9879;&#x76EE;&#x8BBE;&#x7F6E;&#x91CC;&#x6253;&#x5F00;&#x4E91;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#xFF0C;&#x8BE6;&#x89C1;&#x622A;&#x56FE;&#xFF1A;</p>
-<p><img src="screenshot-cloud-build.png" alt=""></p>
-<h2 id="&#x9879;&#x76EE;&#x4E2D;&#x914D;&#x7F6E;">&#x9879;&#x76EE;&#x4E2D;&#x914D;&#x7F6E;</h2>
-<p>&#x4FEE;&#x6539; package.json&#xFF0C;&#x4FEE;&#x6539; scripts &#x548C; devDependencies &#x5C5E;&#x6027;&#xFF1A;</p>
-<pre><code>{
+                                <h1 id="&#x4E91;&#x6784;&#x5EFA;">&#x4E91;&#x6784;&#x5EFA;</h1><hr><p>&#x8981;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;&#x4E91;&#x6784;&#x5EFA;&#xFF0C;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;</p><h2 id="gitlab-&#x914D;&#x7F6E;">Gitlab &#x914D;&#x7F6E;</h2><p>&#x5728; gitlab &#x9879;&#x76EE;&#x8BBE;&#x7F6E;&#x91CC;&#x6253;&#x5F00;&#x4E91;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#xFF0C;&#x8BE6;&#x89C1;&#x622A;&#x56FE;&#xFF1A;</p><p><img src="screenshot-cloud-build.png"></p><h2 id="&#x9879;&#x76EE;&#x4E2D;&#x914D;&#x7F6E;">&#x9879;&#x76EE;&#x4E2D;&#x914D;&#x7F6E;</h2><p>&#x4FEE;&#x6539; package.json&#xFF0C;&#x4FEE;&#x6539; scripts &#x548C; devDependencies &#x5C5E;&#x6027;&#xFF1A;</p><pre><code>{
   &quot;name&quot;: &quot;test&quot;,
   &quot;scripts&quot;: {
     &quot;start&quot;: &quot;nowa server&quot;,
@@ -565,9 +570,8 @@
     &quot;nowa-build&quot;: &quot;^1&quot;
   },
   ...
-}
-</code></pre><p>&#x589E;&#x52A0;&#x6216;&#x4FEE;&#x6539; abc.json&#xFF0C;&#x589E;&#x52A0; assets &#x5C5E;&#x6027;&#xFF1A;</p>
-<pre><code>{
+}</code></pre>
+<p>&#x589E;&#x52A0;&#x6216;&#x4FEE;&#x6539; abc.json&#xFF0C;&#x589E;&#x52A0; assets &#x5C5E;&#x6027;&#xFF1A;</p><pre><code>{
   &quot;name&quot;: &quot;test&quot;,
   &quot;options&quot;: {
     ...
@@ -581,10 +585,8 @@
       ]
     }
   }
-}
-</code></pre><h2 id="&#x4EE3;&#x7801;&#x63D0;&#x4EA4;">&#x4EE3;&#x7801;&#x63D0;&#x4EA4;</h2>
-<p>&#x4EE3;&#x7801; push &#x4E4B;&#x540E;&#x4F1A;&#x81EA;&#x52A8;&#x89E6;&#x53D1;&#x6784;&#x5EFA;&#xFF0C;&#x6BCF;&#x4E00;&#x6B21;&#x6784;&#x5EFA;&#x7684;&#x8FDB;&#x5EA6;&#x548C;&#x65E5;&#x5FD7;&#x53EF;&#x5728;<a href="http://builder.alibaba-inc.com/task" _target="blank">&#x8FD9;&#x91CC;</a>&#x67E5;&#x770B;&#x3002;</p>
-
+}</code></pre>
+<h2 id="&#x4EE3;&#x7801;&#x63D0;&#x4EA4;">&#x4EE3;&#x7801;&#x63D0;&#x4EA4;</h2><p>&#x4EE3;&#x7801; push &#x4E4B;&#x540E;&#x4F1A;&#x81EA;&#x52A8;&#x89E6;&#x53D1;&#x6784;&#x5EFA;&#xFF0C;&#x6BCF;&#x4E00;&#x6B21;&#x6784;&#x5EFA;&#x7684;&#x8FDB;&#x5EA6;&#x548C;&#x65E5;&#x5FD7;&#x53EF;&#x5728;<a href="http://builder.alibaba-inc.com/task" target="_blank">&#x8FD9;&#x91CC;</a>&#x67E5;&#x770B;&#x3002;</p>
                                 
                                 </section>
                             
@@ -623,7 +625,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"云构建","level":"1.3.2.11","depth":3,"next":{"title":"构建","level":"1.3.3","depth":2,"ref":"","articles":[{"title":"项目构建","level":"1.3.3.1","depth":3,"path":"xiang_mu_gou_jian.md","ref":"xiang_mu_gou_jian.md","articles":[]},{"title":"组件库的定制构建","level":"1.3.3.2","depth":3,"path":"zu_jian_ku_de_ding_zhi_gou_jian.md","ref":"zu_jian_ku_de_ding_zhi_gou_jian.md","articles":[]}]},"previous":{"title":"模拟数据配置","level":"1.3.2.10","depth":3,"path":"mo_ni_shu_ju.md","ref":"mo_ni_shu_ju.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"yun_gou_jian.md","mtime":"2016-10-16T11:47:55.054Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2018-03-30T13:36:34.388Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"云构建","level":"1.3.2.11","depth":3,"next":{"title":"构建","level":"1.3.3","depth":2,"ref":"","articles":[{"title":"项目构建","level":"1.3.3.1","depth":3,"path":"xiang_mu_gou_jian.md","ref":"xiang_mu_gou_jian.md","articles":[]},{"title":"组件库的定制构建","level":"1.3.3.2","depth":3,"path":"zu_jian_ku_de_ding_zhi_gou_jian.md","ref":"zu_jian_ku_de_ding_zhi_gou_jian.md","articles":[]}]},"previous":{"title":"模拟数据配置","level":"1.3.2.10","depth":3,"path":"mo_ni_shu_ju.md","ref":"mo_ni_shu_ju.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"yun_gou_jian.md","mtime":"2019-03-13T02:37:27.332Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-03-13T03:19:56.157Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -631,6 +633,10 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -653,7 +659,7 @@
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

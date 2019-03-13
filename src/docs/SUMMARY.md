@@ -28,5 +28,6 @@
 * 扩展
    * [脚手架](jiao_shou_jia.md)
    * [插件](cha_jian.md)
+* [升级到 Nowa2](upgrade-to-nowa2.md)
 * [常见问题](chang_jian_wen_ti.md)
 

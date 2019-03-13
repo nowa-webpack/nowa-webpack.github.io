@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.0.2">
+        <meta name="generator" content="GitBook 3.2.0">
         
         
         
@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="chang_jian_wen_ti.html" />
+    <link rel="next" href="upgrade-to-nowa2.html" />
     
     
     <link rel="prev" href="jiao_shou_jia.html" />
@@ -489,7 +489,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="chang_jian_wen_ti.html">
+        <li class="chapter " data-level="1.5" data-path="upgrade-to-nowa2.html">
+            
+                <a href="upgrade-to-nowa2.html">
+            
+                    
+                    升级到 Nowa2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chang_jian_wen_ti.html">
             
                 <a href="chang_jian_wen_ti.html">
             
@@ -547,21 +560,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x63D2;&#x4EF6;">&#x63D2;&#x4EF6;</h1>
-<hr>
-<h2 id="&#x67E5;&#x627E;">&#x67E5;&#x627E;</h2>
-<p>&#x53EF;&#x4EE5;&#x4ECE; npm &#x4E0A;&#x641C;&#x7D22;&#x5230;&#x53EF;&#x7528;&#x7684; nowa &#x63D2;&#x4EF6;&#xFF0C;&#x8BBF;&#x95EE;<a href="https://www.npmjs.com/search?q=nowa-" _target="blank">&#x8FD9;&#x91CC;</a>&#x3002;</p>
-<h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
-<p>&#x53EF;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x5B89;&#x88C5; nowa &#x63D2;&#x4EF6;&#xFF1A;</p>
-<pre><code class="lang-shell">nowa install &lt;plugin&gt;
-</code></pre>
-<h2 id="&#x65B0;&#x5EFA;">&#x65B0;&#x5EFA;</h2>
-<p>&#x5982;&#x679C;&#x8FD8;&#x662F;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x4F60;&#x60F3;&#x8981;&#x7684;&#x63D2;&#x4EF6;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; nowa &#x5185;&#x7F6E;&#x7684;&#x63D2;&#x4EF6;&#x811A;&#x624B;&#x67B6;&#x529F;&#x80FD;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x63D2;&#x4EF6;&#xFF01;</p>
-<pre><code class="lang-shell">nowa plugin &lt;name&gt;
-</code></pre>
-<p><img src="screenshot-plugin-use.png" alt=""></p>
-<p>&#x4EE3;&#x7801;&#x5165;&#x53E3;&#x5728; <code>src/index.js</code>&#xFF0C;&#x4E3B;&#x8981;&#x90E8;&#x5206;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-js"><span class="hljs-comment">// plugin defination</span>
+                                <h1 id="&#x63D2;&#x4EF6;">&#x63D2;&#x4EF6;</h1><hr><h2 id="&#x67E5;&#x627E;">&#x67E5;&#x627E;</h2><p>&#x53EF;&#x4EE5;&#x4ECE; npm &#x4E0A;&#x641C;&#x7D22;&#x5230;&#x53EF;&#x7528;&#x7684; nowa &#x63D2;&#x4EF6;&#xFF0C;&#x8BBF;&#x95EE;<a href="https://www.npmjs.com/search?q=nowa-" target="_blank">&#x8FD9;&#x91CC;</a>&#x3002;</p><h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2><p>&#x53EF;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x5B89;&#x88C5; nowa &#x63D2;&#x4EF6;&#xFF1A;</p><pre><code class="lang-shell">nowa install &lt;plugin&gt;</code></pre>
+<h2 id="&#x65B0;&#x5EFA;">&#x65B0;&#x5EFA;</h2><p>&#x5982;&#x679C;&#x8FD8;&#x662F;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x4F60;&#x60F3;&#x8981;&#x7684;&#x63D2;&#x4EF6;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; nowa &#x5185;&#x7F6E;&#x7684;&#x63D2;&#x4EF6;&#x811A;&#x624B;&#x67B6;&#x529F;&#x80FD;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x63D2;&#x4EF6;&#xFF01;</p><pre><code class="lang-shell">nowa plugin &lt;name&gt;</code></pre>
+<p><img src="screenshot-plugin-use.png"></p><p>&#x4EE3;&#x7801;&#x5165;&#x53E3;&#x5728; <code>src/index.js</code>&#xFF0C;&#x4E3B;&#x8981;&#x90E8;&#x5206;&#x5982;&#x4E0B;&#xFF1A;</p><pre><code class="lang-js"><span class="hljs-comment">// plugin defination</span>
 <span class="hljs-built_in">module</span>.exports = {
 
   description: pkg.description,
@@ -575,16 +576,10 @@
     <span class="hljs-comment">// console.log(options.mode, options.slient)</span>
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;It works.&apos;</span>)
   }
-};
-</code></pre>
-<p><code>options</code> &#x5B9A;&#x4E49;&#x4E86;&#x53EF;&#x7528;&#x7684;&#x53C2;&#x6570;&#xFF0C;<code>action</code> &#x5219;&#x5B9A;&#x4E49;&#x4E86;&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#xFF0C;&#x5C31;&#x662F;&#x8FD9;&#x4E48;&#x7B80;&#x5355;&#x3002;</p>
-<h2 id="&#x6D4B;&#x8BD5;">&#x6D4B;&#x8BD5;</h2>
-<p>&#x628A;&#x63D2;&#x4EF6;&#x94FE;&#x63A5;&#x5230;&#x5168;&#x5C40;&#x76EE;&#x5F55;&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x59CB;&#x6D4B;&#x8BD5;&#x5566;&#xFF01;</p>
-<pre><code class="lang-shell">npm link
-nowa &lt;name&gt;
-</code></pre>
-<p><img src="screenshot-plugin-test.png" alt=""></p>
-
+};</code></pre>
+<p><code>options</code> &#x5B9A;&#x4E49;&#x4E86;&#x53EF;&#x7528;&#x7684;&#x53C2;&#x6570;&#xFF0C;<code>action</code> &#x5219;&#x5B9A;&#x4E49;&#x4E86;&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#xFF0C;&#x5C31;&#x662F;&#x8FD9;&#x4E48;&#x7B80;&#x5355;&#x3002;</p><h2 id="&#x6D4B;&#x8BD5;">&#x6D4B;&#x8BD5;</h2><p>&#x628A;&#x63D2;&#x4EF6;&#x94FE;&#x63A5;&#x5230;&#x5168;&#x5C40;&#x76EE;&#x5F55;&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x59CB;&#x6D4B;&#x8BD5;&#x5566;&#xFF01;</p><pre><code class="lang-shell">npm link
+nowa &lt;name&gt;</code></pre>
+<p><img src="screenshot-plugin-test.png"></p>
                                 
                                 </section>
                             
@@ -616,7 +611,7 @@ nowa &lt;name&gt;
                 </a>
                 
                 
-                <a href="chang_jian_wen_ti.html" class="navigation navigation-next " aria-label="Next page: 常见问题">
+                <a href="upgrade-to-nowa2.html" class="navigation navigation-next " aria-label="Next page: 升级到 Nowa2">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -627,7 +622,7 @@ nowa &lt;name&gt;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"插件","level":"1.4.2","depth":2,"next":{"title":"常见问题","level":"1.5","depth":1,"path":"chang_jian_wen_ti.md","ref":"chang_jian_wen_ti.md","articles":[]},"previous":{"title":"脚手架","level":"1.4.1","depth":2,"path":"jiao_shou_jia.md","ref":"jiao_shou_jia.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"cha_jian.md","mtime":"2016-08-22T10:09:13.757Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2018-03-30T13:36:34.388Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"插件","level":"1.4.2","depth":2,"next":{"title":"升级到 Nowa2","level":"1.5","depth":1,"path":"upgrade-to-nowa2.md","ref":"upgrade-to-nowa2.md","articles":[]},"previous":{"title":"脚手架","level":"1.4.1","depth":2,"path":"jiao_shou_jia.md","ref":"jiao_shou_jia.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"cha_jian.md","mtime":"2019-03-13T02:37:27.312Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-03-13T03:19:56.157Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -635,6 +630,10 @@ nowa &lt;name&gt;
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -657,7 +656,7 @@ nowa &lt;name&gt;
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

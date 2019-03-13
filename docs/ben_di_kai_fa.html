@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.0.2">
+        <meta name="generator" content="GitBook 3.2.0">
         
         
         
@@ -487,7 +487,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="chang_jian_wen_ti.html">
+        <li class="chapter " data-level="1.5" data-path="upgrade-to-nowa2.html">
+            
+                <a href="upgrade-to-nowa2.html">
+            
+                    
+                    升级到 Nowa2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chang_jian_wen_ti.html">
             
                 <a href="chang_jian_wen_ti.html">
             
@@ -545,50 +558,55 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x672C;&#x5730;&#x5F00;&#x53D1;">&#x672C;&#x5730;&#x5F00;&#x53D1;</h1>
-<hr>
-<h2 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h2>
-<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>nowa server</code> &#x547D;&#x4EE4;&#x6765;&#x5F00;&#x542F;&#x4E00;&#x4E2A;&#x672C;&#x5730;&#x5F00;&#x53D1;&#x8C03;&#x8BD5;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
-<blockquote>
-<p>&#x5982;&#x679C;&#x63D0;&#x793A;&#x627E;&#x4E0D;&#x5230; server &#x547D;&#x4EE4;&#xFF0C;&#x8BF7;&#x901A;&#x8FC7; <code>nowa install server</code> &#x6765;&#x5B89;&#x88C5;</p>
-</blockquote>
-<pre><code class="lang-shell">nowa server
-</code></pre>
-<p>&#x8BE5;&#x547D;&#x4EE4;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x5728;&#x901A;&#x8FC7; <code>nowa init</code> &#x521B;&#x5EFA;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x8BF7;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x6267;&#x884C;&#x3002;</p>
-<p>&#x4E5F;&#x53EF;&#x901A;&#x8FC7;&#x5FEB;&#x6377;&#x547D;&#x4EE4; <code>npm start</code> &#x6765;&#x5B8C;&#x6210;&#x540C;&#x6837;&#x7684;&#x5DE5;&#x4F5C;&#x3002;</p>
-<p><img src="screenshot-server-use.png" alt=""></p>
-<p><code>nowa server</code> &#x5C06;&#x628A;&#x4EE5;&#x4E0B;&#x76EE;&#x5F55;&#x4F5C;&#x4E3A;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x76D1;&#x542C;&#x76EE;&#x5F55;&#xFF1A;</p>
-<ul>
-<li><code>./html</code></li>
-<li><code>./src/lib</code>&#xFF08;&#x8BE5;&#x76EE;&#x5F55;&#x8DDF;&#x968F; <code>--src</code> &#x914D;&#x7F6E;&#x800C;&#x6539;&#x53D8;&#xFF09;</li>
-<li><code>./dist</code>&#xFF08;&#x8BE5;&#x76EE;&#x5F55;&#x8DDF;&#x968F; <code>--dist</code> &#x914D;&#x7F6E;&#x800C;&#x6539;&#x53D8;&#xFF09;</li>
-<li><code>.</code></li>
-</ul>
-<p>webpack &#x7684;&#x6784;&#x5EFA;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x5C06;&#x4E0D;&#x4F1A;&#x5199;&#x5230;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x800C;&#x662F;&#x7F13;&#x5B58;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x5728;&#x8BBF;&#x95EE;&#x65F6;&#x76F4;&#x63A5;&#x8F93;&#x51FA;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x53EF;&#x663E;&#x8457;&#x63D0;&#x9AD8;&#x6784;&#x5EFA;&#x6548;&#x7387;&#x3002;</p>
-<h2 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h2>
-<p><code>nowa server</code> &#x63A5;&#x53D7;&#x4EE5;&#x4E0B;&#x5019;&#x9009;&#x53C2;&#x6570;&#xFF1A;</p>
-<ul>
-<li><code>-s, --src &lt;dir&gt;</code> &#x6E90;&#x4EE3;&#x7801;&#x76EE;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411; <code>src</code></li>
-<li><code>-d, --dist &lt;dir&gt;</code> &#x8F93;&#x51FA;&#x4EE3;&#x7801;&#x76EE;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411; <code>dist</code></li>
-<li><code>-p, --port &lt;port&gt;</code> &#x670D;&#x52A1;&#x5668;&#x76D1;&#x542C;&#x7AEF;&#x53E3;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411; <code>3000</code></li>
-<li><code>-e  --entry &lt;file&gt;</code> &#x5E94;&#x7528;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411; <code>app/app.js</code></li>
-<li><code>--pages [pages]</code> &#x5F00;&#x542F;&#x591A;&#x9875;&#x9762;&#x5165;&#x53E3;&#x89C4;&#x5219;&#xFF0C;&#x53EF;&#x4F20;&#x5165;&#x9700;&#x8981;&#x6784;&#x5EFA;&#x7684;&#x9875;&#x9762;&#xFF0C;&#x4F8B;&#x5982; <code>home,demo</code></li>
-<li><code>--vars</code> &#x8FD0;&#x884C;&#x65F6;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF08;&#x8BE6;&#x89C1;<a href="huan_jing_bian_liang.html">&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7BC7;</a>&#xFF09;</li>
-<li><code>--buildvars</code> &#x6784;&#x5EFA;&#x65F6;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF08;&#x8BE6;&#x89C1;<a href="huan_jing_bian_liang.html">&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7BC7;</a>&#xFF09;</li>
-<li><code>-r, --proxy</code> &#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8D44;&#x6E90;&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;</li>
-<li><code>-k, --keepcss</code> &#x5B9E;&#x65F6;&#x8F93;&#x51FA; css &#x6587;&#x4EF6;&#x5230; dist &#x76EE;&#x5F55;</li>
-<li><code>-l, --lazyload</code> &#x7981;&#x7528;&#x53D8;&#x66F4;&#x7684;&#x5B9E;&#x65F6;&#x63A8;&#x9001;</li>
-<li><code>-h, --https</code> &#x5F00;&#x542F; https &#x670D;&#x52A1;&#x5668;</li>
-<li><code>--externals</code> webpack &#x5916;&#x90E8;&#x53D8;&#x91CF;&#x5B9A;&#x4E49;</li>
-<li><code>-o, --open</code> &#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE;&#x9875;&#x9762;</li>
-<li><code>--loose</code> &#x4F7F;&#x7528; babel es2015 &#x7684;&#x5BBD;&#x677E;&#x6A21;&#x5F0F;&#x6765;&#x505A;&#x4EE3;&#x7801;&#x8F6C;&#x6362;</li>
-<li><code>--historyApiFallback</code> &#x8DEF;&#x7531;&#x6620;&#x5C04;&#x914D;&#x7F6E;&#xFF08;&#x8BE6;&#x89C1;<a href="lu_you_ying_she.html">&#x8DEF;&#x7531;&#x6620;&#x5C04;&#x7BC7;</a>&#xFF09;</li>
-<li><code>--mockapi</code> &#x6A21;&#x62DF;&#x6570;&#x636E;&#x811A;&#x672C;&#x6620;&#x5C04;&#x914D;&#x7F6E;&#xFF08;&#x8BE6;&#x89C1;<a href="mo_ni_shu_ju.html">&#x6A21;&#x62DF;&#x6570;&#x636E;&#x7BC7;</a>&#xFF09;</li>
-<li><code>--includes</code> &#x9700;&#x8981;&#x8FC7; loader &#x7684;&#x8D44;&#x6E90;&#x76EE;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#x540C; src</li>
-<li><code>--polyfill</code> &#x5F15;&#x5165; babel &#x7684; polyfill&#xFF0C;&#x53EF;&#x76F4;&#x63A5;&#x4F7F;&#x7528; Object.assign &#x7B49;&#x7C7B;&#x65B9;&#x6CD5;&#x548C; Map&#x3001;Set&#x3001;Promise &#x7B49;&#x7C7B;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
-<li><code>--alias</code> &#x8DEF;&#x5F84;&#x522B;&#x540D;&#x914D;&#x7F6E;&#xFF0C;&#x6B64;&#x5904;&#x914D;&#x7F6E;&#x4E3A;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;&#x6E90;&#x4EE3;&#x7801;&#x76EE;&#x5F55; <code>src</code>&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>{ &quot;i18n&quot;: &quot;i18n&quot; }</code></li>
-<li><code>--injects</code> &#x5411;&#x9875;&#x9762;&#x4E2D;&#x63D2;&#x5165;&#x7684;&#x811A;&#x672C;&#x5730;&#x5740;&#x7684;&#x6570;&#x7EC4;</li>
-</ul>
+                                <h1 id="&#x672C;&#x5730;&#x5F00;&#x53D1;">&#x672C;&#x5730;&#x5F00;&#x53D1;</h1><hr><h2 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h2><p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>nowa server</code> &#x547D;&#x4EE4;&#x6765;&#x5F00;&#x542F;&#x4E00;&#x4E2A;&#x672C;&#x5730;&#x5F00;&#x53D1;&#x8C03;&#x8BD5;&#x670D;&#x52A1;&#x5668;&#x3002;</p><blockquote><p>&#x5982;&#x679C;&#x63D0;&#x793A;&#x627E;&#x4E0D;&#x5230; server &#x547D;&#x4EE4;&#xFF0C;&#x8BF7;&#x901A;&#x8FC7; <code>nowa install server</code> &#x6765;&#x5B89;&#x88C5;</p></blockquote><pre><code class="lang-shell">nowa server</code></pre>
+<p>&#x8BE5;&#x547D;&#x4EE4;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x5728;&#x901A;&#x8FC7; <code>nowa init</code> &#x521B;&#x5EFA;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x8BF7;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x6267;&#x884C;&#x3002;</p><p>&#x4E5F;&#x53EF;&#x901A;&#x8FC7;&#x5FEB;&#x6377;&#x547D;&#x4EE4; <code>npm start</code> &#x6765;&#x5B8C;&#x6210;&#x540C;&#x6837;&#x7684;&#x5DE5;&#x4F5C;&#x3002;</p><p><img src="screenshot-server-use.png"></p><p><code>nowa server</code> &#x5C06;&#x628A;&#x4EE5;&#x4E0B;&#x76EE;&#x5F55;&#x4F5C;&#x4E3A;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x76D1;&#x542C;&#x76EE;&#x5F55;&#xFF1A;</p><ul><li><code>./html</code>
+</li>
+<li><code>./src/lib</code>&#xFF08;&#x8BE5;&#x76EE;&#x5F55;&#x8DDF;&#x968F; <code>--src</code> &#x914D;&#x7F6E;&#x800C;&#x6539;&#x53D8;&#xFF09;
+</li>
+<li><code>./dist</code>&#xFF08;&#x8BE5;&#x76EE;&#x5F55;&#x8DDF;&#x968F; <code>--dist</code> &#x914D;&#x7F6E;&#x800C;&#x6539;&#x53D8;&#xFF09;
+</li>
+<li><code>.</code>
+</li></ul>
+<p>webpack &#x7684;&#x6784;&#x5EFA;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x5C06;&#x4E0D;&#x4F1A;&#x5199;&#x5230;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x800C;&#x662F;&#x7F13;&#x5B58;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x5728;&#x8BBF;&#x95EE;&#x65F6;&#x76F4;&#x63A5;&#x8F93;&#x51FA;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x53EF;&#x663E;&#x8457;&#x63D0;&#x9AD8;&#x6784;&#x5EFA;&#x6548;&#x7387;&#x3002;</p><h2 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h2><p><code>nowa server</code> &#x63A5;&#x53D7;&#x4EE5;&#x4E0B;&#x5019;&#x9009;&#x53C2;&#x6570;&#xFF1A;</p><ul><li><code>-s, --src &lt;dir&gt;</code> &#x6E90;&#x4EE3;&#x7801;&#x76EE;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411; <code>src</code>
+</li>
+<li><code>-d, --dist &lt;dir&gt;</code> &#x8F93;&#x51FA;&#x4EE3;&#x7801;&#x76EE;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411; <code>dist</code>
+</li>
+<li><code>-p, --port &lt;port&gt;</code> &#x670D;&#x52A1;&#x5668;&#x76D1;&#x542C;&#x7AEF;&#x53E3;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411; <code>3000</code>
+</li>
+<li><code>-e  --entry &lt;file&gt;</code> &#x5E94;&#x7528;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411; <code>app/app.js</code>
+</li>
+<li><code>--pages [pages]</code> &#x5F00;&#x542F;&#x591A;&#x9875;&#x9762;&#x5165;&#x53E3;&#x89C4;&#x5219;&#xFF0C;&#x53EF;&#x4F20;&#x5165;&#x9700;&#x8981;&#x6784;&#x5EFA;&#x7684;&#x9875;&#x9762;&#xFF0C;&#x4F8B;&#x5982; <code>home,demo</code>
+</li>
+<li><code>--vars</code> &#x8FD0;&#x884C;&#x65F6;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF08;&#x8BE6;&#x89C1;<a href="huan_jing_bian_liang.html">&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7BC7;</a>&#xFF09;
+</li>
+<li><code>--buildvars</code> &#x6784;&#x5EFA;&#x65F6;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF08;&#x8BE6;&#x89C1;<a href="huan_jing_bian_liang.html">&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7BC7;</a>&#xFF09;
+</li>
+<li><code>-r, --proxy</code> &#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8D44;&#x6E90;&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;
+</li>
+<li><code>-k, --keepcss</code> &#x5B9E;&#x65F6;&#x8F93;&#x51FA; css &#x6587;&#x4EF6;&#x5230; dist &#x76EE;&#x5F55;
+</li>
+<li><code>-l, --lazyload</code> &#x7981;&#x7528;&#x53D8;&#x66F4;&#x7684;&#x5B9E;&#x65F6;&#x63A8;&#x9001;
+</li>
+<li><code>-h, --https</code> &#x5F00;&#x542F; https &#x670D;&#x52A1;&#x5668;
+</li>
+<li><code>--externals</code> webpack &#x5916;&#x90E8;&#x53D8;&#x91CF;&#x5B9A;&#x4E49;
+</li>
+<li><code>-o, --open</code> &#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE;&#x9875;&#x9762;
+</li>
+<li><code>--loose</code> &#x4F7F;&#x7528; babel es2015 &#x7684;&#x5BBD;&#x677E;&#x6A21;&#x5F0F;&#x6765;&#x505A;&#x4EE3;&#x7801;&#x8F6C;&#x6362;
+</li>
+<li><code>--historyApiFallback</code> &#x8DEF;&#x7531;&#x6620;&#x5C04;&#x914D;&#x7F6E;&#xFF08;&#x8BE6;&#x89C1;<a href="lu_you_ying_she.html">&#x8DEF;&#x7531;&#x6620;&#x5C04;&#x7BC7;</a>&#xFF09;
+</li>
+<li><code>--mockapi</code> &#x6A21;&#x62DF;&#x6570;&#x636E;&#x811A;&#x672C;&#x6620;&#x5C04;&#x914D;&#x7F6E;&#xFF08;&#x8BE6;&#x89C1;<a href="mo_ni_shu_ju.html">&#x6A21;&#x62DF;&#x6570;&#x636E;&#x7BC7;</a>&#xFF09;
+</li>
+<li><code>--includes</code> &#x9700;&#x8981;&#x8FC7; loader &#x7684;&#x8D44;&#x6E90;&#x76EE;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#x540C; src
+</li>
+<li><code>--polyfill</code> &#x5F15;&#x5165; babel &#x7684; polyfill&#xFF0C;&#x53EF;&#x76F4;&#x63A5;&#x4F7F;&#x7528; Object.assign &#x7B49;&#x7C7B;&#x65B9;&#x6CD5;&#x548C; Map&#x3001;Set&#x3001;Promise &#x7B49;&#x7C7B;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code>
+</li>
+<li><code>--alias</code> &#x8DEF;&#x5F84;&#x522B;&#x540D;&#x914D;&#x7F6E;&#xFF0C;&#x6B64;&#x5904;&#x914D;&#x7F6E;&#x4E3A;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;&#x6E90;&#x4EE3;&#x7801;&#x76EE;&#x5F55; <code>src</code>&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>{ &quot;i18n&quot;: &quot;i18n&quot; }</code>
+</li>
+<li><code>--injects</code> &#x5411;&#x9875;&#x9762;&#x4E2D;&#x63D2;&#x5165;&#x7684;&#x811A;&#x672C;&#x5730;&#x5740;&#x7684;&#x6570;&#x7EC4;
+</li></ul>
 
                                 
                                 </section>
@@ -628,7 +646,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"本地开发","level":"1.3.2.1","depth":3,"next":{"title":"远程调试","level":"1.3.2.2","depth":3,"path":"yuan_cheng_tiao_shi.md","ref":"yuan_cheng_tiao_shi.md","articles":[]},"previous":{"title":"开发","level":"1.3.2","depth":2,"ref":"","articles":[{"title":"本地开发","level":"1.3.2.1","depth":3,"path":"ben_di_kai_fa.md","ref":"ben_di_kai_fa.md","articles":[]},{"title":"远程调试","level":"1.3.2.2","depth":3,"path":"yuan_cheng_tiao_shi.md","ref":"yuan_cheng_tiao_shi.md","articles":[]},{"title":"https 配置","level":"1.3.2.3","depth":3,"path":"https_pei_zhi.md","ref":"https_pei_zhi.md","articles":[]},{"title":"国际化","level":"1.3.2.4","depth":3,"path":"guo_ji_hua.md","ref":"guo_ji_hua.md","articles":[]},{"title":"模块热替换","level":"1.3.2.5","depth":3,"path":"mo_kuai_re_ti_huan.md","ref":"mo_kuai_re_ti_huan.md","articles":[]},{"title":"覆盖默认的 webpack 配置","level":"1.3.2.6","depth":3,"path":"fu_gai_mo_ren_de_webpack_pei_zhi.md","ref":"fu_gai_mo_ren_de_webpack_pei_zhi.md","articles":[]},{"title":"环境变量","level":"1.3.2.7","depth":3,"path":"huan_jing_bian_liang.md","ref":"huan_jing_bian_liang.md","articles":[]},{"title":"图片和 svg 的使用","level":"1.3.2.8","depth":3,"path":"tu_pian_he_svg_de_shi_yong.md","ref":"tu_pian_he_svg_de_shi_yong.md","articles":[]},{"title":"路由映射配置","level":"1.3.2.9","depth":3,"path":"lu_you_ying_she.md","ref":"lu_you_ying_she.md","articles":[]},{"title":"模拟数据配置","level":"1.3.2.10","depth":3,"path":"mo_ni_shu_ju.md","ref":"mo_ni_shu_ju.md","articles":[]},{"title":"云构建","level":"1.3.2.11","depth":3,"path":"yun_gou_jian.md","ref":"yun_gou_jian.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ben_di_kai_fa.md","mtime":"2017-08-22T05:59:54.784Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2018-03-30T13:36:34.388Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"本地开发","level":"1.3.2.1","depth":3,"next":{"title":"远程调试","level":"1.3.2.2","depth":3,"path":"yuan_cheng_tiao_shi.md","ref":"yuan_cheng_tiao_shi.md","articles":[]},"previous":{"title":"开发","level":"1.3.2","depth":2,"ref":"","articles":[{"title":"本地开发","level":"1.3.2.1","depth":3,"path":"ben_di_kai_fa.md","ref":"ben_di_kai_fa.md","articles":[]},{"title":"远程调试","level":"1.3.2.2","depth":3,"path":"yuan_cheng_tiao_shi.md","ref":"yuan_cheng_tiao_shi.md","articles":[]},{"title":"https 配置","level":"1.3.2.3","depth":3,"path":"https_pei_zhi.md","ref":"https_pei_zhi.md","articles":[]},{"title":"国际化","level":"1.3.2.4","depth":3,"path":"guo_ji_hua.md","ref":"guo_ji_hua.md","articles":[]},{"title":"模块热替换","level":"1.3.2.5","depth":3,"path":"mo_kuai_re_ti_huan.md","ref":"mo_kuai_re_ti_huan.md","articles":[]},{"title":"覆盖默认的 webpack 配置","level":"1.3.2.6","depth":3,"path":"fu_gai_mo_ren_de_webpack_pei_zhi.md","ref":"fu_gai_mo_ren_de_webpack_pei_zhi.md","articles":[]},{"title":"环境变量","level":"1.3.2.7","depth":3,"path":"huan_jing_bian_liang.md","ref":"huan_jing_bian_liang.md","articles":[]},{"title":"图片和 svg 的使用","level":"1.3.2.8","depth":3,"path":"tu_pian_he_svg_de_shi_yong.md","ref":"tu_pian_he_svg_de_shi_yong.md","articles":[]},{"title":"路由映射配置","level":"1.3.2.9","depth":3,"path":"lu_you_ying_she.md","ref":"lu_you_ying_she.md","articles":[]},{"title":"模拟数据配置","level":"1.3.2.10","depth":3,"path":"mo_ni_shu_ju.md","ref":"mo_ni_shu_ju.md","articles":[]},{"title":"云构建","level":"1.3.2.11","depth":3,"path":"yun_gou_jian.md","ref":"yun_gou_jian.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ben_di_kai_fa.md","mtime":"2019-03-13T02:37:27.312Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-03-13T03:19:56.157Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -636,6 +654,10 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -658,7 +680,7 @@
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

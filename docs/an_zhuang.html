@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.0.2">
+        <meta name="generator" content="GitBook 3.2.0">
         
         
         
@@ -489,7 +489,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="chang_jian_wen_ti.html">
+        <li class="chapter " data-level="1.5" data-path="upgrade-to-nowa2.html">
+            
+                <a href="upgrade-to-nowa2.html">
+            
+                    
+                    升级到 Nowa2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chang_jian_wen_ti.html">
             
                 <a href="chang_jian_wen_ti.html">
             
@@ -547,47 +560,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h1>
-<hr>
-<h2 id="&#x51C6;&#x5907;">&#x51C6;&#x5907;</h2>
-<p>&#x5728;&#x5B89;&#x88C5; nowa &#x4E4B;&#x524D;&#x8BF7;&#x5148;&#x786E;&#x4FDD;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x6709; <a href="https://nodejs.org/" _target="blank">nodejs</a> &#x548C; <a href="https://www.npmjs.com/" _target="blank">npm</a>&#x3002;</p>
-<p>&#x5FC5;&#x987B;&#x4F7F;&#x7528; <strong>nodejs&gt;=4.0</strong> &#x7248;&#x672C;&#xFF0C;&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528; <strong>npm&gt;=3.0</strong> &#x7248;&#x672C;&#x3002;  </p>
-<blockquote>
-<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>node -v</code> &#x548C; <code>npm -v</code> &#x6765;&#x67E5;&#x770B; nodejs &#x548C; npm &#x7684;&#x7248;&#x672C;&#x3002;<br>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <a href="http://web.npm.alibaba-inc.com/package/n" _target="blank">n</a> &#x6765;&#x5207;&#x6362; nodejs &#x7248;&#x672C;&#x3002;</p>
-</blockquote>
-<h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
-<p>&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x6765;&#x5B89;&#x88C5; nowa &#x548C;&#x5E38;&#x7528;&#x63D2;&#x4EF6;&#xFF1A;</p>
-<pre><code class="lang-shell">npm i nowa -g &amp;&amp; nowa install
-</code></pre>
-<blockquote>
-<p><code>nowa install</code> &#x4F1A;&#x5B89;&#x88C5;&#x4E00;&#x6279;&#x5E38;&#x7528;&#x7684;&#x63D2;&#x4EF6;&#x3002;</p>
-</blockquote>
-<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528; registry &#x53C2;&#x6570;&#x6765;&#x6307;&#x5B9A;&#x5B89;&#x88C5;&#x7684;&#x6E90;&#xFF08;nowa-install v1.2.0 &#x4E4B;&#x524D;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528; registry.npmjs.org &#x6E90;&#xFF0C;v1.2.0 &#x4E4B;&#x540E;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528; registry.npm.taobao.org &#x6E90;&#xFF09;</p>
-<pre><code>nowa install --registry=https://registry.npm.taobao.org
-</code></pre><blockquote>
-<p>&#x5982;&#x679C;&#x62A5;&#x9519;&#x65E0;&#x6743;&#x9650;&#xFF0C;&#x8BF7;&#x5C1D;&#x8BD5;&#x52A0; sudo <code>sudo npm i nowa -g &amp;&amp; nowa install</code>&#x3002;<br>&#x5982;&#x679C;&#x62A5;&#x9519; <code>common.gypi not found</code>&#xFF0C;&#x8BF7;&#x5C1D;&#x8BD5; <code>rm -rf ~/.node_gyp</code> &#x540E;&#x91CD;&#x65B0;&#x5B89;&#x88C5;&#x3002;</p>
-</blockquote>
-<h2 id="&#x5378;&#x8F7D;">&#x5378;&#x8F7D;</h2>
-<p>&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x6765;&#x5378;&#x8F7D; nowa &#x548C;&#x5168;&#x90E8; nowa &#x63D2;&#x4EF6;&#xFF1A;</p>
-<pre><code class="lang-shell">npm uninstall nowa -g
-</code></pre>
-<h3 id="&#x5173;&#x4E8E;&#x6743;&#x9650;">&#x5173;&#x4E8E;&#x6743;&#x9650;</h3>
-<p>&#x5173;&#x4E8E;&#x6743;&#x9650;&#x7684;&#x95EE;&#x9898;&#x8FD9;&#x91CC;&#x7279;&#x522B;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF1A;</p>
-<ul>
-<li><p>Windows</p>
-<p>&#x8BF7; <strong>&#x4E0D;&#x8981;</strong> &#x52A0; sudo&#xFF0C;&#x5982;&#x679C;&#x63D0;&#x793A;&#x6CA1;&#x6743;&#x9650;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;&#x7BA1;&#x7406;&#x5458;&#x6743;&#x9650;&#x6253;&#x5F00;&#x547D;&#x4EE4;&#x884C;&#xFF0C;&#x518D;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x3002;</p>
+                                <h1 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h1><hr><h2 id="&#x51C6;&#x5907;">&#x51C6;&#x5907;</h2><p>&#x5728;&#x5B89;&#x88C5; nowa &#x4E4B;&#x524D;&#x8BF7;&#x5148;&#x786E;&#x4FDD;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x6709; <a href="https://nodejs.org/" target="_blank">nodejs</a> &#x548C; <a href="https://www.npmjs.com/" target="_blank">npm</a>&#x3002;</p><p>&#x5FC5;&#x987B;&#x4F7F;&#x7528; <strong>nodejs&gt;=4.0</strong> &#x7248;&#x672C;&#xFF0C;&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528; <strong>npm&gt;=3.0</strong> &#x7248;&#x672C;&#x3002;</p><blockquote><p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>node -v</code> &#x548C; <code>npm -v</code> &#x6765;&#x67E5;&#x770B; nodejs &#x548C; npm &#x7684;&#x7248;&#x672C;&#x3002;</p><p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <a href="http://web.npm.alibaba-inc.com/package/n" target="_blank">n</a> &#x6765;&#x5207;&#x6362; nodejs &#x7248;&#x672C;&#x3002;</p></blockquote><h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2><p>&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x6765;&#x5B89;&#x88C5; nowa &#x548C;&#x5E38;&#x7528;&#x63D2;&#x4EF6;&#xFF1A;</p><pre><code class="lang-shell">npm i nowa -g &amp;&amp; nowa install</code></pre>
+<blockquote><p><code>nowa install</code> &#x4F1A;&#x5B89;&#x88C5;&#x4E00;&#x6279;&#x5E38;&#x7528;&#x7684;&#x63D2;&#x4EF6;&#x3002;</p></blockquote><p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528; registry &#x53C2;&#x6570;&#x6765;&#x6307;&#x5B9A;&#x5B89;&#x88C5;&#x7684;&#x6E90;&#xFF08;nowa-install v1.2.0 &#x4E4B;&#x524D;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528; registry.npmjs.org &#x6E90;&#xFF0C;v1.2.0 &#x4E4B;&#x540E;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528; registry.npm.taobao.org &#x6E90;&#xFF09;</p><pre><code>nowa install --registry=https://registry.npm.taobao.org</code></pre>
+<blockquote><p>&#x5982;&#x679C;&#x62A5;&#x9519;&#x65E0;&#x6743;&#x9650;&#xFF0C;&#x8BF7;&#x5C1D;&#x8BD5;&#x52A0; sudo <code>sudo npm i nowa -g &amp;&amp; nowa install</code>&#x3002;</p><p>&#x5982;&#x679C;&#x62A5;&#x9519; <code>common.gypi not found</code>&#xFF0C;&#x8BF7;&#x5C1D;&#x8BD5; <code>rm -rf ~/.node_gyp</code> &#x540E;&#x91CD;&#x65B0;&#x5B89;&#x88C5;&#x3002;</p></blockquote><h2 id="&#x5378;&#x8F7D;">&#x5378;&#x8F7D;</h2><p>&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x6765;&#x5378;&#x8F7D; nowa &#x548C;&#x5168;&#x90E8; nowa &#x63D2;&#x4EF6;&#xFF1A;</p><pre><code class="lang-shell">npm uninstall nowa -g</code></pre>
+<h3 id="&#x5173;&#x4E8E;&#x6743;&#x9650;">&#x5173;&#x4E8E;&#x6743;&#x9650;</h3><p>&#x5173;&#x4E8E;&#x6743;&#x9650;&#x7684;&#x95EE;&#x9898;&#x8FD9;&#x91CC;&#x7279;&#x522B;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF1A;</p><ul><li><p>Windows</p><p>&#x8BF7; <strong>&#x4E0D;&#x8981;</strong> &#x52A0; sudo&#xFF0C;&#x5982;&#x679C;&#x63D0;&#x793A;&#x6CA1;&#x6743;&#x9650;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;&#x7BA1;&#x7406;&#x5458;&#x6743;&#x9650;&#x6253;&#x5F00;&#x547D;&#x4EE4;&#x884C;&#xFF0C;&#x518D;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x3002;</p></li>
+<li><p>Linux &#x548C; Mac OSX</p><ul><li><code>npm i nowa -g</code> &#x4F1A;&#x5411; <code>npm bin -g</code> &#x548C; <code>npm root -g</code> &#x8FD9;&#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x5199;&#x5165;&#x6587;&#x4EF6;&#xFF0C;&#x6240;&#x4EE5;&#x8BF7;&#x786E;&#x4FDD;&#x6267;&#x884C;&#x5B89;&#x88C5;&#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x4F60;&#x5BF9;&#x8FD9;&#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#x62E5;&#x6709;&#x5199;&#x6743;&#x9650;&#x3002;  
 </li>
-<li><p>Linux &#x548C; Mac OSX</p>
-<ul>
-<li><code>npm i nowa -g</code> &#x4F1A;&#x5411; <code>npm bin -g</code> &#x548C; <code>npm root -g</code> &#x8FD9;&#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x5199;&#x5165;&#x6587;&#x4EF6;&#xFF0C;&#x6240;&#x4EE5;&#x8BF7;&#x786E;&#x4FDD;&#x6267;&#x884C;&#x5B89;&#x88C5;&#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x4F60;&#x5BF9;&#x8FD9;&#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#x62E5;&#x6709;&#x5199;&#x6743;&#x9650;&#x3002;  </li>
-<li><code>nowa install</code> &#x4F1A;&#x5411; <code>$HOME</code> &#x548C; <code>npm root -g</code> &#x8FD9;&#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x5199;&#x5165;&#x6587;&#x4EF6;&#xFF0C;&#x6240;&#x4EE5;&#x8BF7;&#x786E;&#x4FDD;&#x6267;&#x884C;&#x5B89;&#x88C5;&#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x4F60;&#x5BF9;&#x8FD9;&#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#x62E5;&#x6709;&#x5199;&#x6743;&#x9650;&#x3002;  </li>
-<li>&#x83B7;&#x5F97;&#x5199;&#x6743;&#x9650;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;<pre><code class="lang-shell">sudo chmod 777 `npm root -g`
-</code></pre>
+<li><code>nowa install</code> &#x4F1A;&#x5411; <code>$HOME</code> &#x548C; <code>npm root -g</code> &#x8FD9;&#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x5199;&#x5165;&#x6587;&#x4EF6;&#xFF0C;&#x6240;&#x4EE5;&#x8BF7;&#x786E;&#x4FDD;&#x6267;&#x884C;&#x5B89;&#x88C5;&#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x4F60;&#x5BF9;&#x8FD9;&#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#x62E5;&#x6709;&#x5199;&#x6743;&#x9650;&#x3002;  
 </li>
-<li>&#x6240;&#x6709; nowa &#x5F00;&#x5934;&#x7684;&#x547D;&#x4EE4;&#x8BF7;&#x4E0D;&#x8981;&#x52A0; sudo&#xFF0C;&#x5426;&#x5219;&#x53EF;&#x80FD;&#x4F1A;&#x7ED9;&#x4F60;&#x9020;&#x6210;&#x4E00;&#x4E9B;&#x9EBB;&#x70E6;</li>
-</ul>
-</li>
-</ul>
+<li><p>&#x83B7;&#x5F97;&#x5199;&#x6743;&#x9650;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p><pre><code class="lang-shell">sudo chmod 777 `npm root -g`</code></pre>
+<ul><li>&#x6240;&#x6709; nowa &#x5F00;&#x5934;&#x7684;&#x547D;&#x4EE4;&#x8BF7;&#x4E0D;&#x8981;&#x52A0; sudo&#xFF0C;&#x5426;&#x5219;&#x53EF;&#x80FD;&#x4F1A;&#x7ED9;&#x4F60;&#x9020;&#x6210;&#x4E00;&#x4E9B;&#x9EBB;&#x70E6;
+</li></ul>
+</li></ul>
+</li></ul>
 
                                 
                                 </section>
@@ -631,7 +616,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"安装","level":"1.2.2","depth":2,"next":{"title":"预览","level":"1.2.3","depth":2,"path":"yu_lan.md","ref":"yu_lan.md","articles":[]},"previous":{"title":"简介","level":"1.2.1","depth":2,"path":"jian_jie.md","ref":"jian_jie.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"an_zhuang.md","mtime":"2017-05-03T05:52:41.590Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2018-03-30T13:36:34.388Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"安装","level":"1.2.2","depth":2,"next":{"title":"预览","level":"1.2.3","depth":2,"path":"yu_lan.md","ref":"yu_lan.md","articles":[]},"previous":{"title":"简介","level":"1.2.1","depth":2,"path":"jian_jie.md","ref":"jian_jie.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"an_zhuang.md","mtime":"2019-03-13T02:37:27.312Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-03-13T03:19:56.157Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -639,6 +624,10 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -661,7 +650,7 @@
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

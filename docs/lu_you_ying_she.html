@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.0.2">
+        <meta name="generator" content="GitBook 3.2.0">
         
         
         
@@ -489,7 +489,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="chang_jian_wen_ti.html">
+        <li class="chapter " data-level="1.5" data-path="upgrade-to-nowa2.html">
+            
+                <a href="upgrade-to-nowa2.html">
+            
+                    
+                    升级到 Nowa2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chang_jian_wen_ti.html">
             
                 <a href="chang_jian_wen_ti.html">
             
@@ -547,37 +560,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x8DEF;&#x7531;&#x6620;&#x5C04;">&#x8DEF;&#x7531;&#x6620;&#x5C04;</h1>
-<hr>
-<h2 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h2>
-<p><code>nowa server</code> &#x63D0;&#x4F9B;&#x7B80;&#x5355;&#x7684;&#x8DEF;&#x7531;&#x6620;&#x5C04;&#x529F;&#x80FD;&#xFF0C;&#x4E3B;&#x8981;&#x4F9B; historyApiFallback &#x4F7F;&#x7528;&#xFF0C;&#x6EE1;&#x8DB3;&#x591A;&#x4E2A;&#x9875;&#x9762;&#x6307;&#x5411;&#x540C;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x7684;&#x9700;&#x6C42;&#x3002;</p>
-<h2 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h2>
-<p>&#x4F8B;&#x5982;&#xFF0C;&#x9700;&#x8981;&#x5C06;&#x6240;&#x6709;&#x7684; <code>/user/*</code> &#x6307;&#x5411; <code>/user.html</code>&#xFF0C;&#x5219;&#x53EF;&#x7528;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#xFF1A;</p>
-<p><code>abc.json</code></p>
-<pre><code class="lang-json">{
+                                <h1 id="&#x8DEF;&#x7531;&#x6620;&#x5C04;">&#x8DEF;&#x7531;&#x6620;&#x5C04;</h1><hr><h2 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h2><p><code>nowa server</code> &#x63D0;&#x4F9B;&#x7B80;&#x5355;&#x7684;&#x8DEF;&#x7531;&#x6620;&#x5C04;&#x529F;&#x80FD;&#xFF0C;&#x4E3B;&#x8981;&#x4F9B; historyApiFallback &#x4F7F;&#x7528;&#xFF0C;&#x6EE1;&#x8DB3;&#x591A;&#x4E2A;&#x9875;&#x9762;&#x6307;&#x5411;&#x540C;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x7684;&#x9700;&#x6C42;&#x3002;</p><h2 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h2><p>&#x4F8B;&#x5982;&#xFF0C;&#x9700;&#x8981;&#x5C06;&#x6240;&#x6709;&#x7684; <code>/user/*</code> &#x6307;&#x5411; <code>/user.html</code>&#xFF0C;&#x5219;&#x53EF;&#x7528;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#xFF1A;</p><p><code>abc.json</code></p><pre><code class="lang-json">{
   <span class="hljs-string">&quot;options&quot;</span>: {
     <span class="hljs-string">&quot;historyApiFallback&quot;</span>: {
       <span class="hljs-string">&quot;/user/*&quot;</span>: <span class="hljs-string">&quot;/user.html&quot;</span>
     }
   }
-}
-</code></pre>
-<p>&#x8DEF;&#x7531;&#x6620;&#x5C04;&#x652F;&#x6301;&#x53D8;&#x91CF;&#x66FF;&#x6362;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x9700;&#x8981;&#x5C06;&#x6240;&#x6709;&#x7684; <code>/category/:cat</code> &#x6307;&#x5411;&#x5BF9;&#x5E94;&#x7684; category &#x9875;&#x9762;&#xFF0C;&#x5219;&#x53EF;&#x7528;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#xFF1A;</p>
-<p><code>abc.json</code></p>
-<pre><code class="lang-json">{
+}</code></pre>
+<p>&#x8DEF;&#x7531;&#x6620;&#x5C04;&#x652F;&#x6301;&#x53D8;&#x91CF;&#x66FF;&#x6362;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x9700;&#x8981;&#x5C06;&#x6240;&#x6709;&#x7684; <code>/category/:cat</code> &#x6307;&#x5411;&#x5BF9;&#x5E94;&#x7684; category &#x9875;&#x9762;&#xFF0C;&#x5219;&#x53EF;&#x7528;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#xFF1A;</p><p><code>abc.json</code></p><pre><code class="lang-json">{
   <span class="hljs-string">&quot;options&quot;</span>: {
     <span class="hljs-string">&quot;historyApiFallback&quot;</span>: {
       <span class="hljs-string">&quot;/category/:cat&quot;</span>: <span class="hljs-string">&quot;/{{cat}}.html&quot;</span>
     }
   }
-}
-</code></pre>
-<blockquote>
-<p>&#x53EF;&#x7528;&#x7684;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x8BE6;&#x89C1; <a href="http://expressjs.com/" _target="blank">express &#x6587;&#x6863;</a>&#x3002;</p>
-</blockquote>
-<h2 id="&#x6CE8;&#x610F;">&#x6CE8;&#x610F;</h2>
-<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;<code>historyApiFallback</code> &#x4F18;&#x5148;&#x7EA7;&#x9AD8;&#x4E8E;&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF0C;&#x5982;&#x679C;&#x8BBF;&#x95EE;&#x7684;&#x8DEF;&#x5F84;&#x5339;&#x914D;&#x4E86;&#x67D0;&#x4E2A;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#xFF0C;&#x5219;&#x5C06;&#x8BBF;&#x95EE;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x6307;&#x5411;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x975E;&#x539F;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x3002;</p>
-
+}</code></pre>
+<blockquote><p>&#x53EF;&#x7528;&#x7684;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x8BE6;&#x89C1; <a href="http://expressjs.com/" target="_blank">express &#x6587;&#x6863;</a>&#x3002;</p></blockquote><h2 id="&#x6CE8;&#x610F;">&#x6CE8;&#x610F;</h2><p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;<code>historyApiFallback</code> &#x4F18;&#x5148;&#x7EA7;&#x9AD8;&#x4E8E;&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF0C;&#x5982;&#x679C;&#x8BBF;&#x95EE;&#x7684;&#x8DEF;&#x5F84;&#x5339;&#x914D;&#x4E86;&#x67D0;&#x4E2A;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#xFF0C;&#x5219;&#x5C06;&#x8BBF;&#x95EE;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x6307;&#x5411;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x975E;&#x539F;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x3002;</p>
                                 
                                 </section>
                             
@@ -620,7 +617,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"路由映射配置","level":"1.3.2.9","depth":3,"next":{"title":"模拟数据配置","level":"1.3.2.10","depth":3,"path":"mo_ni_shu_ju.md","ref":"mo_ni_shu_ju.md","articles":[]},"previous":{"title":"图片和 svg 的使用","level":"1.3.2.8","depth":3,"path":"tu_pian_he_svg_de_shi_yong.md","ref":"tu_pian_he_svg_de_shi_yong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lu_you_ying_she.md","mtime":"2016-08-22T10:09:13.757Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2018-03-30T13:36:34.388Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"路由映射配置","level":"1.3.2.9","depth":3,"next":{"title":"模拟数据配置","level":"1.3.2.10","depth":3,"path":"mo_ni_shu_ju.md","ref":"mo_ni_shu_ju.md","articles":[]},"previous":{"title":"图片和 svg 的使用","level":"1.3.2.8","depth":3,"path":"tu_pian_he_svg_de_shi_yong.md","ref":"tu_pian_he_svg_de_shi_yong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lu_you_ying_she.md","mtime":"2019-03-13T02:37:27.314Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-03-13T03:19:56.157Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -628,6 +625,10 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -650,7 +651,7 @@
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

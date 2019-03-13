@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.0.2">
+        <meta name="generator" content="GitBook 3.2.0">
         
         
         
@@ -489,7 +489,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="chang_jian_wen_ti.html">
+        <li class="chapter " data-level="1.5" data-path="upgrade-to-nowa2.html">
+            
+                <a href="upgrade-to-nowa2.html">
+            
+                    
+                    升级到 Nowa2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chang_jian_wen_ti.html">
             
                 <a href="chang_jian_wen_ti.html">
             
@@ -547,29 +560,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;">&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;</h1>
-<hr>
-<h2 id="&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8F6C;&#x53D1;&#x914D;&#x7F6E;">&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8F6C;&#x53D1;&#x914D;&#x7F6E;</h2>
-<p><code>nowa server</code> &#x6807;&#x914D;&#x4E86;&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x8BE5;&#x529F;&#x80FD;&#x6240;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x662F;&#xFF1A;&#x5C06;&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#xFF08;&#x6307;&#x5B9A;&#x8DEF;&#x7531;&#x4E0B;&#xFF09;&#x627E;&#x4E0D;&#x5230;&#x7684;&#x8D44;&#x6E90;&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
-<h3 id="&#x5355;&#x89C4;&#x5219;&#x914D;&#x7F6E;">&#x5355;&#x89C4;&#x5219;&#x914D;&#x7F6E;</h3>
-<p><code>nowa server</code> &#x63D0;&#x4F9B; <code>proxy</code> &#x53C2;&#x6570;&#x7528;&#x4E8E;&#x914D;&#x7F6E;&#x8F6C;&#x53D1;&#x89C4;&#x5219;&#xFF0C;&#x4F8B;&#x5982;&#x6709;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#xFF1A;</p>
-<p><code>abc.json</code></p>
-<pre><code class="lang-json">{
+                                <h1 id="&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;">&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;</h1><hr><h2 id="&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8F6C;&#x53D1;&#x914D;&#x7F6E;">&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8F6C;&#x53D1;&#x914D;&#x7F6E;</h2><p><code>nowa server</code> &#x6807;&#x914D;&#x4E86;&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x8BE5;&#x529F;&#x80FD;&#x6240;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x662F;&#xFF1A;&#x5C06;&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#xFF08;&#x6307;&#x5B9A;&#x8DEF;&#x7531;&#x4E0B;&#xFF09;&#x627E;&#x4E0D;&#x5230;&#x7684;&#x8D44;&#x6E90;&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x670D;&#x52A1;&#x5668;&#x3002;</p><h3 id="&#x5355;&#x89C4;&#x5219;&#x914D;&#x7F6E;">&#x5355;&#x89C4;&#x5219;&#x914D;&#x7F6E;</h3><p><code>nowa server</code> &#x63D0;&#x4F9B; <code>proxy</code> &#x53C2;&#x6570;&#x7528;&#x4E8E;&#x914D;&#x7F6E;&#x8F6C;&#x53D1;&#x89C4;&#x5219;&#xFF0C;&#x4F8B;&#x5982;&#x6709;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#xFF1A;</p><p><code>abc.json</code></p><pre><code class="lang-json">{
   <span class="hljs-string">&quot;options&quot;</span>: {
     <span class="hljs-string">&quot;port&quot;</span>: <span class="hljs-number">3000</span>,
     <span class="hljs-string">&quot;proxy&quot;</span>: <span class="hljs-string">&quot;http://127.0.0.1:9077/admin&quot;</span>
   }
-}
-</code></pre>
-<p>&#x90A3;&#x4E48;&#x5BF9;&#x4E8E; <code>http://127.0.0.1:3000/index.htm</code> &#x7684;&#x8BBF;&#x95EE;&#xFF0C;</p>
-<ul>
-<li>&#x5982;&#x679C;&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x5B58;&#x5728;&#x9759;&#x6001;&#x8D44;&#x6E90; <code>/index.htm</code>&#xFF0C;&#x5219;&#x8FD4;&#x56DE; <code>/index.htm</code></li>
-<li>&#x5982;&#x679C;&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x5B58;&#x5728;&#x9759;&#x6001;&#x8D44;&#x6E90; <code>/index.htm</code>&#xFF0C;&#x5219;&#x8F6C;&#x53D1;&#x5230; <code>http://127.0.0.1:9077/admin/index.htm</code></li>
-</ul>
-<h3 id="&#x591A;&#x89C4;&#x5219;&#x914D;&#x7F6E;">&#x591A;&#x89C4;&#x5219;&#x914D;&#x7F6E;</h3>
-<p><code>proxy</code> &#x53C2;&#x6570;&#x4E5F;&#x53EF;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5F62;&#x5982;&#xFF1A;</p>
-<p><code>abc.json</code></p>
-<pre><code class="lang-json">{
+}</code></pre>
+<p>&#x90A3;&#x4E48;&#x5BF9;&#x4E8E; <code>http://127.0.0.1:3000/index.htm</code> &#x7684;&#x8BBF;&#x95EE;&#xFF0C;</p><ul><li>&#x5982;&#x679C;&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x5B58;&#x5728;&#x9759;&#x6001;&#x8D44;&#x6E90; <code>/index.htm</code>&#xFF0C;&#x5219;&#x8FD4;&#x56DE; <code>/index.htm</code>
+</li>
+<li>&#x5982;&#x679C;&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x5B58;&#x5728;&#x9759;&#x6001;&#x8D44;&#x6E90; <code>/index.htm</code>&#xFF0C;&#x5219;&#x8F6C;&#x53D1;&#x5230; <code>http://127.0.0.1:9077/admin/index.htm</code>
+</li></ul>
+<h3 id="&#x591A;&#x89C4;&#x5219;&#x914D;&#x7F6E;">&#x591A;&#x89C4;&#x5219;&#x914D;&#x7F6E;</h3><p><code>proxy</code> &#x53C2;&#x6570;&#x4E5F;&#x53EF;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5F62;&#x5982;&#xFF1A;</p><p><code>abc.json</code></p><pre><code class="lang-json">{
   <span class="hljs-string">&quot;options&quot;</span>: {
     <span class="hljs-string">&quot;port&quot;</span>: <span class="hljs-number">3000</span>,
     <span class="hljs-string">&quot;proxy&quot;</span>: {
@@ -577,78 +578,53 @@
       <span class="hljs-string">&quot;*&quot;</span>: <span class="hljs-string">&quot;http://127.0.0.1:9077&quot;</span>
     }
   }
-}
-</code></pre>
-<p>&#x90A3;&#x4E48;&#x5BF9;&#x4E8E; <code>http://127.0.0.1:3000/api/getSomeInfo.json</code> &#x7684;&#x8BBF;&#x95EE;&#xFF0C;</p>
-<ul>
-<li>&#x5982;&#x679C;&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x5B58;&#x5728;&#x9759;&#x6001;&#x8D44;&#x6E90; <code>/api/getSomeInfo.json</code>&#xFF0C;&#x5219;&#x8FD4;&#x56DE; <code>/api/getSomeInfo.json</code></li>
-<li>&#x5982;&#x679C;&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x5B58;&#x5728;&#x9759;&#x6001;&#x8D44;&#x6E90; <code>/api/getSomeInfo.json</code>&#xFF0C;&#x5219;&#x8F6C;&#x53D1;&#x5230; <code>http://10.125.55.239:9077/api/getSomeInfo.json</code></li>
-</ul>
-<p>&#x540C;&#x6837;&#x7684;&#xFF0C;&#x5BF9;&#x4E8E;&#x5176;&#x4ED6;&#x7684;&#x975E; <code>/api</code> &#x5F00;&#x5934;&#x7684;&#x8BF7;&#x6C42;&#xFF08;&#x5339;&#x914D; <code>&quot;*&quot;</code>&#xFF09;&#xFF0C;&#x5219;&#x8F6C;&#x53D1;&#x5230; <code>http://127.0.0.1:9077</code>&#x3002;</p>
-<h2 id="&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#x7684;&#x89C4;&#x5219;&#x914D;&#x7F6E;">&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#x7684;&#x89C4;&#x5219;&#x914D;&#x7F6E;</h2>
-<p><code>nowa proxy</code> &#x662F;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#x5F3A;&#x5927;&#x7684;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x57FA;&#x4E8E; <a href="http://anyproxy.io/" _target="blank">AnyProxy</a> &#x505A;&#x4E86;&#x5C01;&#x88C5;&#xFF0C;&#x63D0;&#x4F9B;&#x66F4;&#x4E3A;&#x7075;&#x6D3B;&#x7684;&#x89C4;&#x5219;&#x903B;&#x8F91;&#x914D;&#x7F6E;&#x3002;</p>
-<blockquote>
-<p>&#x5982;&#x679C;&#x63D0;&#x793A;&#x627E;&#x4E0D;&#x5230; proxy &#x547D;&#x4EE4;&#xFF0C;&#x8BF7;&#x901A;&#x8FC7; <code>nowa install proxy</code> &#x6765;&#x5B89;&#x88C5;</p>
-</blockquote>
-<pre><code class="lang-shell">nowa proxy
-</code></pre>
-<h3 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h3>
-<p><code>nowa proxy</code> &#x63A5;&#x53D7;&#x4EE5;&#x4E0B;&#x5019;&#x9009;&#x53C2;&#x6570;&#xFF1A;</p>
-<ul>
-<li><code>--mappings</code> &#x4EE3;&#x7406;&#x6620;&#x5C04;&#x914D;&#x7F6E;</li>
-<li><code>-r, --rule &lt;path&gt;</code> &#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x6587;&#x4EF6;&#x5C06;&#x4F1A;&#x8986;&#x76D6;&#x4EE3;&#x7406;&#x6620;&#x5C04;&#x914D;&#x7F6E;</li>
-<li><code>-t, --throttle &lt;throttle&gt;</code> &#x6A21;&#x62DF;&#x7F51;&#x7EDC;&#x9650;&#x901F;&#xFF08;kb/s&#xFF09;</li>
-<li><code>-s  --silent</code> &#x4E0D;&#x8F93;&#x51FA;&#x65E5;&#x5FD7;&#x5230;&#x7EC8;&#x7AEF;</li>
-</ul>
-<p><code>mappings</code> &#x4E2D;&#x6BCF;&#x6761;&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code>&quot;&lt;METHOD&gt; //&lt;HOSTNAME&gt;[:&lt;PORT&gt;]/[PATH]&quot;: &quot;//&lt;HOSTNAME1&gt;[:&lt;PORT1&gt;]/[PATH1]&quot;
-</code></pre><p>&#x5176;&#x4E2D;&#x5DE6;&#x8FB9;&#x4E3A;&#x7B5B;&#x9009;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x53F3;&#x8FB9;&#x4E3A;&#x76EE;&#x6807;&#x8868;&#x8FBE;&#x5F0F;</p>
-<ul>
-<li><code>METHOD</code> &#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#xFF0C;&#x4EC5;&#x53EF;&#x7528;&#x4E8E;&#x7B5B;&#x9009;&#xFF0C;&#x53EF;&#x9009;&#x503C; <code>GET | POST | *</code></li>
-<li><code>HOSTNAME</code> &#x8BF7;&#x6C42;&#x57DF;&#x540D;&#xFF0C;&#x7528;&#x4E8E;&#x7B5B;&#x9009;&#x548C;&#x76EE;&#x6807;&#xFF0C;&#x4E24;&#x8FB9;&#x5FC5;&#x987B;&#x90FD;&#x7ED9;&#x51FA;</li>
-<li><code>PORT</code> &#x8BF7;&#x6C42;&#x7AEF;&#x53E3;&#xFF0C;&#x7528;&#x4E8E;&#x7B5B;&#x9009;&#x548C;&#x76EE;&#x6807;&#xFF0C;&#x82E5;&#x5728;&#x76EE;&#x6807;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x672A;&#x7ED9;&#x51FA;&#x5219;&#x4ECD;&#x7EF4;&#x6301;&#x7B5B;&#x9009;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x7684;&#x503C;&#xFF0C;&#x82E5;&#x5728;&#x7B5B;&#x9009;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x672A;&#x7ED9;&#x51FA;&#x5219;&#x4E0D;&#x5BF9;&#x7AEF;&#x53E3;&#x505A;&#x9650;&#x5B9A;</li>
-<li><code>PATH</code> &#x8BF7;&#x6C42;&#x8DEF;&#x5F84;&#xFF0C;&#x7528;&#x4E8E;&#x7B5B;&#x9009;&#x548C;&#x76EE;&#x6807;&#xFF0C;&#x5176;&#x4E2D;&#x5C0F;&#x62EC;&#x53F7;&#x62EC;&#x8D77;&#x7684;&#x90E8;&#x5206;&#x6620;&#x5C04;&#x540E;&#x5C06;&#x62FC;&#x63A5;&#x5230; <code>PATH1</code> &#x4E4B;&#x540E;</li>
-</ul>
-<p>&#x4F8B;&#x5982;&#x6709;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#xFF1A;</p>
-<p><code>abc.json</code></p>
-<pre><code class="lang-json">{
+}</code></pre>
+<p>&#x90A3;&#x4E48;&#x5BF9;&#x4E8E; <code>http://127.0.0.1:3000/api/getSomeInfo.json</code> &#x7684;&#x8BBF;&#x95EE;&#xFF0C;</p><ul><li>&#x5982;&#x679C;&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x5B58;&#x5728;&#x9759;&#x6001;&#x8D44;&#x6E90; <code>/api/getSomeInfo.json</code>&#xFF0C;&#x5219;&#x8FD4;&#x56DE; <code>/api/getSomeInfo.json</code>
+</li>
+<li>&#x5982;&#x679C;&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x5B58;&#x5728;&#x9759;&#x6001;&#x8D44;&#x6E90; <code>/api/getSomeInfo.json</code>&#xFF0C;&#x5219;&#x8F6C;&#x53D1;&#x5230; <code>http://10.125.55.239:9077/api/getSomeInfo.json</code>
+</li></ul>
+<p>&#x540C;&#x6837;&#x7684;&#xFF0C;&#x5BF9;&#x4E8E;&#x5176;&#x4ED6;&#x7684;&#x975E; <code>/api</code> &#x5F00;&#x5934;&#x7684;&#x8BF7;&#x6C42;&#xFF08;&#x5339;&#x914D; <code>&quot;*&quot;</code>&#xFF09;&#xFF0C;&#x5219;&#x8F6C;&#x53D1;&#x5230; <code>http://127.0.0.1:9077</code>&#x3002;</p><h2 id="&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#x7684;&#x89C4;&#x5219;&#x914D;&#x7F6E;">&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#x7684;&#x89C4;&#x5219;&#x914D;&#x7F6E;</h2><p><code>nowa proxy</code> &#x662F;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#x5F3A;&#x5927;&#x7684;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x57FA;&#x4E8E; <a href="http://anyproxy.io/" target="_blank">AnyProxy</a> &#x505A;&#x4E86;&#x5C01;&#x88C5;&#xFF0C;&#x63D0;&#x4F9B;&#x66F4;&#x4E3A;&#x7075;&#x6D3B;&#x7684;&#x89C4;&#x5219;&#x903B;&#x8F91;&#x914D;&#x7F6E;&#x3002;</p><blockquote><p>&#x5982;&#x679C;&#x63D0;&#x793A;&#x627E;&#x4E0D;&#x5230; proxy &#x547D;&#x4EE4;&#xFF0C;&#x8BF7;&#x901A;&#x8FC7; <code>nowa install proxy</code> &#x6765;&#x5B89;&#x88C5;</p></blockquote><pre><code class="lang-shell">nowa proxy</code></pre>
+<h3 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h3><p><code>nowa proxy</code> &#x63A5;&#x53D7;&#x4EE5;&#x4E0B;&#x5019;&#x9009;&#x53C2;&#x6570;&#xFF1A;</p><ul><li><code>--mappings</code> &#x4EE3;&#x7406;&#x6620;&#x5C04;&#x914D;&#x7F6E;
+</li>
+<li><code>-r, --rule &lt;path&gt;</code> &#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x6587;&#x4EF6;&#x5C06;&#x4F1A;&#x8986;&#x76D6;&#x4EE3;&#x7406;&#x6620;&#x5C04;&#x914D;&#x7F6E;
+</li>
+<li><code>-t, --throttle &lt;throttle&gt;</code> &#x6A21;&#x62DF;&#x7F51;&#x7EDC;&#x9650;&#x901F;&#xFF08;kb/s&#xFF09;
+</li>
+<li><code>-s  --silent</code> &#x4E0D;&#x8F93;&#x51FA;&#x65E5;&#x5FD7;&#x5230;&#x7EC8;&#x7AEF;
+</li></ul>
+<p><code>mappings</code> &#x4E2D;&#x6BCF;&#x6761;&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p><pre><code>&quot;&lt;METHOD&gt; //&lt;HOSTNAME&gt;[:&lt;PORT&gt;]/[PATH]&quot;: &quot;//&lt;HOSTNAME1&gt;[:&lt;PORT1&gt;]/[PATH1]&quot;</code></pre>
+<p>&#x5176;&#x4E2D;&#x5DE6;&#x8FB9;&#x4E3A;&#x7B5B;&#x9009;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x53F3;&#x8FB9;&#x4E3A;&#x76EE;&#x6807;&#x8868;&#x8FBE;&#x5F0F;</p><ul><li><code>METHOD</code> &#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#xFF0C;&#x4EC5;&#x53EF;&#x7528;&#x4E8E;&#x7B5B;&#x9009;&#xFF0C;&#x53EF;&#x9009;&#x503C; <code>GET | POST | *</code>
+</li>
+<li><code>HOSTNAME</code> &#x8BF7;&#x6C42;&#x57DF;&#x540D;&#xFF0C;&#x7528;&#x4E8E;&#x7B5B;&#x9009;&#x548C;&#x76EE;&#x6807;&#xFF0C;&#x4E24;&#x8FB9;&#x5FC5;&#x987B;&#x90FD;&#x7ED9;&#x51FA;
+</li>
+<li><code>PORT</code> &#x8BF7;&#x6C42;&#x7AEF;&#x53E3;&#xFF0C;&#x7528;&#x4E8E;&#x7B5B;&#x9009;&#x548C;&#x76EE;&#x6807;&#xFF0C;&#x82E5;&#x5728;&#x76EE;&#x6807;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x672A;&#x7ED9;&#x51FA;&#x5219;&#x4ECD;&#x7EF4;&#x6301;&#x7B5B;&#x9009;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x7684;&#x503C;&#xFF0C;&#x82E5;&#x5728;&#x7B5B;&#x9009;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x672A;&#x7ED9;&#x51FA;&#x5219;&#x4E0D;&#x5BF9;&#x7AEF;&#x53E3;&#x505A;&#x9650;&#x5B9A;
+</li>
+<li><code>PATH</code> &#x8BF7;&#x6C42;&#x8DEF;&#x5F84;&#xFF0C;&#x7528;&#x4E8E;&#x7B5B;&#x9009;&#x548C;&#x76EE;&#x6807;&#xFF0C;&#x5176;&#x4E2D;&#x5C0F;&#x62EC;&#x53F7;&#x62EC;&#x8D77;&#x7684;&#x90E8;&#x5206;&#x6620;&#x5C04;&#x540E;&#x5C06;&#x62FC;&#x63A5;&#x5230; <code>PATH1</code> &#x4E4B;&#x540E;
+</li></ul>
+<p>&#x4F8B;&#x5982;&#x6709;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#xFF1A;</p><p><code>abc.json</code></p><pre><code class="lang-json">{
   <span class="hljs-string">&quot;options&quot;</span>: {
     <span class="hljs-string">&quot;port&quot;</span>: <span class="hljs-number">3000</span>,
     <span class="hljs-string">&quot;mappings&quot;</span>: {
       <span class="hljs-string">&quot;GET //localhost:3000/(admin/meeting/mobile/*.json)&quot;</span>: <span class="hljs-string">&quot;//a-work.alibaba-inc.com:443&quot;</span>
     }
   }
-}
-</code></pre>
-<p>&#x5219;&#x5BF9;&#x4E8E; <code>https://localhost:3000/admin/meeting/mobile/apply/GetList.json</code> &#x7684;&#x8BF7;&#x6C42;&#x5C06;&#x88AB;&#x8F6C;&#x53D1;&#x5230; <code>https://a-work.alibaba-inc.com/admin/meeting/mobile/apply/GetList.json</code></p>
-<h3 id="&#x4EE3;&#x7406;&#x914D;&#x7F6E;">&#x4EE3;&#x7406;&#x914D;&#x7F6E;</h3>
-<p>&#x7531;&#x4E8E;&#x662F;&#x4F7F;&#x7528;&#x8BF7;&#x6C42;&#x4EE3;&#x7406;&#x6765;&#x505A;&#x8F6C;&#x53D1;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x5728;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x6216;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8FDB;&#x884C;&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;&#x5C06;&#x76F8;&#x5E94;&#x7684;&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;&#x5230;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;</p>
-<h4 id="pc-&#x6D4F;&#x89C8;&#x5668;">PC &#x6D4F;&#x89C8;&#x5668;</h4>
-<p>&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528; <a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif" _target="blank">SwitchyOmega</a> &#x6765;&#x505A;&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;</p>
-<ul>
-<li>&#x4F7F;&#x7528; PAC &#x811A;&#x672C;</li>
-</ul>
-<p>&#x5178;&#x578B;&#x7684; PAC &#x811A;&#x672C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">FindProxyForURL</span>(<span class="hljs-params">url, host</span>) </span>{
+}</code></pre>
+<p>&#x5219;&#x5BF9;&#x4E8E; <code>https://localhost:3000/admin/meeting/mobile/apply/GetList.json</code> &#x7684;&#x8BF7;&#x6C42;&#x5C06;&#x88AB;&#x8F6C;&#x53D1;&#x5230; <code>https://a-work.alibaba-inc.com/admin/meeting/mobile/apply/GetList.json</code></p><h3 id="&#x4EE3;&#x7406;&#x914D;&#x7F6E;">&#x4EE3;&#x7406;&#x914D;&#x7F6E;</h3><p>&#x7531;&#x4E8E;&#x662F;&#x4F7F;&#x7528;&#x8BF7;&#x6C42;&#x4EE3;&#x7406;&#x6765;&#x505A;&#x8F6C;&#x53D1;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x5728;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x6216;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8FDB;&#x884C;&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;&#x5C06;&#x76F8;&#x5E94;&#x7684;&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;&#x5230;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;</p><h4 id="pc-&#x6D4F;&#x89C8;&#x5668;">PC &#x6D4F;&#x89C8;&#x5668;</h4><p>&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528; <a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif" target="_blank">SwitchyOmega</a> &#x6765;&#x505A;&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;</p><ul><li>&#x4F7F;&#x7528; PAC &#x811A;&#x672C;
+</li></ul>
+<p>&#x5178;&#x578B;&#x7684; PAC &#x811A;&#x672C;&#x5982;&#x4E0B;&#xFF1A;</p><pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">FindProxyForURL</span>(<span class="hljs-params">url, host</span>) </span>{
   <span class="hljs-keyword">if</span> (host === <span class="hljs-string">&quot;test.com&quot;</span>) {
     <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;PROXY 127.0.0.1:8001; DIRECT&quot;</span>;
   }
   <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;DIRECT&quot;</span>;
-}
-</code></pre>
-<ul>
-<li>&#x4F7F;&#x7528; HTTP &#x4EE3;&#x7406;&#xFF1A;</li>
-</ul>
-<p><img src="https://gw.alicdn.com/tfscom/TB1lZLqKpXXXXcQXpXXXXXXXXXX" alt=""></p>
-<h4 id="&#x79FB;&#x52A8;&#x8BBE;&#x5907;">&#x79FB;&#x52A8;&#x8BBE;&#x5907;</h4>
-<p><a href="https://www.google.com/search?q=Android+iOS+%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE&amp;gws_rd=cr,ssl" _target="blank">Android &#x6216; iOS &#x7684;&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;</a></p>
-<h3 id="https-&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;">https &#x8BF7;&#x6C42;&#x8F6C;&#x53D1;</h3>
-<p>&#x5982;&#x9700;&#x8F6C;&#x53D1; https &#x8BF7;&#x6C42;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x8BBE;&#x5907;&#x4E2D;&#x5B89;&#x88C5; https &#x6839;&#x8BC1;&#x4E66;&#xFF08;&#x8BC1;&#x4E66;&#x53EA;&#x9700;&#x5B89;&#x88C5;&#x4E00;&#x6B21;&#xFF09;&#x3002;</p>
-<ul>
-<li>&#x670D;&#x52A1;&#x7AEF;&#x5F00;&#x542F; <code>nowa proxy</code></li>
-<li>&#x7528;&#x8C03;&#x8BD5;&#x8BBE;&#x5907;&#x8BBF;&#x95EE;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5730;&#x5740;&#xFF0C;&#x5F62;&#x5982;&#xFF1A;<code>http://&lt;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668; IP&gt;:8002/fetchCrtFile</code></li>
-<li>&#x4E0B;&#x8F7D;&#x5E76;&#x5B89;&#x88C5;&#x8BC1;&#x4E66;</li>
-</ul>
+}</code></pre>
+<ul><li>&#x4F7F;&#x7528; HTTP &#x4EE3;&#x7406;&#xFF1A;
+</li></ul>
+<p><img src="https://gw.alicdn.com/tfscom/TB1lZLqKpXXXXcQXpXXXXXXXXXX"></p><h4 id="&#x79FB;&#x52A8;&#x8BBE;&#x5907;">&#x79FB;&#x52A8;&#x8BBE;&#x5907;</h4><p><a href="https://www.google.com/search?q=Android+iOS+%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE&amp;gws_rd=cr,ssl" target="_blank">Android &#x6216; iOS &#x7684;&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;</a></p><h3 id="https-&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;">https &#x8BF7;&#x6C42;&#x8F6C;&#x53D1;</h3><p>&#x5982;&#x9700;&#x8F6C;&#x53D1; https &#x8BF7;&#x6C42;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x8BBE;&#x5907;&#x4E2D;&#x5B89;&#x88C5; https &#x6839;&#x8BC1;&#x4E66;&#xFF08;&#x8BC1;&#x4E66;&#x53EA;&#x9700;&#x5B89;&#x88C5;&#x4E00;&#x6B21;&#xFF09;&#x3002;</p><ul><li>&#x670D;&#x52A1;&#x7AEF;&#x5F00;&#x542F; <code>nowa proxy</code>
+</li>
+<li>&#x7528;&#x8C03;&#x8BD5;&#x8BBE;&#x5907;&#x8BBF;&#x95EE;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5730;&#x5740;&#xFF0C;&#x5F62;&#x5982;&#xFF1A;<code>http://&lt;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668; IP&gt;:8002/fetchCrtFile</code>
+</li>
+<li>&#x4E0B;&#x8F7D;&#x5E76;&#x5B89;&#x88C5;&#x8BC1;&#x4E66;
+</li></ul>
 
                                 
                                 </section>
@@ -692,7 +668,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"远程调试","level":"1.3.2.2","depth":3,"next":{"title":"https 配置","level":"1.3.2.3","depth":3,"path":"https_pei_zhi.md","ref":"https_pei_zhi.md","articles":[]},"previous":{"title":"本地开发","level":"1.3.2.1","depth":3,"path":"ben_di_kai_fa.md","ref":"ben_di_kai_fa.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"yuan_cheng_tiao_shi.md","mtime":"2017-03-16T13:02:58.139Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2018-03-30T13:36:34.388Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"远程调试","level":"1.3.2.2","depth":3,"next":{"title":"https 配置","level":"1.3.2.3","depth":3,"path":"https_pei_zhi.md","ref":"https_pei_zhi.md","articles":[]},"previous":{"title":"本地开发","level":"1.3.2.1","depth":3,"path":"ben_di_kai_fa.md","ref":"ben_di_kai_fa.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"yuan_cheng_tiao_shi.md","mtime":"2019-03-13T02:37:27.331Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-03-13T03:19:56.157Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -700,6 +676,10 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -722,7 +702,7 @@
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.0.2">
+        <meta name="generator" content="GitBook 3.2.0">
         
         
         
@@ -489,7 +489,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="chang_jian_wen_ti.html">
+        <li class="chapter " data-level="1.5" data-path="upgrade-to-nowa2.html">
+            
+                <a href="upgrade-to-nowa2.html">
+            
+                    
+                    升级到 Nowa2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chang_jian_wen_ti.html">
             
                 <a href="chang_jian_wen_ti.html">
             
@@ -547,31 +560,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x6A21;&#x62DF;&#x6570;&#x636E;">&#x6A21;&#x62DF;&#x6570;&#x636E;</h1>
-<hr>
-<h2 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h2>
-<p><code>nowa server</code> &#x53EF;&#x901A;&#x8FC7; <code>mockapi</code> &#x53C2;&#x6570;&#x6765;&#x914D;&#x7F6E;&#x6A21;&#x62DF;&#x6570;&#x636E;&#x8DEF;&#x7531;&#x6620;&#x5C04;&#x3002;&#x6A21;&#x62DF;&#x6570;&#x636E;&#x8DEF;&#x7531;&#x7528;&#x4E8E;&#x5C06;&#x6EE1;&#x8DB3;&#x914D;&#x7F6E;&#x89C4;&#x5219;&#x7684;&#x8DEF;&#x5F84;&#x6307;&#x5411;&#x5BF9;&#x5E94;&#x7684;&#x903B;&#x8F91;&#x5904;&#x7406;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x901A;&#x8FC7;&#x7B80;&#x5355;&#x7684;&#x903B;&#x8F91;&#x4EE3;&#x7801;&#x6765;&#x5B9A;&#x4E49;&#x81EA;&#x5DF1;&#x6240;&#x9700;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x3002;</p>
-<h2 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h2>
-<p>&#x4F8B;&#x5982;&#xFF0C;&#x5BF9;&#x4E8E;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#xFF1A;</p>
-<p><code>abc.json</code></p>
-<pre><code class="lang-json">{
+                                <h1 id="&#x6A21;&#x62DF;&#x6570;&#x636E;">&#x6A21;&#x62DF;&#x6570;&#x636E;</h1><hr><h2 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h2><p><code>nowa server</code> &#x53EF;&#x901A;&#x8FC7; <code>mockapi</code> &#x53C2;&#x6570;&#x6765;&#x914D;&#x7F6E;&#x6A21;&#x62DF;&#x6570;&#x636E;&#x8DEF;&#x7531;&#x6620;&#x5C04;&#x3002;&#x6A21;&#x62DF;&#x6570;&#x636E;&#x8DEF;&#x7531;&#x7528;&#x4E8E;&#x5C06;&#x6EE1;&#x8DB3;&#x914D;&#x7F6E;&#x89C4;&#x5219;&#x7684;&#x8DEF;&#x5F84;&#x6307;&#x5411;&#x5BF9;&#x5E94;&#x7684;&#x903B;&#x8F91;&#x5904;&#x7406;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x901A;&#x8FC7;&#x7B80;&#x5355;&#x7684;&#x903B;&#x8F91;&#x4EE3;&#x7801;&#x6765;&#x5B9A;&#x4E49;&#x81EA;&#x5DF1;&#x6240;&#x9700;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x3002;</p><h2 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h2><p>&#x4F8B;&#x5982;&#xFF0C;&#x5BF9;&#x4E8E;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#xFF1A;</p><p><code>abc.json</code></p><pre><code class="lang-json">{
   <span class="hljs-string">&quot;options&quot;</span>: {
     <span class="hljs-string">&quot;mockapi&quot;</span>: {
       <span class="hljs-string">&quot;/api/fetchData&quot;</span>: <span class="hljs-string">&quot;mock/fetch.js&quot;</span>
     }
   }
-}
-</code></pre>
-<p>&#x5219;&#x5BF9;&#x4E8E; <code>/api/fetchData</code> &#x7684;&#x8BBF;&#x95EE;&#xFF0C;&#x5C06;&#x4EA4;&#x7531;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x7684; <code>mock/fetch.js</code> &#x6A21;&#x5757;&#x5904;&#x7406;&#x3002;</p>
-<p><code>mock/fetch.js</code></p>
-<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+}</code></pre>
+<p>&#x5219;&#x5BF9;&#x4E8E; <code>/api/fetchData</code> &#x7684;&#x8BBF;&#x95EE;&#xFF0C;&#x5C06;&#x4EA4;&#x7531;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x7684; <code>mock/fetch.js</code> &#x6A21;&#x5757;&#x5904;&#x7406;&#x3002;</p><p><code>mock/fetch.js</code></p><pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
   res.end(<span class="hljs-string">&apos;sucess&apos;</span>);
-};
-</code></pre>
-<blockquote>
-<p>&#x53EF;&#x7528;&#x7684;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x548C;&#x4E2D;&#x95F4;&#x4EF6;&#x8BF4;&#x660E;&#x8BE6;&#x89C1; <a href="http://expressjs.com/" _target="blank">express &#x6587;&#x6863;</a>&#x3002;</p>
-</blockquote>
-
+};</code></pre>
+<blockquote><p>&#x53EF;&#x7528;&#x7684;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x548C;&#x4E2D;&#x95F4;&#x4EF6;&#x8BF4;&#x660E;&#x8BE6;&#x89C1; <a href="http://expressjs.com/" target="_blank">express &#x6587;&#x6863;</a>&#x3002;</p></blockquote>
                                 
                                 </section>
                             
@@ -614,7 +613,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"模拟数据配置","level":"1.3.2.10","depth":3,"next":{"title":"云构建","level":"1.3.2.11","depth":3,"path":"yun_gou_jian.md","ref":"yun_gou_jian.md","articles":[]},"previous":{"title":"路由映射配置","level":"1.3.2.9","depth":3,"path":"lu_you_ying_she.md","ref":"lu_you_ying_she.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"mo_ni_shu_ju.md","mtime":"2016-08-22T10:09:13.757Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2018-03-30T13:36:34.388Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"模拟数据配置","level":"1.3.2.10","depth":3,"next":{"title":"云构建","level":"1.3.2.11","depth":3,"path":"yun_gou_jian.md","ref":"yun_gou_jian.md","articles":[]},"previous":{"title":"路由映射配置","level":"1.3.2.9","depth":3,"path":"lu_you_ying_she.md","ref":"lu_you_ying_she.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"mo_ni_shu_ju.md","mtime":"2019-03-13T02:37:27.314Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-03-13T03:19:56.157Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -622,6 +621,10 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -644,7 +647,7 @@
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

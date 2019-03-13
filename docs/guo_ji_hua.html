@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.0.2">
+        <meta name="generator" content="GitBook 3.2.0">
         
         
         
@@ -489,7 +489,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="chang_jian_wen_ti.html">
+        <li class="chapter " data-level="1.5" data-path="upgrade-to-nowa2.html">
+            
+                <a href="upgrade-to-nowa2.html">
+            
+                    
+                    升级到 Nowa2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chang_jian_wen_ti.html">
             
                 <a href="chang_jian_wen_ti.html">
             
@@ -547,20 +560,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x56FD;&#x9645;&#x5316;">&#x56FD;&#x9645;&#x5316;</h1>
-<hr>
-<h2 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h2>
-<p><code>nowa init</code> &#x4E2D;&#x4E3B;&#x8981;&#x7684;&#x9879;&#x76EE;&#x6A21;&#x677F;&#x90FD;&#x63A8;&#x8350;&#x4F7F;&#x7528; <a href="huan_jing_bian_liang.html">&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6CE8;&#x5165;</a> + <a href="https://www.npmjs.com/package/i18n-helper" _target="blank">i18n-helper</a> &#x6587;&#x6848;&#x6A21;&#x677F;&#x5DE5;&#x5177; &#x6765;&#x5B8C;&#x6210;&#x56FD;&#x9645;&#x5316;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
-<p>&#x8BE5;&#x65B9;&#x6848;&#x4F1A;&#x5728; <code>src/i18n</code> &#x76EE;&#x5F55;&#x4E0B;&#x5B58;&#x653E;&#x5404;&#x79CD;&#x8BED;&#x8A00;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#xFF08;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x8BE6;&#x89C1; <a href="xin_xiang_mu.html">&#x65B0;&#x9879;&#x76EE;&#x7BC7;</a>&#xFF09;&#xFF0C;&#x4F8B;&#x5982; <code>zh-cn.js</code>&#x3001;<code>en.js</code>&#x2026; &#x7136;&#x540E;&#x7531; <code>index.js</code> &#x6765;&#x8D1F;&#x8D23;&#x9009;&#x62E9;&#x6027;&#x52A0;&#x8F7D;&#x67D0;&#x4E00;&#x79CD;&#x8BED;&#x8A00;&#x3002;</p>
-<p><code>index.js</code> &#x4E2D;&#x4E3B;&#x8981;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> lang = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./&apos;</span> + locale);
-<span class="hljs-built_in">module</span>.exports = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;i18n-helper&apos;</span>)(lang);
-</code></pre>
-<p>&#x5176;&#x4E2D; <code>locale</code> &#x7531;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6CE8;&#x5165;&#xFF0C;lang &#x5373;&#x662F;&#x5F53;&#x524D;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x7684;&#x8BED;&#x8A00;&#x8D44;&#x6E90;&#x5305;&#xFF0C;&#x6A21;&#x5757;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6587;&#x6848;&#x6A21;&#x677F;&#x5DE5;&#x5177;&#x3002;</p>
-<h2 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h2>
-<p>&#x5728; <code>abc.json</code> &#x4E2D;&#x7684;&#x914D;&#x7F6E;&#xFF1A;</p>
-<p><code>abc.json</code></p>
-<pre><code class="lang-json">{
+                                <h1 id="&#x56FD;&#x9645;&#x5316;">&#x56FD;&#x9645;&#x5316;</h1><hr><h2 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h2><p><code>nowa init</code> &#x4E2D;&#x4E3B;&#x8981;&#x7684;&#x9879;&#x76EE;&#x6A21;&#x677F;&#x90FD;&#x63A8;&#x8350;&#x4F7F;&#x7528; <a href="huan_jing_bian_liang.html">&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6CE8;&#x5165;</a> + <a href="https://www.npmjs.com/package/i18n-helper" target="_blank">i18n-helper</a> &#x6587;&#x6848;&#x6A21;&#x677F;&#x5DE5;&#x5177; &#x6765;&#x5B8C;&#x6210;&#x56FD;&#x9645;&#x5316;&#x7684;&#x529F;&#x80FD;&#x3002;</p><p>&#x8BE5;&#x65B9;&#x6848;&#x4F1A;&#x5728; <code>src/i18n</code> &#x76EE;&#x5F55;&#x4E0B;&#x5B58;&#x653E;&#x5404;&#x79CD;&#x8BED;&#x8A00;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#xFF08;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x8BE6;&#x89C1; <a href="xin_xiang_mu.html">&#x65B0;&#x9879;&#x76EE;&#x7BC7;</a>&#xFF09;&#xFF0C;&#x4F8B;&#x5982; <code>zh-cn.js</code>&#x3001;<code>en.js</code>&#x2026; &#x7136;&#x540E;&#x7531; <code>index.js</code> &#x6765;&#x8D1F;&#x8D23;&#x9009;&#x62E9;&#x6027;&#x52A0;&#x8F7D;&#x67D0;&#x4E00;&#x79CD;&#x8BED;&#x8A00;&#x3002;</p><p><code>index.js</code> &#x4E2D;&#x4E3B;&#x8981;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p><pre><code class="lang-js"><span class="hljs-keyword">var</span> lang = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./&apos;</span> + locale);
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;i18n-helper&apos;</span>)(lang);</code></pre>
+<p>&#x5176;&#x4E2D; <code>locale</code> &#x7531;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6CE8;&#x5165;&#xFF0C;lang &#x5373;&#x662F;&#x5F53;&#x524D;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x7684;&#x8BED;&#x8A00;&#x8D44;&#x6E90;&#x5305;&#xFF0C;&#x6A21;&#x5757;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6587;&#x6848;&#x6A21;&#x677F;&#x5DE5;&#x5177;&#x3002;</p><h2 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h2><p>&#x5728; <code>abc.json</code> &#x4E2D;&#x7684;&#x914D;&#x7F6E;&#xFF1A;</p><p><code>abc.json</code></p><pre><code class="lang-json">{
   <span class="hljs-string">&quot;options&quot;</span>: {
     <span class="hljs-string">&quot;vars&quot;</span>: {
       <span class="hljs-string">&quot;locale&quot;</span>: <span class="hljs-string">&quot;en&quot;</span>
@@ -569,27 +571,16 @@
       <span class="hljs-string">&quot;locale&quot;</span>: [ <span class="hljs-string">&quot;zh-cn&quot;</span>, <span class="hljs-string">&quot;en&quot;</span> ]
     }
   }
-}
-</code></pre>
-<blockquote>
-<p>&#x5176;&#x4E2D;&#xFF0C;<code>vars</code> &#x662F;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x6CE8;&#x5165;&#x53D8;&#x91CF;&#xFF0C;<code>buildvars</code> &#x662F;&#x6784;&#x5EFA;&#x65F6;&#x7684;&#x5019;&#x9009;&#x503C;&#xFF0C;<br>&#x5F53;&#x67D0;&#x4E2A;&#x53D8;&#x91CF;&#x6709;&#x591A;&#x4E2A;&#x5019;&#x9009;&#x503C;&#x65F6;&#xFF0C;&#x5C06;&#x4F1A;&#x628A;&#x8BE5;&#x5019;&#x9009;&#x503C;&#x4F5C;&#x4E3A;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x7684;&#x540E;&#x7F00;&#x3002;</p>
-</blockquote>
-<p>&#x5728;&#x4E1A;&#x52A1;&#x4EE3;&#x7801;&#x4E2D;&#x4F7F;&#x7528;&#xFF1A;</p>
-<p><code>html/index.html</code></p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;app-en.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-</code></pre>
-<p><code>src/i18n/en.js</code></p>
-<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+}</code></pre>
+<blockquote><p>&#x5176;&#x4E2D;&#xFF0C;<code>vars</code> &#x662F;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x6CE8;&#x5165;&#x53D8;&#x91CF;&#xFF0C;<code>buildvars</code> &#x662F;&#x6784;&#x5EFA;&#x65F6;&#x7684;&#x5019;&#x9009;&#x503C;&#xFF0C;</p><p>&#x5F53;&#x67D0;&#x4E2A;&#x53D8;&#x91CF;&#x6709;&#x591A;&#x4E2A;&#x5019;&#x9009;&#x503C;&#x65F6;&#xFF0C;&#x5C06;&#x4F1A;&#x628A;&#x8BE5;&#x5019;&#x9009;&#x503C;&#x4F5C;&#x4E3A;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x7684;&#x540E;&#x7F00;&#x3002;</p></blockquote><p>&#x5728;&#x4E1A;&#x52A1;&#x4EE3;&#x7801;&#x4E2D;&#x4F7F;&#x7528;&#xFF1A;</p><p><code>html/index.html</code></p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;app-en.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+<p><code>src/i18n/en.js</code></p><pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
   key1: <span class="hljs-string">&apos;hello {1}&apos;</span>,
   key2: <span class="hljs-string">&apos;test demo&apos;</span>
-};
-</code></pre>
-<p><code>src/pages/PageXxx.js</code></p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> i18n = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;i18n&apos;</span>); <span class="hljs-comment">// i18n &#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x4E00;&#x4E2A;&#x5FEB;&#x6377;&#x8DEF;&#x5F84;&#xFF0C;&#x65E0;&#x8BBA;&#x4E1A;&#x52A1;&#x4EE3;&#x7801;&#x5728;&#x4F55;&#x5904;&#x90FD;&#x53EF;&#x901A;&#x8FC7;&#x6B64;&#x8DEF;&#x5F84;&#x5F15;&#x7528;&#x5230; `src/i18n/index.js` &#x6A21;&#x5757;</span>
+};</code></pre>
+<p><code>src/pages/PageXxx.js</code></p><pre><code class="lang-js"><span class="hljs-keyword">const</span> i18n = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;i18n&apos;</span>); <span class="hljs-comment">// i18n &#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x4E00;&#x4E2A;&#x5FEB;&#x6377;&#x8DEF;&#x5F84;&#xFF0C;&#x65E0;&#x8BBA;&#x4E1A;&#x52A1;&#x4EE3;&#x7801;&#x5728;&#x4F55;&#x5904;&#x90FD;&#x53EF;&#x901A;&#x8FC7;&#x6B64;&#x8DEF;&#x5F84;&#x5F15;&#x7528;&#x5230; `src/i18n/index.js` &#x6A21;&#x5757;</span>
 ...
 i18n(<span class="hljs-string">&apos;key1&apos;</span>, <span class="hljs-string">&apos;world&apos;</span>); <span class="hljs-comment">// &apos;hello world&apos;</span>
-i18n(<span class="hljs-string">&apos;key2&apos;</span>); <span class="hljs-comment">// &apos;test demo&apos;</span>
-</code></pre>
+i18n(<span class="hljs-string">&apos;key2&apos;</span>); <span class="hljs-comment">// &apos;test demo&apos;</span></code></pre>
 
                                 
                                 </section>
@@ -633,7 +624,7 @@ i18n(<span class="hljs-string">&apos;key2&apos;</span>); <span class="hljs-comme
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"国际化","level":"1.3.2.4","depth":3,"next":{"title":"模块热替换","level":"1.3.2.5","depth":3,"path":"mo_kuai_re_ti_huan.md","ref":"mo_kuai_re_ti_huan.md","articles":[]},"previous":{"title":"https 配置","level":"1.3.2.3","depth":3,"path":"https_pei_zhi.md","ref":"https_pei_zhi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"guo_ji_hua.md","mtime":"2016-08-22T10:09:13.757Z","type":"markdown"},"gitbook":{"version":"3.0.2","time":"2018-03-30T13:36:34.388Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"国际化","level":"1.3.2.4","depth":3,"next":{"title":"模块热替换","level":"1.3.2.5","depth":3,"path":"mo_kuai_re_ti_huan.md","ref":"mo_kuai_re_ti_huan.md","articles":[]},"previous":{"title":"https 配置","level":"1.3.2.3","depth":3,"path":"https_pei_zhi.md","ref":"https_pei_zhi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"guo_ji_hua.md","mtime":"2019-03-13T02:37:27.313Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-03-13T03:19:56.157Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -641,6 +632,10 @@ i18n(<span class="hljs-string">&apos;key2&apos;</span>); <span class="hljs-comme
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -663,7 +658,7 @@ i18n(<span class="hljs-string">&apos;key2&apos;</span>); <span class="hljs-comme
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 
